@@ -1,0 +1,53 @@
+{
+ "pessimistic": {
+  "district": 23.5,
+  "district_alt_method": 35.3,
+  "district_with_bandwidth": 45.0,
+  "district_bw_zero": 12.6,
+  "county10": 87.6,
+  "county15": 98.2,
+  "county_total15": 1047677,
+  "hh15": 1047311,
+  "county_competitive10": 21.6,
+  "county_competitive15": 47.9,
+  "net_cash_P50": 107018,
+  "dscr": 1.0,
+  "capexP80": 1383192,
+  "payback_P50": 8.9,
+  "payback_P80": 10.1
+ },
+ "balanced": {
+  "district": 87.6,
+  "district_alt_method": 70.8,
+  "district_with_bandwidth": 95.6,
+  "district_bw_zero": 77.0,
+  "county10": 99.8,
+  "county15": 100.0,
+  "county_total15": 2266155,
+  "hh15": 1516262,
+  "county_competitive10": 74.2,
+  "county_competitive15": 96.1,
+  "net_cash_P50": 178811,
+  "dscr": 1.7,
+  "capexP80": 1383192,
+  "payback_P50": 8.6,
+  "payback_P80": 10.7
+ },
+ "optimistic": {
+  "district": 94.9,
+  "district_alt_method": 83.4,
+  "district_with_bandwidth": 98.0,
+  "district_bw_zero": 90.6,
+  "county10": 100.0,
+  "county15": 100.0,
+  "county_total15": 2946551,
+  "hh15": 1855021,
+  "county_competitive10": 88.8,
+  "county_competitive15": 99.6,
+  "net_cash_P50": 208573,
+  "dscr": 2.0,
+  "capexP80": 1383192,
+  "payback_P50": 8.0,
+  "payback_P80": 9.7
+ }
+}

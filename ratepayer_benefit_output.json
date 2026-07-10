@@ -1,0 +1,54 @@
+{
+ "basis": "Ratepayer surplus avoided: discounted gap between the flat cost-based PUD wholesale rate and an escalating for-profit counterfactual, over the served base. WHOLESALE $480/yr anchor, NOT retail ~$120/mo Starlink. FISHER nominal discount (~4% at base inflation). Household surplus avoided, NOT District margin -- do NOT sum with the cost-recovery NPV. Escalation floored at 0 (models the dollar bill). Headline applies the near-certain NCI exit; no-exit and full-22%-loss runs are the bracket ends. Bands not points.",
+ "n_cust": 878,
+ "horizons": {
+  "10": {
+   "P5": 14022,
+   "P50": 462559,
+   "P80": 758321,
+   "P95": 1085996,
+   "mean": 494224,
+   "P50_no_exit": 509830,
+   "P50_full_loss": 398623,
+   "scurve_median_cumPV": [
+    10022,
+    29321,
+    57398,
+    93861,
+    138169,
+    189991,
+    248780,
+    313952,
+    385216,
+    462559
+   ]
+  },
+  "15": {
+   "P5": 51689,
+   "P50": 920505,
+   "P80": 1523675,
+   "P95": 2225506,
+   "mean": 999774,
+   "P50_no_exit": 1012635,
+   "P50_full_loss": 794952,
+   "scurve_median_cumPV": [
+    10022,
+    29321,
+    57398,
+    93861,
+    138169,
+    189991,
+    248780,
+    313952,
+    385216,
+    462559,
+    544881,
+    632555,
+    724190,
+    820726,
+    920505
+   ]
+  }
+ },
+ "_model_version": "v2.1-2026-07-03"
+}

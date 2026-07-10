@@ -1,0 +1,765 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+montecarlo_robust.py  --  World-class Monte Carlo for the Okanogan PUD Tarana upgrade
+=====================================================================================
+Successor to recovery_model.py. Implements the "ADOPT NOW" factors from the two
+2026-06 robustness reviews so the analysis withstands a skeptical board/auditor.
+
+WHAT THIS ADDS over recovery_model.py (which randomized only margin + growth vs a
+FIXED capex -- the "you treat capex as certain" critique):
+
+  COST SIDE (the board's labor/contingency question):
+    * CAPEX is now STOCHASTIC and right-skewed = hardware BOM + tower-side LABOR
+      (the $1.18M vendor BOM contains $0 labor/contingency -- verified) + an AACE
+      18R-97 Class-4 CONTINGENCY draw. Reported as P50/P80/P90 (funded = P80).
+  MACRO (the #1 left-tail fix):
+    * One inflation factor pi couples OPEX and ARPU -- margin is DERIVED each year
+      (1 - opex_t/rev_t), so a sim can't pair flat opex with rising ARPU. Captures
+      the "margin scissors."
+  TECH/COMPETITION tails:
+    * Gear life is a PERT random var over an 8/11/14-yr EFFECTIVE life (combined
+      physical + economic). NOTE(v2): there is NO separate annual obsolescence hazard --
+      earlier docs claimed one; it was never implemented, and adding it on top of the
+      random effective life would double-count technology-life uncertainty.
+    * A mid-horizon G1->G2 base-node-only refresh event (~$150K) -- a de-risker.
+    * Starlink price-sensitive churn hazard (bounded) and a low-prob subsidized
+      fiber-OVERBUILD tail on a site.
+  METHOD:
+    * PERT/Beta for bounded inputs (not clipped Normals); P50/P80/P90 + capex
+      S-curve; standard error; NCI exit as a Bernoulli event (not just a floor).
+
+  SECOND LEDGER (the structural-advantage ledger):
+    * benefit_mc(): discounted RATEPAYER SURPLUS avoided -- flat cost-based public
+      wholesale rate vs an escalating for-profit counterfactual. SEPARATE output,
+      NEVER summed with the cost-recovery NPV (different payees, one rate).
+
+Every distribution's basis is cited inline. DOCUMENTED = in workbook/audit;
+INFERRED = a labeled modeling judgment. Seed locked for reproducibility.
+Run:  python montecarlo_robust.py
+"""
+import numpy as np, json
+
+MODEL_VERSION = "v2.1-2026-07-03"   # PROMOTED. overbuild fix; conditional+unconditional payback; annual/min DSCR; bandwidth overlap bracket; NCI-timing (nci_year=2 adopted); run-to-failure ledger (E); Ledger-E refresh+NCI-common-mode; Ledger-B NCI-consistent; CPE = customer/RSP pass-through
+SEED = 20260629
+H_LIVES = (8, 10, 12)
+
+# ---- VERIFIED CONSTANTS (District Tarana workbook + WA SAO 2024 audit) -------
+CUST          = 878
+RADIOS_PLAN   = 1035
+TOWER_FIXED   = 370_783        # 7-site tower-hardware sum, workbook-footed (was 371,323; ~$540 fix)
+RADIO_COST    = 787            # RN $640 + BW unlock $100 + 1yr mgmt $47
+ARPU_YR       = 480.0          # $40/mo PROPOSED single-tier wholesale rate
+ARPU_CURRENT  = 374.4          # ~$31.2/mo currently realized blended wholesale
+NCI_SHARE     = 0.22           # NCI's share of the served base. NCI is the 2nd-largest reseller (~717 subs); HIGHLAND is largest (~1,050). Not "the largest."
+NCI_EXIT_P    = 0.85           # NCI exit is NEAR-CERTAIN within the horizon (Core Fiber is winding down its RSP participation). Timing/degree is the variable, not IF. (Slider/scn can override.)
+NCI_MIGRATE   = 0.50           # on exit, ~half of NCI's RSP customers MIGRATE to other PUD resellers (stay on the network — open-access; the PUD is observed taking NCI customers several/week). So NET loss = NCI_SHARE*(1-NCI_MIGRATE) ≈ 11%, not 22%. NCI also keeps buying wholesale bandwidth/transport for its own-tower customers (retained revenue; not a full-book loss).
+DELAY_CHURN   = 0.04           # BUILD DELAY: extra annual attrition (to Starlink) while the congested/end-of-life network waits for a delayed upgrade; the longer the wait, the more customers settle elsewhere and must be won back
+# ---- ROBUSTNESS-AUDIT (2026-06) corrective constants ------------------------
+REAL_DISCOUNT = 0.015          # real discount; nominal = REAL_DISCOUNT + inflation (Fisher) -> ~4% at base
+RADIO_DEFLATION = 0.04         # annual electronics cost decline on incremental (growth) radios
+SALES_TAX     = 0.08           # WA sales/use tax on equipment (conservative; verify broadband-utility exemption)
+ELAST_HAIRCUT = 0.025          # AUDIT (de-bias 2026-06): relaxed 3.5%->2.5% -- a necessity with few rural substitutes and only partial reseller pass-through supports ~2-2.5%, not 3.5%
+CHURN_RAMP    = 0.08           # per-yr lift on Starlink/LEO churn (capacity growth relaxes the oversubscription cap over time)
+BATHTUB_START = 8              # yr after which aging-gear failure/RMA/truck-roll cost ramps
+BATHTUB_RATE  = 0.02           # extra opex/yr in the gear's final third (reliability bathtub)
+PULL_ELAST    = 0.30           # demand-pull: a flat cost-based rate grows more competitive vs the for-profit each yr -> extra take-up (necessity-grade elasticity; conservative gap proxy)
+# --- WHOLESALE BANDWIDTH RESALE (FOI-verified, was left out): the PUD bills RSPs on 95th-percentile
+#     usage at ~$1.50/Mbps, and its upstream cost is ~$0 (flat-rate 100G NoaNet co-op pipe; the budget's
+#     "Upstream Internet Bandwidth" line went $64K(2021)->$0(2023+)). So each served customer's sustained
+#     usage is a near-pure-margin slice; lose the customer, lose the slice. Conservative + tunable. ---
+BW_PRICE      = 1.50           # $/Mbps/mo charged to RSPs on 95th-percentile (FOI / RSP-reported); scn['bw_price'] can drop it
+# MODELING NOTE (2026-07): bandwidth resale is a SEPARATE, currently-billed revenue line ($193K in 2025,
+#   distinct from the $1.14M WISP access line -- both on the RSP bills, verified in yearly_revenue_by_category.csv).
+#   The books imply ~3.5 Mbps/customer AVERAGE ($193K / ~3,000 wireless customers / $1.50 / 12mo). We headline a
+#   deliberately conservative ~1.0 Mbps (mode) -- WELL below documented -- for two honest reasons NOT to bank the full
+#   figure: (a) a residual chance the audited margin anchor already reflects part of it, (b) modesty. But note the
+#   pressure runs the OTHER way: these 878 sit on the CONGESTED towers (demand is suppressed by the old gear, the
+#   upgrade RELIEVES it), and per-customer usage rises every year -- even if $/Mbps falls as backhaul cheapens,
+#   volume grows faster. So 1.0 is a floor-ish headline, not a stretch. run_scenarios reports the documented-full
+#   (~2.8 Mbps) and a hypothetical ZERO as the range bounds. bw_price + bw_mbps are both sliders on the calculator.
+BW_LO         = 0.5            # per-customer 95th-pctile Mbps: FLOOR of the headline draw
+BW_MODE       = 1.0            # conservative headline CENTRAL -- well below the ~3.5 Mbps the books document (deliberately conservative)
+BW_HI         = 2.0            # upper draw -- still below the documented average
+BW_MBPS_CUST  = None           # None => draw the BW_LO/MODE/HI distribution; a scalar pins it (0.0 floor / 2.8 documented-full)
+BW_MARGIN     = 0.90           # near-pure margin (upstream ~$0 on the 100G NoaNet pipe; small shared-cost allowance)
+BW_GROWTH     = 0.05           # NET per-customer bandwidth growth/yr -- usage rises even as $/Mbps may fall; conservative vs 10-20% data-demand trends
+# ---- DEBT SERVICE (for the per-scenario DSCR) -------------------------------
+DSCR_RATE     = 0.04           # bond rate for the coverage calc (conservative; District's 2020 revenue-bond TIC was ~2.9%)
+DSCR_TERM     = 15             # revenue-bond term (yr)
+# NOTE(v2): the old fixed DEBT_SERVICE constant (on the $1.178M sticker) is REMOVED -- the DSCR now sizes
+# debt on each run's FUNDED P80 capex, computed inside cost_recovery_mc.
+
+def hardware_capex(n_cust):
+    """Hardware-only BOM for the customers ACTUALLY SERVED (no labor/contingency).
+    The 1,035-radio headroom in the workbook is funded but bought as customers
+    sign up (each headroom radio arrives with its own revenue), so the as-built
+    878 cost is ~$1.06M, not the $1.19M funded total."""
+    return TOWER_FIXED + n_cust * RADIO_COST   # ~$1,061,769 at 878
+
+# ---- distribution helpers (numpy only) --------------------------------------
+def pert(rng, a, b, c, size, lam=4.0):
+    """PERT (smooth triangular) via Beta on [a,c] with mode b. Respects bounds
+    without the mass-pile-up a clipped Normal produces (GAO/PMI three-point)."""
+    if c <= a:
+        return np.full(size, b, float)
+    alpha = 1.0 + lam * (b - a) / (c - a)
+    beta  = 1.0 + lam * (c - b) / (c - a)
+    return a + rng.beta(alpha, beta, size) * (c - a)
+
+# ============================================================================
+# (A) ROBUST COST-RECOVERY MONTE CARLO
+# ============================================================================
+def cost_recovery_mc(n=200_000, headline_arpu=ARPU_YR, seed=SEED, verbose=True, scn=None):
+    """Discounted cost-recovery (post robustness-audit 2026-06). Ledger A now: discounts cash
+    (Fisher), charges incremental growth radios (G2 refresh = separate future decision), caps growth at funded radios,
+    adds sales/use tax, anchors opex to a DOLLAR cost-to-serve (not a fraction of price), applies
+    a necessity-grade elasticity haircut at the $40 step, a bathtub aging-opex ramp, a shared
+    macro-stress factor, and a time-rising churn hazard. All conservative; each tagged AUDIT."""
+    rng = np.random.default_rng(seed)
+    scn = scn or {}
+    F1 = float(scn.get('starlink', 0.0))   # FEAR: extra Starlink churn /yr
+    F2 = float(scn.get('popdecl',  0.0))   # FEAR: population growth drag /yr
+    F3 = float(scn.get('shock',    0.0))   # FEAR: reseller/market shock one-time sub-loss
+    F4 = float(scn.get('pricewar', 0.0))   # FEAR: NCI price-war margin compression, first 3 yr
+    U1 = float(scn.get('coverage', 0.0))   # UPSIDE: added addressable homes vs 878
+    U2 = float(scn.get('sticky',   0.0))   # UPSIDE: local-stickiness churn reduction
+    U3 = float(scn.get('community',0.0))   # UPSIDE: community-advantage growth-mode lift
+    _bwset = scn.get('bw_mbps', BW_MBPS_CUST)                     # None => always-on random draw; a scalar (0.0/1.0) pins it
+    BWm = pert(rng, BW_LO, BW_MODE, BW_HI, n) if _bwset is None else float(_bwset)
+    BWp = float(scn.get('bw_price', BW_PRICE))                    # $/Mbps the PUD charges RSPs (slider can model a price drop)   # per-customer 95th-pctile Mbps -> near-pure bandwidth-resale margin
+
+    # --- CAPEX: hardware (PERT) + WA sales/use tax on equipment + tower LABOR + AACE overrun --
+    hw_mode  = hardware_capex(CUST)
+    hardware = pert(rng, hw_mode * 0.94, hw_mode, hw_mode * 1.06, n)
+    labor    = pert(rng, 50_000, 95_000, 200_000, n)
+    overrun  = pert(rng, -0.10, 0.05, 0.40, n)
+    capex = (hardware * (1.0 + SALES_TAX) + labor) * (1.0 + overrun)        # AUDIT: sales/use tax on equipment
+
+    # --- INFLATION regime + Fisher-coupled discount + margin scissors --
+    high = rng.random(n) < 0.12
+    pi = np.where(high, rng.normal(0.055, 0.012, n), rng.normal(0.025, 0.010, n)).clip(0.0, 0.09)
+    beta_opex = rng.uniform(1.0, 1.2, n)
+    beta_arpu = rng.uniform(0.3, 0.6, n)
+    g_opex = beta_opex * pi
+    RT = float(scn.get('rate_track', 0.0))
+    g_arpu = (beta_arpu * pi) if RT <= 0 else (RT * g_opex + (1.0 - RT) * beta_arpu * pi)
+    disc = REAL_DISCOUNT + pi                                               # AUDIT: discount Ledger A (Fisher, ~4% at base)
+
+    base_margin = pert(rng, 0.28, 0.45, 0.58, n)
+
+    # --- NCI exit Bernoulli (p=NCI_EXIT_P=0.85, near-certain): removes its net-lost subs AND those radios --
+    NCI_P = float(scn.get('nci', NCI_EXIT_P))                # near-certain exit (slider/scn can override)
+    NCI_M = float(scn.get('nci_migrate', NCI_MIGRATE))       # fraction migrating to other PUD resellers (retained on the network)
+    nci_loss = NCI_SHARE * (1.0 - NCI_M)                     # NET loss to the PUD network (rest migrate; bandwidth retained)
+    nci_exit = rng.random(n) < NCI_P
+    # v2: NCI_YEAR lets us MEASURE the exit-timing direction instead of presuming it. Default 0 = current behavior
+    # (exit modeled at t0: base steps down immediately AND the radios for the truly-lost are never bought -> capex saving).
+    # >0 = exit happens IN that year: revenue is kept until then, but the radios WERE bought and STRAND on exit (no saving) --
+    # so a later exit trades preserved near-term revenue against stranded capital. Direction is an output, not an assumption.
+    NCI_YEAR = int(scn.get('nci_year', 0))
+    if NCI_YEAR <= 0:
+        n_cust = np.where(nci_exit, round(CUST * (1 - nci_loss)), CUST).astype(float)
+        nci_saving = nci_loss * CUST * RADIO_COST * (1.0 + SALES_TAX) * (1.0 + overrun)   # radios saved only for the TRULY-lost (migrated customers still need service)
+        capex = np.where(nci_exit, capex - nci_saving, capex)
+    else:
+        n_cust = np.full(n, float(CUST))                     # full base until the exit year; radios ARE bought (no saving) and strand when NCI leaves
+    # BUILD DELAY: each year the upgrade waits, the congested network sheds customers to Starlink and win-back gets harder
+    DELAY = float(scn.get('delay', 0.0))
+    if DELAY > 0: n_cust = n_cust * max(1.0 - DELAY_CHURN * DELAY, 0.5)
+
+    # --- price-elasticity: the $40 product draws fewer takers than today's $31 (necessity-grade) --
+    if headline_arpu >= ARPU_YR:                                            # AUDIT: take-rate haircut at the rate step
+        n_cust = n_cust * (1.0 - ELAST_HAIRCUT)
+
+    wear_life = pert(rng, 8.0, 11.0, 14.0, n)                               # payback DEADLINE = physical wear life
+
+    # --- competitive churn (Starlink): small bounded hazard, RAMPS as LEO capacity grows --
+    star_churn = rng.uniform(0.003, 0.012, n)
+    if F1 > 0:  star_churn = star_churn + rng.uniform(0.75, 1.25, n) * F1
+    if U2 > 0:  star_churn = np.maximum(star_churn - U2, 0.0)
+
+    # --- shared MACRO-STRESS factor: one latent Z/sim correlates adverse events (AUDIT) --
+    Z  = rng.standard_normal(n) + np.where(high, 0.4, 0.0)                  # shared macro factor (mean shifts adverse in the high-inflation regime)
+    # AUDIT (de-bias 2026-06): SYMMETRIC now -- a benign macro world genuinely helps (lower churn, less
+    # overbuild, more growth), not only the adverse half; the +0.4 shift still ties stress to high inflation.
+    star_churn = np.maximum(star_churn + 0.0015 * Z, 0.0)
+
+    overbuild = rng.random(n) < np.clip(0.12 + 0.03 * Z, 0.0, 1.0)          # macro raises OR lowers subsidized-overbuild odds
+    overbuild_yr = rng.integers(3, 11, n)
+    overbuild_loss = np.where(overbuild, rng.uniform(0.08, 0.18, n), 0.0)
+
+    growth = pert(rng, -0.06, 0.0 + U3 - F2, 0.05 + U3, n) - 0.004 * Z      # AUDIT: mode 0 (record shows flat-to-shrinking base); macro Z now symmetric (a good decade helps growth, a bad one drags it)
+    # DEMAND-PULL: a flat cost-based rate gets more competitive vs the for-profit every year,
+    # so customers switch in. Proxy the competitiveness gain by how far the rate lags (inflation +
+    # a real for-profit creep) and convert via a necessity-grade elasticity. Big at RT=0 (rate flat),
+    # ~0 at RT=1 (rate keeps up) -- so the flat-rate margin hit is partly offset by volume.
+    pull = PULL_ELAST * np.maximum((pi + 0.012) - g_arpu, 0.0)
+    if scn.get('pull_off', False): pull = pull * 0.0        # v2 sensitivity: kill demand-pull entirely (isolates its contribution; PULL vs ELAST asymmetry — review §6)
+    # G2/CPE (resolved, per operator): the District FRONTS customer-radio purchases but is REIMBURSED by
+    # customers/RSPs, buying them in batches AS customers sign up -- not all up front -- so CPE is a revolving
+    # PASS-THROUGH, ~net-zero on its books; the only exposure is working-capital timing IF it over-bought up
+    # front, which isn't the practice. A mid-life G1->G2 refresh therefore charges only the District's
+    # tower/base-node gear (~$150K, fair mode below); there is NO CPE re-buy burden. We still keep the INITIAL
+    # radio fleet inside the District's stated ~$1.2M capex AND do not credit the offsetting reimbursement --
+    # deliberately conservative, so payback is if anything understated, not gamed down.
+
+    HMAX = 15
+    bal  = capex.copy()
+    subs = n_cust.copy()
+    subs_prev = subs.copy()
+    rev0  = headline_arpu
+    opex0 = (1.0 - base_margin) * ARPU_YR + 12.0                            # AUDIT: dollar cost-to-serve anchored at $40 ref (same for both runs)
+    addr_cap = float(RADIOS_PLAN) + U1                                      # AUDIT: cap growth at funded radios (+U1 coverage beyond); fixed miscoded ceiling
+    payback_yr = np.full(n, np.nan)
+    paid = np.zeros(n, bool)
+    net_cash_sum = np.zeros(n)   # accumulate annual operating cash (before capex/debt) -> avg-coverage
+    cash_yr1    = np.zeros(n)    # v2 DSCR: year-1 operating cash (the covenant's first test)
+    cash_min    = np.full(n, np.inf)   # v2 DSCR: MINIMUM annual operating cash over the debt term (worst coverage year)
+    # CLIFF (strict): payback must clear before the gear physically wears out -- conservative.
+    # not CLIFF (fair): recovery is measured over the full asset-class life, and ONE refresh is
+    # honestly charged at wear-out (the gear is swapped and the same customers keep paying) --
+    # the way utilities actually recover capital, through successive refreshes.
+    CLIFF = bool(scn.get('cliff', True))
+    deadline = wear_life if CLIFF else np.full(n, float(HMAX))
+    g2_yr = np.round(wear_life).astype(int)
+    g2_cost = pert(rng, 110_000, 150_000, 210_000, n)
+    if F3 > 0:
+        shock_hit = rng.random(n) < 0.20
+        shock_yr  = rng.integers(3, 8, n)
+        shock_rebuild = shock_hit.astype(float) * (F3 / 0.25) * 200_000.0
+    for t in range(1, HMAX + 1):
+        churn_t = star_churn * (1.0 + CHURN_RAMP * min(t - 1, 6))           # Starlink churn front-loaded, plateaus ~yr7 (capacity saturates + Starlink's own prices rise; research-corrected, was monotonic)
+        subs = np.minimum(subs * (1.0 + growth + pull) * (1.0 - churn_t), addr_cap)   # +pull: flat-rate competitiveness draws subs in
+        subs = np.where(overbuild & (t == overbuild_yr), subs * (1.0 - overbuild_loss), subs)   # FIX(v2): one-time STEP at the overbuild year (persists as a level shift); was `>=`, which re-applied the 8-18% loss EVERY subsequent year and compounded it into a runaway decline
+        if NCI_YEAR > 0:
+            subs = np.where(nci_exit & (t == NCI_YEAR), subs * (1.0 - nci_loss), subs)   # v2: timed NCI exit (one-time step in the exit year; radios already bought -> stranded)
+        if F3 > 0:
+            subs = np.where(shock_hit & (t == shock_yr), subs * (1.0 - F3), subs)
+        net_add = np.maximum(subs - subs_prev, 0.0)                        # AUDIT: incremental radios for net growth
+        radio_t = RADIO_COST * (1.0 - RADIO_DEFLATION) ** (t - 1)
+        rev_ps  = rev0  * (1.0 + g_arpu) ** t
+        bathtub = 1.0 + BATHTUB_RATE * max(t - BATHTUB_START, 0)           # AUDIT: aging-gear failure cost ramp
+        opex_ps = opex0 * (1.0 + g_opex) ** t * bathtub
+        if F4 > 0 and t <= 3:
+            opex_ps = opex_ps + F4 * rev_ps
+        bw_ps = BWm * BWp * 12.0 * BW_MARGIN * (1.0 + BW_GROWTH) ** (t - 1)   # near-pure bandwidth-resale margin per customer
+        cash = subs * (rev_ps - opex_ps + bw_ps)                           # AUDIT: allow NEGATIVE; + bandwidth resale (FOI)
+        net_cash_sum += cash                                               # operating cash available to service debt
+        if t == 1: cash_yr1 = cash.copy()                                  # v2 DSCR: first-year coverage (usually the tightest year)
+        cash_min = np.minimum(cash_min, cash)                              # v2 DSCR: worst annual coverage over the term
+        df = (1.0 + disc) ** t
+        bal_prev = bal
+        bal = bal - cash / df + net_add * radio_t / df                     # AUDIT: discount cash AND charge growth capex
+        if not CLIFF:
+            bal = bal + np.where(g2_yr == t, g2_cost / df, 0.0)            # fair: charge one BASE-NODE refresh at wear-out (customer CPE is customer/RSP-borne, not District capital); gear keeps earning past it
+        if F3 > 0:
+            bal = bal + np.where(shock_hit & (t == shock_yr), shock_rebuild / df, 0.0)
+        delta = bal_prev - bal                                             # discounted amount paid down this year
+        just = (~paid) & (bal <= 0) & (t <= deadline)
+        frac = np.clip(np.where(delta > 0, bal_prev / np.maximum(delta, 1.0), 1.0), 0.0, 1.0)
+        payback_yr = np.where(just, (t - 1) + frac, payback_yr)            # sub-year interpolation (restored)
+        paid = paid | just
+        subs_prev = subs
+
+    within = paid & (payback_yr <= deadline)
+    p = within.mean() * 100
+    se = np.sqrt(p / 100 * (1 - p / 100) / n) * 100
+    pk = payback_yr[within]                                                # payback years CONDITIONAL on recovering
+    pb_all = np.where(within, payback_yr, np.inf)                          # v2: censor non-payers at +inf for unconditional percentiles
+    cond = lambda q: (round(float(np.percentile(pk, q)), 1) if pk.size else None)
+    def uncond(q):
+        if p < q:                                                        # v2: honest -- if <q% ever pay back, the q-th percentile never recovers
+            return "not reached"
+        with np.errstate(invalid='ignore'):
+            v = float(np.percentile(pb_all, q))
+        return round(v, 1) if np.isfinite(v) else "not reached"
+    by = lambda Y: round(float((within & (payback_yr <= Y)).mean()) * 100, 1)   # % of ALL futures recovered by year Y
+    term_bal = bal[~within]                                               # discounted unrecovered balance where it never paid back
+    # ---- v2 DSCR: coverage on the FUNDED capex (P80), reported as annual figures, not a horizon average ----
+    capex_funded = float(np.percentile(capex, 80))
+    debt_svc = capex_funded * (DSCR_RATE / (1.0 - (1.0 + DSCR_RATE) ** (-DSCR_TERM)))
+    dscr_yr1 = cash_yr1 / debt_svc                                        # year-1 coverage per sim
+    dscr_min = cash_min / debt_svc                                        # worst-year coverage per sim (the covenant test)
+    avg_net_cash = net_cash_sum / HMAX                                    # horizon-AVERAGE annual cash (kept, but clearly labeled)
+    out = {
+        "p_payback": round(p, 1), "se": round(se, 2),
+        # --- cash & DEBT-SERVICE COVERAGE (v2) ---
+        "net_cash_P50": round(float(np.percentile(avg_net_cash, 50))),    # median horizon-average annual operating cash
+        "avg_cash_coverage_P50": round(float(np.percentile(avg_net_cash / debt_svc, 50)), 2),  # avg-cash / debt svc -- NOT annual DSCR (was mislabeled 'dscr')
+        "dscr_yr1_P50": round(float(np.percentile(dscr_yr1, 50)), 2),     # median YEAR-1 coverage
+        "dscr_min_P50": round(float(np.percentile(dscr_min, 50)), 2),     # median MINIMUM-year coverage (the number a bond analyst reads)
+        "p_dscr_min_below_1_00": round(float((dscr_min < 1.00).mean()) * 100, 1),
+        "p_dscr_min_below_1_20": round(float((dscr_min < 1.20).mean()) * 100, 1),
+        "p_dscr_min_below_1_25": round(float((dscr_min < 1.25).mean()) * 100, 1),
+        "debt_service": round(debt_svc), "capex_funded_P80": round(capex_funded),
+        # --- payback timing: CONDITIONAL (among futures that recover) ---
+        "payback_P50": cond(50), "payback_P80": cond(80), "payback_P90": cond(90),   # legacy keys retained = conditional
+        "payback_P50_conditional": cond(50), "payback_P80_conditional": cond(80),
+        "payback_P90_conditional": cond(90),
+        # --- payback timing: UNCONDITIONAL (across ALL futures) ---
+        "payback_P50_uncond": uncond(50), "payback_P80_uncond": uncond(80),
+        "payback_P90_uncond": uncond(90),
+        "p_paid_by_yr5": by(5), "p_paid_by_yr8": by(8), "p_paid_by_yr10": by(10),
+        "p_paid_by_yr12": by(12), "p_paid_by_yr15": by(15),
+        "p_never": round(100 - p, 1),
+        "terminal_unrecovered_P50": (round(float(np.percentile(term_bal, 50))) if term_bal.size else 0),
+        # --- capex ---
+        "capex_P50": round(float(np.percentile(capex, 50))),
+        "capex_P80": round(float(np.percentile(capex, 80))),
+        "capex_P90": round(float(np.percentile(capex, 90))),
+        "capex_min": round(float(capex.min())), "capex_mean": round(float(capex.mean())),
+    }
+    if verbose:
+        print(f"  [n={n:,} | ARPU ${headline_arpu/12:.0f}/mo | DISCOUNTED + growth-capex + bathtub + macro-stress]")
+        print(f"   P(discounted payback within wear-life) : {out['p_payback']}%  (SE +/-{out['se']})  |  never: {out['p_never']}%")
+        print(f"   payback yr (conditional P50/P80/P90) : {out['payback_P50_conditional']} / {out['payback_P80_conditional']} / {out['payback_P90_conditional']}")
+        print(f"   payback yr (unconditional P50/P80/P90): {out['payback_P50_uncond']} / {out['payback_P80_uncond']} / {out['payback_P90_uncond']}")
+        print(f"   recovered by yr 5/8/10/12/15 : {out['p_paid_by_yr5']}/{out['p_paid_by_yr8']}/{out['p_paid_by_yr10']}/{out['p_paid_by_yr12']}/{out['p_paid_by_yr15']}%")
+        print(f"   DSCR yr1 / min (median) : {out['dscr_yr1_P50']}x / {out['dscr_min_P50']}x   |  P(min<1.0)={out['p_dscr_min_below_1_00']}%  (debt svc ${out['debt_service']:,} on funded ${out['capex_funded_P80']:,})")
+        print(f"   CAPEX  P50/P80/P90 : ${out['capex_P50']:,} / ${out['capex_P80']:,} / ${out['capex_P90']:,}"
+              f"   (funded budget = P80; vs hardware-only ${hw_mode:,})")
+    return out
+
+# ============================================================================
+# (B) STRUCTURAL-ADVANTAGE LEDGER  --  ratepayer surplus avoided (SEPARATE)
+# ============================================================================
+# Discounted gap between the flat cost-based PUD wholesale rate (RCW 54.16.330)
+# and an escalating for-profit return-on-rate-base counterfactual (NARUC), over
+# the served base. WHOLESALE-vs-WHOLESALE at the $480 anchor -- NOT retail
+# Starlink ~$120/mo (context only). Nominal cash, nominal discount. NEVER summed
+# with the cost-recovery NPV. Escalation floored at 0 (concedes per-megabit
+# hedonic deflation; we model the DOLLAR BILL). NOTE: we report the MC mean/P50
+# directly and make NO convexity claim -- base erosion actually pulls the mean
+# slightly BELOW a frozen-base deterministic, so "E[PV] > PV-at-mean" was wrong.
+def benefit_mc(n_cust, H, n=200_000, seed=SEED, nci=True):
+    # v2: discounts at the FISHER nominal rate (REAL_DISCOUNT + pi) -- the dead `r`
+    # arg is gone, and the JSON no longer claims a flat 0.04. Competitor escalation is
+    # inflation-coupled (beta>=1 pass-through + real creep), so high inflation WIDENS the gap.
+    # HEADLINE applies the near-certain NCI exit to the starting base (nci=True); the no-exit
+    # and full-22%-loss runs are the bracket ends.
+    rng = np.random.default_rng(seed)
+    high = rng.random(n) < 0.12
+    pi = np.where(high, rng.normal(0.055, 0.012, n), rng.normal(0.025, 0.010, n)).clip(0.0, 0.09)
+    beta_com = rng.uniform(1.0, 1.2, n); real_com = rng.normal(0.012, 0.010, n)
+    mu = beta_com * pi + real_com                        # nominal commercial escalation (~4.4% at base)
+    disc = REAL_DISCOUNT + pi                            # Fisher nominal discount (~4% at base inflation)
+    star_churn = rng.uniform(0.003, 0.012, n)
+    growth = pert(rng, -0.06, 0.0, 0.05, n)             # mode 0 (record shows a shrinking base)
+    subs = np.full(n, float(n_cust))
+    if nci:                                              # near-certain wholesale/RSP wind-down (consistent with A & C)
+        nci_exit = rng.random(n) < NCI_EXIT_P
+        nci_loss = NCI_SHARE * (1.0 - NCI_MIGRATE)
+        subs = np.where(nci_exit, n_cust * (1.0 - nci_loss), float(n_cust))
+    cum = np.ones(n); pv = np.zeros(n); track = []
+    for t in range(1, H + 1):
+        churn_t = star_churn * (1.0 + CHURN_RAMP * min(t - 1, 6))    # cap the ramp at yr7 (match Ledgers A & C)
+        subs = np.minimum(subs * (1.0 + growth) * (1.0 - churn_t), float(RADIOS_PLAN))
+        g = (mu + rng.normal(0.0, 0.020, n)).clip(0.0, 0.11)   # floor 0, cap 11% (high-infl pass-through)
+        cum *= (1.0 + g)
+        p_com = ARPU_YR * cum
+        p_pub = ARPU_YR * (1.0 + 0.015) ** t
+        pv += subs * (p_com - p_pub) / (1.0 + disc) ** t
+        track.append(float(np.median(pv)))
+    return pv, track
+
+def run_benefit(n_cust=CUST):
+    out = {"basis": ("Ratepayer surplus avoided: discounted gap between the flat cost-based PUD wholesale "
+                     "rate and an escalating for-profit counterfactual, over the served base. WHOLESALE $480/yr "
+                     "anchor, NOT retail ~$120/mo Starlink. FISHER nominal discount (~4% at base inflation). "
+                     "Household surplus avoided, NOT District margin -- do NOT sum with the cost-recovery NPV. "
+                     "Escalation floored at 0 (models the dollar bill). Headline applies the near-certain NCI exit; "
+                     "no-exit and full-22%-loss runs are the bracket ends. Bands not points."),
+           "n_cust": n_cust, "horizons": {}}
+    for H in (10, 15):
+        pv, track = benefit_mc(n_cust, H, nci=True)                          # HEADLINE: NCI exit applied
+        pv_hi, _  = benefit_mc(n_cust, H, nci=False)                         # bracket: no exit (frozen base)
+        pv_lo, _  = benefit_mc(round(n_cust * (1 - NCI_SHARE)), H, nci=False)  # bracket: full 22% loss
+        rec = {"P5": round(float(np.percentile(pv, 5))), "P50": round(float(np.percentile(pv, 50))),
+               "P80": round(float(np.percentile(pv, 80))), "P95": round(float(np.percentile(pv, 95))),
+               "mean": round(float(pv.mean())),
+               "P50_no_exit": round(float(np.percentile(pv_hi, 50))),        # upper bracket end
+               "P50_full_loss": round(float(np.percentile(pv_lo, 50))),      # lower bracket end
+               "scurve_median_cumPV": [round(x) for x in track]}
+        out["horizons"][str(H)] = rec
+        print(f"  {H:2d}-yr: P50 ${rec['P50']:,} (bracket ${rec['P50_full_loss']:,} .. ${rec['P50_no_exit']:,}) "
+              f"| P5 ${rec['P5']:,} | P95 ${rec['P95']:,} | mean ${rec['mean']:,}")
+    return out
+
+# ============================================================================
+# (C) DOES THE COUNTY COME OUT AHEAD?  --  the two ledgers, jointly
+# ============================================================================
+# The cost-recovery sim (A) asks "does the DISTRICT recoup its $1.2M?". This asks
+# the bigger question: "does the COUNTY come out ahead?" -- counting BOTH the
+# District's segment result AND the overpayment households avoid because a public
+# option forces the market to stay competitive.
+#
+# THE KEY IDENTITY (rigorous, and the heart of the argument):
+#   county_value = household_savings + district_result
+#               = subs*(P_com - P_pub)  +  (subs*(P_pub - opex) - capex)
+#               = -capex + subs*(P_com - opex)              <-- P_pub CANCELS
+# The public rate the District charges only SPLITS value between the District and
+# ratepayers; the county's total (what a commercial provider would extract, minus
+# the real cost to serve) is independent of it. So "is eating some cost really a
+# loss?" is answered robustly: the county can come out ahead even when the District
+# does not fully recoup. Conservative throughout: P_com is the escalating
+# WHOLESALE counterfactual ($480 anchor), NOT retail Starlink ~$120/mo.
+def county_value_mc(H, r=0.04, n=200_000, seed=SEED+7, scn=None):
+    rng = np.random.default_rng(seed)
+    scn = scn or {}
+    U1 = float(scn.get('coverage', 0.0))    # UPSIDE: added addressable homes beyond the funded 1,035
+    U2 = float(scn.get('sticky',   0.0))    # UPSIDE: local-stickiness churn reduction
+    U3 = float(scn.get('community',0.0))    # UPSIDE: community/RSP growth-mode lift
+    PREM = float(scn.get('premium',0.0))    # the for-profit counterfactual STARTS this fraction above cost-based (0 = equal-anchor floor)
+    COMPETITIVE = bool(scn.get('competitive', False))  # FALSIFIABILITY: if True, the market stays truly competitive
+                                            # (P_com == the cost-based public rate) -> household savings = 0 -> the county
+                                            # advantage collapses to the DISTRICT's own payback. This is the scenario that CAN lose.
+    F1 = float(scn.get('starlink', 0.0))    # FEAR: extra Starlink churn /yr (coheres with the cost sim)
+    F2 = float(scn.get('popdecl',  0.0))    # FEAR: population/growth drag /yr
+    F3 = float(scn.get('shock',    0.0))    # FEAR: reseller/market shock one-time sub-loss
+    _bwset = scn.get('bw_mbps', BW_MBPS_CUST)                     # None => always-on random draw; a scalar (0.0/1.0) pins it
+    BWm = pert(rng, BW_LO, BW_MODE, BW_HI, n) if _bwset is None else float(_bwset)
+    BWp = float(scn.get('bw_price', BW_PRICE))                    # $/Mbps the PUD charges RSPs (slider can model a price drop)   # per-customer bandwidth-resale margin (FOI)
+    hw_mode = hardware_capex(CUST)
+    hardware = pert(rng, hw_mode*0.94, hw_mode, hw_mode*1.06, n)
+    labor    = pert(rng, 50_000, 95_000, 200_000, n)
+    overrun  = pert(rng, -0.10, 0.05, 0.40, n)
+    capex = (hardware * (1.0 + SALES_TAX) + labor) * (1.0 + overrun)      # AUDIT: sales tax (mirror Ledger A)
+    NCI_P = float(scn.get('nci', NCI_EXIT_P)); NCI_M = float(scn.get('nci_migrate', NCI_MIGRATE))
+    nci_loss = NCI_SHARE * (1.0 - NCI_M)                     # NET loss (rest migrate to other PUD RSPs; bandwidth retained)
+    nci_exit = rng.random(n) < NCI_P
+    n_cust = np.where(nci_exit, round(CUST*(1-nci_loss)), CUST).astype(float)
+    capex = np.where(nci_exit, capex - nci_loss*CUST*RADIO_COST*(1.0+SALES_TAX)*(1.0+overrun), capex)  # radios saved only for the truly-lost
+    DELAY = float(scn.get('delay', 0.0))
+    if DELAY > 0: n_cust = n_cust * max(1.0 - DELAY_CHURN * DELAY, 0.5)
+    n_cust = n_cust * (1.0 - ELAST_HAIRCUT)                               # AUDIT: $40 elasticity haircut (C is at the $40 anchor)
+    high = rng.random(n) < 0.12
+    pi = np.where(high, rng.normal(0.055,0.012,n), rng.normal(0.025,0.010,n)).clip(0.0,0.09)
+    g_opex = rng.uniform(1.0,1.2,n) * pi
+    gAb = rng.uniform(0.3,0.6,n) * pi                     # cost-based ARPU lag (the scissors)
+    RT = float(scn.get('rate_track', 0.0))               # now RT-aware: the household/District SPLIT is rate-matched
+    g_arpu = gAb if RT <= 0 else (RT * g_opex + (1.0 - RT) * gAb)   # RT moves only the household/District SPLIT; the county TOTAL is genuinely rate-invariant (P_pub cancels AND demand-pull uses the flat-rate gap gAb, so subs don't move with RT either)
+    disc = REAL_DISCOUNT + pi                             # AUDIT: Fisher discount (was flat 0.04)
+    base_margin = pert(rng, 0.28, 0.45, 0.58, n)
+    growth = pert(rng, -0.06, 0.0 + U3 - F2, 0.05 + U3, n)     # AUDIT: mode 0 (record shows a shrinking base); U3 lift; F2 drag
+    pull = PULL_ELAST * np.maximum((pi + 0.012) - gAb, 0.0)      # AUDIT: demand-pull now uses the FLAT-rate gap (gAb, RT-independent) so the county TOTAL is genuinely rate-invariant, not just the price term
+    star_churn = rng.uniform(0.003, 0.012, n)
+    if F1 > 0: star_churn = star_churn + rng.uniform(0.75, 1.25, n) * F1   # F1 Starlink surge
+    if U2 > 0: star_churn = np.maximum(star_churn - U2, 0.0)   # U2 local stickiness
+    shock_hit = (rng.random(n) < 0.20) if F3 > 0 else np.zeros(n, bool)
+    shock_yr  = rng.integers(3, 8, n)
+    # Competitor escalation INFLATION-COUPLED (for-profit passes inflation through + real
+    # creep above CPI), so higher inflation WIDENS the public-vs-private gap (correct sign).
+    beta_com = rng.uniform(1.0, 1.2, n)
+    real_com = rng.normal(0.012, 0.010, n)
+    mu = beta_com * pi + real_com                         # nominal commercial escalation (~4.4% at base)
+    opex0 = (1.0 - base_margin) * ARPU_YR + 12.0
+    subs = n_cust.copy(); subs_prev = subs.copy(); cum_com = np.ones(n)
+    hh = np.zeros(n); dist = np.zeros(n); cnty = np.zeros(n)
+    for t in range(1, H + 1):
+        churn_t = star_churn * (1.0 + CHURN_RAMP * min(t - 1, 6))        # Starlink churn front-loaded, plateaus ~yr7 (research-corrected)
+        subs = np.minimum(subs * (1.0 + growth + pull) * (1.0 - churn_t), float(RADIOS_PLAN) + U1)   # +pull (demand from the widening price edge)
+        if F3 > 0:
+            subs = np.where(shock_hit & (t == shock_yr), subs * (1.0 - F3), subs)   # F3 one-time market shock
+        net_add = np.maximum(subs - subs_prev, 0.0)
+        radio_t = RADIO_COST * (1.0 - RADIO_DEFLATION) ** (t - 1)
+        g_com = (mu + rng.normal(0.0, 0.015, n)).clip(0.0, 0.11)
+        cum_com *= (1.0 + g_com)
+        P_pub = ARPU_YR * (1.0 + g_arpu) ** t
+        P_com = P_pub if COMPETITIVE else ARPU_YR * (1.0 + PREM) * cum_com   # competitive world: no overpayment to avoid -> county advantage = District payback only
+        bathtub = 1.0 + BATHTUB_RATE * max(t - BATHTUB_START, 0)         # AUDIT: bathtub opex ramp
+        opex  = opex0 * (1.0 + g_opex) ** t * bathtub
+        df = (1.0 + disc) ** t
+        capk = (net_add * radio_t) / df                   # AUDIT: incremental growth radios (G2 refresh = separate future decision)
+        if F3 > 0:
+            capk = capk + np.where(shock_hit & (t == shock_yr), (F3 / 0.25) * 200_000.0, 0.0) / df   # F3 rebuild cost (hits District & county)
+        bw_ps = BWm * BWp * 12.0 * BW_MARGIN * (1.0 + BW_GROWTH) ** (t - 1)   # near-pure bandwidth-resale margin/customer (FOI)
+        hh   += subs * (P_com - P_pub) / df               # household avoided overpayment (rate-dependent transfer)
+        dist += subs * (P_pub - opex + bw_ps) / df - capk # District segment cash (+ bandwidth resale) pre-initial-capex
+        cnty += subs * (P_com - opex + bw_ps) / df - capk # county total flow (public rate cancels) + bandwidth resale
+        subs_prev = subs
+    dist -= capex; cnty -= capex
+    ahead = cnty > 0
+    dist_loses = dist < 0
+    pctl = lambda a, q: round(float(np.percentile(a, q)))
+    return {"H": H, "p_county_ahead": round(ahead.mean()*100, 1),
+            "p_district_loses": round(dist_loses.mean()*100, 1),
+            "p_district_loses_but_county_ahead": round((dist_loses & ahead).mean()*100, 1),
+            "county_P10": pctl(cnty,10), "county_P50": pctl(cnty,50), "county_P90": pctl(cnty,90),
+            "household_savings_P50": pctl(hh,50), "household_savings_mean": round(float(hh.mean())),
+            "district_P50": pctl(dist,50)}
+
+def run_county():
+    out = {"basis": ("County net value vs a no-public-network counterfactual. county = "
+                     "household avoided-overpayment + District segment result. The public rate "
+                     "cancels (it only splits value); conservative WHOLESALE commercial counterfactual."),
+           "horizons": {}, "realistic_premium15": {}}
+    for H in (10, 15):
+        rec = county_value_mc(H); out["horizons"][str(H)] = rec                       # equal-anchor FLOOR
+        rec2 = county_value_mc(H, scn={'premium': 0.15})                              # for-profit starts 15% above cost (realistic)
+        out["realistic_premium15"][str(H)] = rec2
+        print(f"  {H:2d}-yr: county ahead FLOOR {rec['p_county_ahead']}% (P50 ${rec['county_P50']:,})  |  "
+              f"+15% premium {rec2['p_county_ahead']}% (P50 ${rec2['county_P50']:,})")
+    return out
+
+# ============================================================================
+# (D) THE THREE HEADLINE SCENARIOS  --  now GENERATED HERE (was JS-only)
+# ============================================================================
+# Each scenario moves several dials together (a coherent worldview, not one knob).
+# Ported from the page's scenario presets so scenarios_output.json is reproducible
+# from committed code. BANDWIDTH IS ALWAYS-ON in the headline (a conservative random draw, never zero --
+# there is always some bandwidth revenue); each scenario also reports the accounting method flipped
+# (un-bundling the convention), the full-documented-1.0-Mbps top of range, and a hypothetical-zero floor.
+# v2 (promotion bundle): nci_year=2 -- a REALISTIC timed exit, not immediate. Having MEASURED
+# that the immediate-exit (t0) default flatters the headline (radios never bought), keeping t0 is
+# indefensible. Balanced moves 91.3 -> ~88-89. ADOPTED at promotion (2026-07-03).
+_NCI_TIMED = {'nci_year': 2}
+SCENARIOS = {
+    "pessimistic": {'rate_track': 0.0, 'premium': 0.06, 'cliff': True,  'starlink': 0.02, 'shock': 0.20, **_NCI_TIMED},
+    "balanced":    {'rate_track': 0.6, 'premium': 0.12, 'cliff': False, 'sticky': 0.004, 'community': 0.008, 'coverage': 180, **_NCI_TIMED},   # EVIDENCE-ANCHORED: retention at researched setting (non-NCI base is observably sticky, Starlink only ~15% of churn); growth toward the District's OWN funded 1,035-radio plan (their budget, not our optimism); coverage = Tarana's documented NLOS reach (District Jackass Butte field test)
+    "optimistic":  {'rate_track': 1.0, 'premium': 0.22, 'cliff': False, 'coverage': 180, 'sticky': 0.006, 'community': 0.009, **_NCI_TIMED},
+}
+
+def run_scenarios():
+    out = {}
+    for name, base in SCENARIOS.items():
+        scn = dict(base)                                                # HEADLINE: bandwidth ALWAYS-ON (conservative random draw; never zero)
+        d   = cost_recovery_mc(scn=scn, verbose=False)
+        c10 = county_value_mc(10, scn=scn)
+        c15 = county_value_mc(15, scn=scn)
+        alt = dict(scn); alt['cliff'] = not scn['cliff']               # un-bundle the accounting convention
+        d_alt = cost_recovery_mc(scn=alt, verbose=False)
+        # BANDWIDTH OVERLAP BRACKET (v2): the audited SEGMENT margin may already contain some of the $193K bandwidth line,
+        # so adding bandwidth on top risks a partial double-count. We do NOT assert a clean split (we lack an access-only
+        # cost allocation). Instead we bracket the OVERLAP: 100% overlap = margin already holds all bandwidth -> add none;
+        # 0% overlap = margin holds none -> add the full documented ~2.8 Mbps; 50% = add half. Headline 1.0 Mbps == ~64% overlap.
+        bwn = dict(scn); bwn['bw_mbps'] = 2.8                          # 0% overlap: full documented ~2.8 Mbps/customer added
+        d_bw = cost_recovery_mc(scn=bwn, verbose=False)
+        bw50 = dict(scn); bw50['bw_mbps'] = 1.4                        # 50% overlap: half of documented (assume the margin already holds the other half)
+        d_bw50 = cost_recovery_mc(scn=bw50, verbose=False)
+        bw0 = dict(scn); bw0['bw_mbps'] = 0.0                          # 100% overlap: no separate bandwidth credit -> the overlap-proof FLOOR
+        d_bw0 = cost_recovery_mc(scn=bw0, verbose=False)
+        # v2 sensitivity (review §6): demand-pull OFF (isolates its contribution)
+        d_np = cost_recovery_mc(scn={**scn, 'pull_off': True}, verbose=False)
+        comp = dict(scn); comp['competitive'] = True                    # FALSIFIABILITY: competitive market (can lose)
+        cc10 = county_value_mc(10, scn=comp); cc15 = county_value_mc(15, scn=comp)
+        # DSCR per scenario: THIS scenario's own annual operating cash / the fixed debt service on the
+        # stated ~$1.2M (bonded at DSCR_RATE over DSCR_TERM). Flexes with the scenario, unlike the
+        # segment-level DSCR (which uses the audited $808K surplus and is scenario-independent).
+        out[name] = {
+            "district": d["p_payback"],
+            "district_alt_method": d_alt["p_payback"],                  # same world, flipped cliff/full-life convention
+            "district_with_bandwidth": d_bw["p_payback"],              # 0% overlap: full documented ~2.8 Mbps bandwidth (legacy key)
+            "district_bw_zero": d_bw0["p_payback"],                    # 100% overlap: no separate bandwidth (legacy key)
+            # explicit overlap bracket (v2):
+            "district_bw_overlap0": d_bw["p_payback"],                 # add full documented bandwidth
+            "district_bw_overlap50": d_bw50["p_payback"],             # add half
+            "district_bw_overlap100": d_bw0["p_payback"],            # add none (overlap-proof floor)
+            "county10": c10["p_county_ahead"], "county15": c15["p_county_ahead"],
+            "county_total15": c15["county_P50"], "hh15": c15["household_savings_P50"],
+            "county_competitive10": cc10["p_county_ahead"],            # if the market stayed truly competitive
+            "county_competitive15": cc15["p_county_ahead"],
+            "net_cash_P50": d["net_cash_P50"],
+            # DEBT-SERVICE COVERAGE (v2): annual, not a horizon average; debt sized on the funded P80 capex
+            "dscr": d["dscr_min_P50"],                                 # canonical 'dscr' now = median MINIMUM-year coverage (the covenant metric)
+            "dscr_yr1": d["dscr_yr1_P50"], "dscr_min": d["dscr_min_P50"],
+            "avg_cash_coverage": d["avg_cash_coverage_P50"],          # the old 'dscr' meaning, correctly renamed
+            "p_dscr_min_below_1_00": d["p_dscr_min_below_1_00"],
+            "p_dscr_min_below_1_20": d["p_dscr_min_below_1_20"],
+            "debt_service": d["debt_service"], "capex_funded_P80": d["capex_funded_P80"],
+            "capexP80": d["capex_P80"],
+            # payback timing -- conditional AND unconditional (v2)
+            "payback_P50": d["payback_P50_conditional"], "payback_P80": d["payback_P80_conditional"],
+            "payback_P50_uncond": d["payback_P50_uncond"], "payback_P80_uncond": d["payback_P80_uncond"],
+            "payback_P90_uncond": d["payback_P90_uncond"],
+            "p_paid_by_yr5": d["p_paid_by_yr5"], "p_paid_by_yr8": d["p_paid_by_yr8"],
+            "p_paid_by_yr10": d["p_paid_by_yr10"], "p_paid_by_yr12": d["p_paid_by_yr12"],
+            "p_paid_by_yr15": d["p_paid_by_yr15"], "p_never": d["p_never"],
+            "terminal_unrecovered_P50": d["terminal_unrecovered_P50"],
+            # sensitivity (v2): pull-off isolates demand-pull's contribution
+            "district_pull_off": d_np["p_payback"],
+        }
+        print(f"  {name:12s}: District {out[name]['district']}% (bw overlap 100/50/0% -> "
+              f"{out[name]['district_bw_overlap100']}/{out[name]['district_bw_overlap50']}/{out[name]['district_bw_overlap0']}%, "
+              f"alt-method {out[name]['district_alt_method']}%) "
+              f"| by yr8/10/15 {out[name]['p_paid_by_yr8']}/{out[name]['p_paid_by_yr10']}/{out[name]['p_paid_by_yr15']}% "
+              f"| county 10/15 {out[name]['county10']}/{out[name]['county15']}% "
+              f"| DSCR yr1/min {out[name]['dscr_yr1']}/{out[name]['dscr_min']}x | comp floor {out[name]['county_competitive15']}%")
+    return out
+
+# ============================================================================
+# (E) BUILD-NOW vs RUN-TO-FAILURE  --  the INCREMENTAL decision  (v2, NEW)
+# ============================================================================
+# Ledger A asks a STANDALONE question: can the upgraded network recover its own
+# $1.2M from its own cash, measured against a FROZEN base that keeps every customer?
+# We keep that number exactly as published -- it is a hard, self-contained test.
+#
+# This section answers the DECISION question A never claims to: how much better is
+# building NOW than spending nothing and running the end-of-life network until it
+# retires or fails? Both paths are evaluated on the SAME drawn future (shared
+# inflation / discount / margin / bandwidth), so the difference is the value of the
+# capital decision -- not two different worlds. NEVER summed with Ledger A.
+#
+# FRAMING (anchored to the District's OWN Tarana deck):
+#   * Do nothing -> the congested, unexpandable, end-of-life network declines toward
+#     ZERO. DOCUMENTED anchors: "lost 39 wireless customers in February... consistently
+#     losing ~10/week"; base ~16% off its 2023 peak; gear "severely congested, no
+#     possibility for expansion." The RATE of decline is uncertain (we BRACKET it in
+#     three transparent cases); the destination -- eventual zero at hardware retirement
+#     -- is the near-certain part.
+#   * Build -> the upgrade unlocks suppressed demand and new customers come in. Rate
+#     uncertain; we reuse Ledger A's CONSERVATIVE growth (mode 0, can be negative).
+#
+# INFERRED, LABELED (not documented): the seasonal leave-and-return texture, where the
+# *recovery* has been eroding, enters ONLY as `recov_decay` -- it makes the net annual
+# decline WORSEN over time. It is a parameter we expose, never a fact we assert.
+#
+# NCI is COMMON-MODE (it winds down whether or not the District builds), so in the
+# build-minus-RTF difference it cancels; we hold both paths at the same start base.
+# Same ARPU on both paths (we do NOT credit 'build' with the $40 rate step -- that
+# would conflate the rate lever with the capital decision).
+#   incremental decision NPV = -capex + Σ (build_cash_t - rtf_cash_t)/df  (build also pays its growth radios)
+#   avoided-decline PV       =            Σ (build_cash_t - rtf_cash_t)/df  (gross value the build protects, no capex)
+RTF_CASES = {
+    # remaining-life + decline are SCENARIOS bracketing the evidence, NOT a known hazard curve.
+    "status_quo_favorable": dict(decline0=0.05, recov_decay=0.08, life_mode=8, life_hi=12, rtf_opex_ramp=0.015),
+    "central":              dict(decline0=0.10, recov_decay=0.12, life_mode=5, life_hi=9,  rtf_opex_ramp=0.030),
+    "status_quo_grim":      dict(decline0=0.15, recov_decay=0.18, life_mode=3, life_hi=6,  rtf_opex_ramp=0.050),
+}
+
+def build_vs_rtf_mc(case, n=200_000, seed=SEED+21, H=15, arpu=ARPU_YR):
+    rng = np.random.default_rng(seed)
+    c = RTF_CASES[case]
+    # ---- shared future (identical draws feed BOTH paths) ----
+    high   = rng.random(n) < 0.12
+    pi     = np.where(high, rng.normal(0.055, 0.012, n), rng.normal(0.025, 0.010, n)).clip(0.0, 0.09)
+    disc   = REAL_DISCOUNT + pi
+    g_opex = rng.uniform(1.0, 1.2, n) * pi
+    g_arpu = rng.uniform(0.3, 0.6, n) * pi
+    base_margin = pert(rng, 0.28, 0.45, 0.58, n)
+    BWm    = pert(rng, BW_LO, BW_MODE, BW_HI, n)
+    opex0  = (1.0 - base_margin) * ARPU_YR + 12.0
+    # ---- BUILD capex (same stochastic capex as Ledger A) ----
+    hw_mode  = hardware_capex(CUST)
+    hardware = pert(rng, hw_mode * 0.94, hw_mode, hw_mode * 1.06, n)
+    labor    = pert(rng, 50_000, 95_000, 200_000, n)
+    overrun  = pert(rng, -0.10, 0.05, 0.40, n)
+    capex    = (hardware * (1.0 + SALES_TAX) + labor) * (1.0 + overrun)
+    # ---- BUILD growth/churn (Ledger A's CONSERVATIVE settings) ----
+    star_churn = rng.uniform(0.003, 0.012, n)
+    growth     = pert(rng, -0.06, 0.0, 0.05, n)
+    pull       = PULL_ELAST * np.maximum((pi + 0.012) - g_arpu, 0.0)
+    addr_cap   = float(RADIOS_PLAN)
+    # ---- NCI is COMMON-MODE (v2, per review): apply the SAME t0 exit to BOTH paths, mirroring
+    #      Ledger A's default. NCI winds down whether or not the District builds, so it must hit both the
+    #      build base and the run-to-failure base identically -- and the radio saving must land on capex,
+    #      so E's capex distribution matches Ledger A's rather than charging radios A never buys. ----
+    nci_exit = rng.random(n) < NCI_EXIT_P
+    nci_loss = NCI_SHARE * (1.0 - NCI_MIGRATE)
+    start = np.where(nci_exit, round(CUST * (1 - nci_loss)), CUST).astype(float)
+    capex = np.where(nci_exit, capex - nci_loss * CUST * RADIO_COST * (1.0 + SALES_TAX) * (1.0 + overrun), capex)
+    # ---- G1->G2 refresh on the BUILD path (v2, per review): Ledger A charges a refresh in fair mode;
+    #      E ran 15 yr on 8-14-yr gear and never did, giving 'build' free electronics ~yr 11-15. Charge a
+    #      PRO-RATED refresh = the life-fraction of that refresh that actually falls inside the 15-yr window
+    #      (a full charge would over-count a window-truncated asset; zero was wrong the other way). ----
+    wear      = pert(rng, 8.0, 11.0, 14.0, n)
+    g2_yr     = np.round(wear).astype(int)
+    g2_cost   = pert(rng, 110_000, 150_000, 210_000, n)
+    frac_used = np.clip((H - g2_yr) / wear, 0.0, 1.0)
+    # ---- RUN-TO-FAILURE decline + terminal retirement (SCENARIO params) ----
+    fail_yr = np.round(pert(rng, 1.0, float(c['life_mode']), float(c['life_hi']), n)).astype(int)  # transparent remaining-life draw
+    dec0, rdecay, oxr = c['decline0'], c['recov_decay'], c['rtf_opex_ramp']
+    subs_b = start.copy(); subs_r = start.copy(); subs_b_prev = subs_b.copy()
+    incr    = -capex.copy()      # DECISION NPV: starts at -capex (build minus run-to-failure)
+    avoided = np.zeros(n)        # PROTECTED-CASH PV (no capex): PV(build cash - RTF cash). Note: includes build-side
+                                 # growth/pull, so it's 'protected + gained', not purely 'avoided decline' -- named accordingly below.
+    rtf_pv  = np.zeros(n)
+    for t in range(1, H + 1):
+        df  = (1.0 + disc) ** t
+        rev = arpu * (1.0 + g_arpu) ** t
+        bw  = BWm * BW_PRICE * 12.0 * BW_MARGIN * (1.0 + BW_GROWTH) ** (t - 1)
+        # BUILD path
+        churn_t = star_churn * (1.0 + CHURN_RAMP * min(t - 1, 6))
+        subs_b  = np.minimum(subs_b * (1.0 + growth + pull) * (1.0 - churn_t), addr_cap)
+        opex_b  = opex0 * (1.0 + g_opex) ** t
+        cash_b  = subs_b * (rev - opex_b + bw)
+        net_add = np.maximum(subs_b - subs_b_prev, 0.0)
+        radio_t = RADIO_COST * (1.0 - RADIO_DEFLATION) ** (t - 1)
+        # RUN-TO-FAILURE path: net decline WORSENS (recovery erodes), aging opex ramps, hard retirement at fail_yr
+        dec_t  = dec0 * (1.0 + rdecay * (t - 1))
+        subs_r = subs_r * np.maximum(1.0 - dec_t, 0.0)
+        subs_r = np.where(t >= fail_yr, 0.0, subs_r)                 # terminal hardware failure -> forced retirement -> stays zero
+        opex_r = opex0 * (1.0 + g_opex) ** t * (1.0 + oxr * t)       # emergency maintenance / used-parts premium on dying gear
+        cash_r = subs_r * (rev - opex_r + bw)
+        gross  = (cash_b - cash_r) / df
+        avoided += gross                                            # GROSS protection: no capex (matches its label)
+        incr    += gross - (net_add * radio_t) / df                 # decision also pays the build's growth radios
+        incr    -= np.where(g2_yr == t, g2_cost * frac_used, 0.0) / df   # ...and a pro-rated G1->G2 refresh at wear-out
+        rtf_pv  += cash_r / df
+        subs_b_prev = subs_b
+    pctl = lambda a, q: round(float(np.percentile(a, q)))
+    return {
+        "case": case, "params": c,
+        "p_build_beats_rtf": round(float((incr > 0).mean()) * 100, 1),
+        "incremental_NPV_P10": pctl(incr, 10), "incremental_NPV_P50": pctl(incr, 50), "incremental_NPV_P90": pctl(incr, 90),
+        "protected_cash_PV_P50": pctl(avoided, 50), "protected_cash_PV_P10": pctl(avoided, 10),
+        "rtf_PV_P50": pctl(rtf_pv, 50),
+        "rtf_median_fail_year": int(np.median(fail_yr)),
+        "p_rtf_shutdown_by_yr10": round(float((fail_yr <= 10).mean()) * 100, 1),
+        "p_rtf_shutdown_by_yr15": round(float((fail_yr <= 15).mean()) * 100, 1),
+        "capex_P80": pctl(capex, 80),
+    }
+
+def run_rtf():
+    out = {"basis": ("Build-now vs run-to-failure, SHARED futures. Incremental NPV = -capex + PV(build cash - "
+                     "run-to-failure cash). Same ARPU on both paths (rate lever excluded). NCI is common-mode: the "
+                     "same t0 exit + radio saving hits BOTH paths, so E's capex matches Ledger A and NCI genuinely "
+                     "cancels. Build path charges a pro-rated G1->G2 refresh at drawn wear-out (life-fraction inside "
+                     "the 15-yr window), mirroring Ledger A. Decline RATE and remaining LIFE are bracketed scenarios, "
+                     "not a known hazard curve; seasonal recovery-decay is a labeled inferred parameter, not "
+                     "documented. NEVER summed with the standalone cost-recovery payback (Ledger A)."),
+           "cases": {}}
+    print(f"  {'case':22s}  P(build>RTF)  incrNPV P10/P50/P90        protected-cash P50   RTF dies by yr10/15")
+    for name in RTF_CASES:
+        r = build_vs_rtf_mc(name); out["cases"][name] = r
+        print(f"  {name:22s}    {r['p_build_beats_rtf']:5.1f}%     "
+              f"${r['incremental_NPV_P10']:>9,}/${r['incremental_NPV_P50']:>9,}/${r['incremental_NPV_P90']:>9,}   "
+              f"${r['protected_cash_PV_P50']:>9,}    {r['p_rtf_shutdown_by_yr10']:.0f}/{r['p_rtf_shutdown_by_yr15']:.0f}%")
+    return out
+
+if __name__ == "__main__":
+    print("=" * 78); print("(A) ROBUST COST-RECOVERY  --  stochastic capex (hw+labor+AACE contingency),");
+    print("    inflation-coupled margin, random gear life, NCI Bernoulli, competitive tails"); print("=" * 78)
+    cost = {"flat_rate_floor": cost_recovery_mc(headline_arpu=ARPU_YR),                                  # RT=0: rate held flat (true to history) = scissors floor
+            "recovers_half":   cost_recovery_mc(headline_arpu=ARPU_YR, scn={'rate_track':0.5}, verbose=False),
+            "recovers_costs":  cost_recovery_mc(headline_arpu=ARPU_YR, scn={'rate_track':1.0}, verbose=False),  # the cost-based norm
+            "current_31":      cost_recovery_mc(headline_arpu=ARPU_CURRENT, verbose=False)}
+    print("\n" + "=" * 78)
+    print("(B) STRUCTURAL ADVANTAGE  --  ratepayer surplus avoided (SEPARATE ledger)"); print("=" * 78)
+    ben = run_benefit(CUST)   # v2: headline applies the NCI exit; no-exit + full-loss brackets are inline per horizon
+    print("\n" + "=" * 78)
+    print("(C) DOES THE COUNTY COME OUT AHEAD?  --  both ledgers jointly"); print("=" * 78)
+    county = run_county()
+    json.dump(county, open("county_value_output.json", "w"), indent=1)
+
+    json.dump({"model_version": MODEL_VERSION, "seed": SEED, "n": 200_000, "cost_recovery": cost,
+               "note": ("Capex is a distribution (hardware + tower-side labor + AACE Class-4 "
+                        "contingency); funded budget = P80. Margin derived from inflation-coupled "
+                        "opex vs ARPU. Gear life random over an 8/11/14-yr effective life (no separate "
+                        "obsolescence hazard). NCI exit Bernoulli p=NCI_EXIT_P (0.85, near-certain). "
+                        "Starlink churn + one-time fiber-overbuild tail included.")},
+              open("montecarlo_robust_output.json", "w"), indent=1)
+    ben["_model_version"] = MODEL_VERSION
+    json.dump(ben, open("ratepayer_benefit_output.json", "w"), indent=1)
+    print("\n" + "=" * 78)
+    print("(D) THE THREE HEADLINE SCENARIOS  --  generated here (reproducible)"); print("=" * 78)
+    scenarios = run_scenarios()
+    scenarios["_model_version"] = MODEL_VERSION
+    json.dump(scenarios, open("scenarios_output.json", "w"), indent=1)
+    print("\n" + "=" * 78)
+    print("(E) BUILD-NOW vs RUN-TO-FAILURE  --  the incremental decision (shared futures)"); print("=" * 78)
+    rtf = run_rtf()
+    rtf["_model_version"] = MODEL_VERSION
+    json.dump(rtf, open("run_to_failure_output.json", "w"), indent=1)
+    print("\n[wrote LIVE *.json: county_value, montecarlo_robust, ratepayer_benefit, "
+          "scenarios, run_to_failure — PROMOTED to live]")

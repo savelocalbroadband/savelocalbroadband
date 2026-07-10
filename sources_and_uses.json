@@ -1,0 +1,576 @@
+{
+  "2021": {
+    "revenue": 3250000,
+    "operating_total": 1426400,
+    "operating": {
+      "Wages": 578900,
+      "Benefits": 251200,
+      "Travel": 12000,
+      "Tuition": 24000,
+      "Transportation": 18000,
+      "Utilities": 0,
+      "Postage/Printing": 800,
+      "Advertising": 1000,
+      "Misc. Contractual": 159200,
+      "Legal": 2500,
+      "Maintenance Contracts": 101100,
+      "Software Lic./Support": 47200,
+      "Permits & Fees": 68700,
+      "Rents & Leases": 69500,
+      "Materials & Supplies": 84200,
+      "Small Tools": 2000,
+      "Taxes": 6100
+    },
+    "capital_total": 1369100,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 100000,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion - Pole Mount Mini Node",
+        "amount": 30000,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion - Mini-OTN",
+        "amount": 20000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Network Expansion - OTN",
+        "amount": 45000,
+        "class": "fiber"
+      },
+      {
+        "desc": "ASA Firewall/VPN concentrator replacement",
+        "amount": 12000,
+        "class": "core"
+      },
+      {
+        "desc": "100G WDM Upgrade",
+        "amount": 180000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Wireless/Wifi System Augmentation",
+        "amount": 150000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Fiber Build - Berney to Sit-N-Bull",
+        "amount": 50000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Rectifier Upgrades",
+        "amount": 25000,
+        "class": "core"
+      },
+      {
+        "desc": "Network Upgrades & Replacement of EOL Network Hardware",
+        "amount": 190500,
+        "class": "upgrade"
+      },
+      {
+        "desc": "Optics",
+        "amount": 46550,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 300000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 180000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 20000,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 5000,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Test Equipment",
+        "amount": 15000,
+        "class": "core"
+      }
+    ],
+    "debt_total": 238000,
+    "total_spend": 3033500,
+    "surplus": 216500
+  },
+  "2022": {
+    "revenue": 3500000,
+    "operating_total": 1732292,
+    "operating": {
+      "Wages": 622300,
+      "Benefits": 286300,
+      "Travel": 24000,
+      "Tuition": 36000,
+      "Transportation": 72826,
+      "Utilities": 0,
+      "Postage/Printing": 100,
+      "Advertising": 500,
+      "Misc. Contractual": 186400,
+      "Legal": 2500,
+      "Maintenance Contracts": 154100,
+      "Software Lic./Support": 86600,
+      "Permits & Fees": 16000,
+      "Rents & Leases": 77000,
+      "Materials & Supplies": 142900,
+      "Small Tools": 8000,
+      "Taxes": 16766
+    },
+    "capital_total": 1080650,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 100000,
+        "class": "core"
+      },
+      {
+        "desc": "Fiber Build - Berney to Sit-N-Bull",
+        "amount": 50000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 300000,
+        "class": "fiber"
+      },
+      {
+        "desc": "VEEAM Server",
+        "amount": 8000,
+        "class": "core"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 20400,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion",
+        "amount": 45000,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 23850,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Test Equipment",
+        "amount": 14400,
+        "class": "core"
+      },
+      {
+        "desc": "Wireless/Wifi System Augmentation",
+        "amount": 55000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 260000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Network Upgrades & Capitalizable Replacement of EOL Network Hardware",
+        "amount": 204000,
+        "class": "upgrade"
+      }
+    ],
+    "debt_total": 238000,
+    "total_spend": 3050942,
+    "surplus": 449058
+  },
+  "2023": {
+    "revenue": 3387500,
+    "operating_total": 1977112,
+    "operating": {
+      "Wages": 726300,
+      "Benefits": 334100,
+      "Travel": 12000,
+      "Tuition": 16000,
+      "Transportation": 72826,
+      "Utilities": 0,
+      "Postage/Printing": 9900,
+      "Advertising": 2500,
+      "Misc. Contractual": 291600,
+      "Legal": 2500,
+      "Maintenance Contracts": 203100,
+      "Software Lic./Support": 64800,
+      "Permits & Fees": 5000,
+      "Rents & Leases": 75800,
+      "Materials & Supplies": 139400,
+      "Small Tools": 4520,
+      "Taxes": 16766
+    },
+    "capital_total": 1064950,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 50000,
+        "class": "core"
+      },
+      {
+        "desc": "Fiber Build - Berney to Sit-N-Bull",
+        "amount": 125000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 200000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 1400,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Test Equipment",
+        "amount": 2400,
+        "class": "core"
+      },
+      {
+        "desc": "Cisco Nexus 3542 Switches for VM environment",
+        "amount": 28000,
+        "class": "core"
+      },
+      {
+        "desc": "NetAppDR in Oroville",
+        "amount": 21000,
+        "class": "core"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 21000,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion",
+        "amount": 45000,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Test Equipment",
+        "amount": 3800,
+        "class": "core"
+      },
+      {
+        "desc": "Wireless/Wifi System Augmentation",
+        "amount": 55000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 162500,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Network Upgrades & Capitalizable Replacement of EOL Network Hardware",
+        "amount": 227250,
+        "class": "upgrade"
+      },
+      {
+        "desc": "CapitalizableOptics",
+        "amount": 122600,
+        "class": "fiber"
+      }
+    ],
+    "debt_total": 235710,
+    "total_spend": 3277772,
+    "surplus": 109728
+  },
+  "2024": {
+    "revenue": 3250000,
+    "operating_total": 1955631,
+    "operating": {
+      "Wages": 812439,
+      "Benefits": 373700,
+      "Travel": 12000,
+      "Tuition": 16000,
+      "Transportation": 72826,
+      "Utilities": 0,
+      "Postage/Printing": 250,
+      "Advertising": 0,
+      "Misc. Contractual": 187000,
+      "Legal": 2500,
+      "Maintenance Contracts": 162000,
+      "Software Lic./Support": 51100,
+      "Permits & Fees": 5000,
+      "Rents & Leases": 76300,
+      "Materials & Supplies": 156900,
+      "Small Tools": 10850,
+      "Taxes": 16766
+    },
+    "capital_total": 756200,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 50000,
+        "class": "core"
+      },
+      {
+        "desc": "Fiber Build - Berney to Sit-N-Bull",
+        "amount": 135000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Build - Brewster to Pateros Aerial",
+        "amount": 30000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 200000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 1300,
+        "class": "core"
+      },
+      {
+        "desc": "NetApp Replacement",
+        "amount": 56700,
+        "class": "core"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 25500,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion",
+        "amount": 45000,
+        "class": "core"
+      },
+      {
+        "desc": "Broadband Test Equipment",
+        "amount": 3000,
+        "class": "core"
+      },
+      {
+        "desc": "Wireless/Wifi System Augmentation",
+        "amount": 15000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 167500,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Network Upgrades & Capitalizable Replacement of EOL Network Hardware",
+        "amount": 25000,
+        "class": "upgrade"
+      },
+      {
+        "desc": "CapitalizableOptics",
+        "amount": 2200,
+        "class": "fiber"
+      }
+    ],
+    "debt_total": 238525,
+    "total_spend": 2950356,
+    "surplus": 299644
+  },
+  "2025": {
+    "revenue": 3250000,
+    "operating_total": 2014701,
+    "operating": {
+      "Wages": 812439,
+      "Benefits": 373700,
+      "Travel": 24000,
+      "Tuition": 32000,
+      "Transportation": 72826,
+      "Utilities": 0,
+      "Postage/Printing": 2500,
+      "Advertising": 0,
+      "Misc. Contractual": 212000,
+      "Legal": 2500,
+      "Maintenance Contracts": 167000,
+      "Software Lic./Support": 49900,
+      "Permits & Fees": 5000,
+      "Rents & Leases": 76300,
+      "Materials & Supplies": 157200,
+      "Small Tools": 10570,
+      "Taxes": 16766
+    },
+    "capital_total": 667350,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 50000,
+        "class": "core"
+      },
+      {
+        "desc": "Fiber Build - Conconully Hwy to Berney",
+        "amount": 30000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Build - Brewster to Pateros Aerial",
+        "amount": 30000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 200000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 33400,
+        "class": "core"
+      },
+      {
+        "desc": "3 ESX Hosts for VMWare Environment",
+        "amount": 45000,
+        "class": "core"
+      },
+      {
+        "desc": "Net Elastic and associated network hardware",
+        "amount": 42500,
+        "class": "core"
+      },
+      {
+        "desc": "Delta/Eltek/Valere DC Power system",
+        "amount": 37500,
+        "class": "core"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 25500,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion",
+        "amount": 40000,
+        "class": "core"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 83750,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Network Upgrades & Capitalizable Replacement of EOL Network Hardware",
+        "amount": 42500,
+        "class": "upgrade"
+      },
+      {
+        "desc": "CapitalizableOptics",
+        "amount": 7200,
+        "class": "fiber"
+      }
+    ],
+    "debt_total": 238525,
+    "total_spend": 2920576,
+    "surplus": 329424
+  },
+  "2026": {
+    "revenue": 3348000,
+    "operating_total": 2490643,
+    "operating": {
+      "Wages": 998515,
+      "Benefits": 381433,
+      "Travel": 24000,
+      "Tuition": 32000,
+      "Transportation": 93795,
+      "Utilities": 0,
+      "Postage/Printing": 5000,
+      "Advertising": 50000,
+      "Misc. Contractual": 215400,
+      "Legal": 10000,
+      "Maintenance Contracts": 164800,
+      "Software Lic./Support": 111700,
+      "Permits & Fees": 5000,
+      "Rents & Leases": 79000,
+      "Materials & Supplies": 275600,
+      "Small Tools": 17400,
+      "Taxes": 27000
+    },
+    "capital_total": 10884850,
+    "capital_lines": [
+      {
+        "desc": "Broadband Node Rework",
+        "amount": 75000,
+        "class": "core"
+      },
+      {
+        "desc": "Fiber Build - Conconully Hwy to Berney",
+        "amount": 30000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Build - Brewster to Pateros Aerial",
+        "amount": 30000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Distribution Builds",
+        "amount": 200000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Build - WSPWB Grant/Loan funded Okanogan to Conconully MM & Conconully FTTx",
+        "amount": 4300000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Fiber Build - RUS ReConnect 4 Grant funded NE Okanogan Co FTTx",
+        "amount": 6000000,
+        "class": "fiber"
+      },
+      {
+        "desc": "Broadband Tools",
+        "amount": 16000,
+        "class": "core"
+      },
+      {
+        "desc": "Delta/Eltek/Valere DC Power system",
+        "amount": 15000,
+        "class": "core"
+      },
+      {
+        "desc": "Replacement HVAC units for Broadband Nodes",
+        "amount": 19000,
+        "class": "core"
+      },
+      {
+        "desc": "Network Expansion",
+        "amount": 130000,
+        "class": "core"
+      },
+      {
+        "desc": "Wireless Subscriber Units",
+        "amount": 14000,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Wireless/Wifi System Augmentation",
+        "amount": 11650,
+        "class": "wireless"
+      },
+      {
+        "desc": "Capitalizable Network Upgrades & Capitalizable Replacement of EOL Network Hardware",
+        "amount": 44200,
+        "class": "upgrade"
+      }
+    ],
+    "debt_total": 235990,
+    "total_spend": 13611483,
+    "surplus": -10263483
+  }
+}

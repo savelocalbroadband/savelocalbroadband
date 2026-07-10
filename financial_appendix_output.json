@@ -1,0 +1,173 @@
+{
+ "inputs": {
+  "capex": 1178368,
+  "cust": 878,
+  "radios_plan": 1035,
+  "arpu_mo": 40,
+  "margin": 0.45,
+  "life": 10,
+  "wacc": 0.04,
+  "arpu_infl": 0.015
+ },
+ "base": {
+  "npv": 460041,
+  "irr": 0.1104,
+  "simple_payback": 6.0,
+  "disc_payback": 6.9,
+  "yr1_cash": 189648,
+  "tot_cash": 2029750,
+  "pi": 1.39
+ },
+ "npv_by_rate": {
+  "0.03": 546779,
+  "0.04": 460041,
+  "0.05": 379610,
+  "0.06": 304932,
+  "0.1104": 0
+ },
+ "proforma": [
+  {
+   "yr": 1,
+   "invest": 189648,
+   "decline": 170683,
+   "incremental": 18965
+  },
+  {
+   "yr": 2,
+   "invest": 192493,
+   "decline": 155919,
+   "incremental": 36574
+  },
+  {
+   "yr": 3,
+   "invest": 195380,
+   "decline": 142432,
+   "incremental": 52948
+  },
+  {
+   "yr": 4,
+   "invest": 198311,
+   "decline": 130112,
+   "incremental": 68199
+  },
+  {
+   "yr": 5,
+   "invest": 201285,
+   "decline": 118857,
+   "incremental": 82428
+  },
+  {
+   "yr": 6,
+   "invest": 204305,
+   "decline": 108576,
+   "incremental": 95729
+  },
+  {
+   "yr": 7,
+   "invest": 207369,
+   "decline": 99184,
+   "incremental": 108185
+  },
+  {
+   "yr": 8,
+   "invest": 210480,
+   "decline": 90605,
+   "incremental": 119875
+  },
+  {
+   "yr": 9,
+   "invest": 213637,
+   "decline": 82767,
+   "incremental": 130870
+  },
+  {
+   "yr": 10,
+   "invest": 216842,
+   "decline": 75608,
+   "incremental": 141234
+  }
+ ],
+ "current_rate": {
+  "arpu_mo": 31.2,
+  "npv": 99591,
+  "irr": 0.0562,
+  "simple_payback": 7.6
+ },
+ "counterfactual": {
+  "breakeven_decline": -0.264,
+  "decision_npv": {
+   "-5": -801900,
+   "-10": -520382,
+   "-20": -149373
+  },
+  "illus_decline": -0.1,
+  "illus_npv": -520382
+ },
+ "breakeven": {
+  "margin": 0.324,
+  "arpu_mo": 28.77,
+  "cust": 631
+ },
+ "financing": {
+  "bond_rate": 0.04,
+  "bond_term": 15,
+  "tic_2020": 0.029,
+  "debt_service": 105984,
+  "seg_surplus": 808166,
+  "dscr_segment": 7.6,
+  "dscr_upgrade": 1.8
+ },
+ "grant_offset": {
+  "0": {
+   "capex": 1178368,
+   "npv": 460041,
+   "simple_payback": 6.0,
+   "debt_service": 105984
+  },
+  "25": {
+   "capex": 883776,
+   "npv": 754633,
+   "simple_payback": 4.5,
+   "debt_service": 79488
+  },
+  "50": {
+   "capex": 589184,
+   "npv": 1049225,
+   "simple_payback": 3.1,
+   "debt_service": 52992
+  }
+ },
+ "sensitivity": [
+  {
+   "label": "Cash margin 28%-58%",
+   "low": -158914,
+   "high": 933359
+  },
+  {
+   "label": "ARPU $31-$45 /mo",
+   "low": 91399,
+   "high": 664842
+  },
+  {
+   "label": "Customers 685-1035",
+   "low": 99889,
+   "high": 753013
+  },
+  {
+   "label": "Gear life 8-12 yr",
+   "low": 163452,
+   "high": 742542
+  },
+  {
+   "label": "Discount 6%-3%",
+   "low": 304932,
+   "high": 546779
+  },
+  {
+   "label": "Capex +15% / -5%",
+   "low": 283285,
+   "high": 518959
+  }
+ ],
+ "worst_all_bad": -890202
+}

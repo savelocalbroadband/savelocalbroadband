@@ -1,0 +1,3265 @@
+year,month,rsp,tier,service,subs
+2021,1,CommunityNET,W06,Cambium Wireless 3/1mbps,50
+2021,1,Highland,W06,Cambium Wireless 3/1mbps,87
+2021,1,Methownet.com,W06,Cambium Wireless 3/1mbps,149
+2021,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,93
+2021,1,PC Telecom,W06,Cambium Wireless 3/1mbps,48
+2021,1,Will Connect,W06,Cambium Wireless 3/1mbps,6
+2021,1,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,1,CommunityNET,W07,Cambium Wireless 7/2mbps,117
+2021,1,Highland,W07,Cambium Wireless 7/2mbps,300
+2021,1,Methownet.com,W07,Cambium Wireless 7/2mbps,114
+2021,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,224
+2021,1,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2021,1,Will Connect,W07,Cambium Wireless 7/2mbps,25
+2021,1,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,1,CommunityNET,W08,Cambium Wireless 12/3mbps,203
+2021,1,Highland,W08,Cambium Wireless 12/3mbps,163
+2021,1,Methownet.com,W08,Cambium Wireless 12/3mbps,23
+2021,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,105
+2021,1,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,1,Will Connect,W08,Cambium Wireless 12/3mbps,21
+2021,1,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2021,1,CommunityNET,W09,Cambium Wireless 20/5mbps,151
+2021,1,Highland,W09,Cambium Wireless 20/5mbps,172
+2021,1,Methownet.com,W09,Cambium Wireless 20/5mbps,20
+2021,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,85
+2021,1,PC Telecom,W09,Cambium Wireless 20/5mbps,4
+2021,1,Will Connect,W09,Cambium Wireless 20/5mbps,71
+2021,1,CommunityNET,W71,Broadband Wireless 3/1Mbps,7
+2021,1,Highland,W71,Broadband Wireless 3/1Mbps,74
+2021,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,21
+2021,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,32
+2021,1,PC Telecom,W71,Broadband Wireless 3/1Mbps,8
+2021,1,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,1,CommunityNET,W75,Broadband Wireless 7/3mbps,16
+2021,1,Highland,W75,Broadband Wireless 7/3mbps,137
+2021,1,Methownet.com,W75,Broadband Wireless 7/3mbps,17
+2021,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,52
+2021,1,PC Telecom,W75,Broadband Wireless 7/3mbps,7
+2021,1,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2021,1,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,1,CommunityNET,W76,Broadband Wireless 12/6mbps,24
+2021,1,Highland,W76,Broadband Wireless 12/6mbps,73
+2021,1,Methownet.com,W76,Broadband Wireless 12/6mbps,4
+2021,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,22
+2021,1,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,1,Will Connect,W76,Broadband Wireless 12/6mbps,6
+2021,1,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,1,CommunityNET,W77,Broadband Wireless 20/10mbps,23
+2021,1,Highland,W77,Broadband Wireless 20/10mbps,50
+2021,1,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,29
+2021,1,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,1,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2021,2,CommunityNET,W06,Cambium Wireless 3/1mbps,50
+2021,2,Highland,W06,Cambium Wireless 3/1mbps,89
+2021,2,Methownet.com,W06,Cambium Wireless 3/1mbps,149
+2021,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,94
+2021,2,PC Telecom,W06,Cambium Wireless 3/1mbps,49
+2021,2,Will Connect,W06,Cambium Wireless 3/1mbps,5
+2021,2,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,2,CommunityNET,W07,Cambium Wireless 7/2mbps,115
+2021,2,Highland,W07,Cambium Wireless 7/2mbps,305
+2021,2,Methownet.com,W07,Cambium Wireless 7/2mbps,116
+2021,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,233
+2021,2,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2021,2,Will Connect,W07,Cambium Wireless 7/2mbps,29
+2021,2,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,2,CommunityNET,W08,Cambium Wireless 12/3mbps,204
+2021,2,Highland,W08,Cambium Wireless 12/3mbps,174
+2021,2,Methownet.com,W08,Cambium Wireless 12/3mbps,26
+2021,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,100
+2021,2,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,2,Will Connect,W08,Cambium Wireless 12/3mbps,21
+2021,2,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,2,CommunityNET,W09,Cambium Wireless 20/5mbps,161
+2021,2,Highland,W09,Cambium Wireless 20/5mbps,188
+2021,2,Methownet.com,W09,Cambium Wireless 20/5mbps,20
+2021,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,85
+2021,2,PC Telecom,W09,Cambium Wireless 20/5mbps,4
+2021,2,Will Connect,W09,Cambium Wireless 20/5mbps,81
+2021,2,CommunityNET,W71,Broadband Wireless 3/1Mbps,7
+2021,2,Highland,W71,Broadband Wireless 3/1Mbps,68
+2021,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,18
+2021,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,26
+2021,2,PC Telecom,W71,Broadband Wireless 3/1Mbps,7
+2021,2,Will Connect,W71,Broadband Wireless 3/1Mbps,5
+2021,2,CommunityNET,W75,Broadband Wireless 7/3mbps,15
+2021,2,Highland,W75,Broadband Wireless 7/3mbps,125
+2021,2,Methownet.com,W75,Broadband Wireless 7/3mbps,19
+2021,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,42
+2021,2,PC Telecom,W75,Broadband Wireless 7/3mbps,7
+2021,2,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2021,2,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,2,CommunityNET,W76,Broadband Wireless 12/6mbps,21
+2021,2,Highland,W76,Broadband Wireless 12/6mbps,71
+2021,2,Methownet.com,W76,Broadband Wireless 12/6mbps,4
+2021,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,20
+2021,2,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,2,Will Connect,W76,Broadband Wireless 12/6mbps,7
+2021,2,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,2,CommunityNET,W77,Broadband Wireless 20/10mbps,25
+2021,2,Highland,W77,Broadband Wireless 20/10mbps,51
+2021,2,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,27
+2021,2,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,2,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2021,3,CommunityNET,W06,Cambium Wireless 3/1mbps,50
+2021,3,Highland,W06,Cambium Wireless 3/1mbps,89
+2021,3,Methownet.com,W06,Cambium Wireless 3/1mbps,146
+2021,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,93
+2021,3,PC Telecom,W06,Cambium Wireless 3/1mbps,50
+2021,3,Will Connect,W06,Cambium Wireless 3/1mbps,7
+2021,3,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,3,CommunityNET,W07,Cambium Wireless 7/2mbps,111
+2021,3,Highland,W07,Cambium Wireless 7/2mbps,306
+2021,3,Methownet.com,W07,Cambium Wireless 7/2mbps,117
+2021,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,233
+2021,3,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2021,3,Will Connect,W07,Cambium Wireless 7/2mbps,31
+2021,3,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,3,CommunityNET,W08,Cambium Wireless 12/3mbps,205
+2021,3,Highland,W08,Cambium Wireless 12/3mbps,175
+2021,3,Methownet.com,W08,Cambium Wireless 12/3mbps,28
+2021,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,107
+2021,3,PC Telecom,W08,Cambium Wireless 12/3mbps,13
+2021,3,Will Connect,W08,Cambium Wireless 12/3mbps,24
+2021,3,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,3,CommunityNET,W09,Cambium Wireless 20/5mbps,166
+2021,3,Highland,W09,Cambium Wireless 20/5mbps,190
+2021,3,Methownet.com,W09,Cambium Wireless 20/5mbps,19
+2021,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,93
+2021,3,PC Telecom,W09,Cambium Wireless 20/5mbps,6
+2021,3,Will Connect,W09,Cambium Wireless 20/5mbps,83
+2021,3,CommunityNET,W71,Broadband Wireless 3/1Mbps,7
+2021,3,Highland,W71,Broadband Wireless 3/1Mbps,68
+2021,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,17
+2021,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,23
+2021,3,PC Telecom,W71,Broadband Wireless 3/1Mbps,5
+2021,3,Will Connect,W71,Broadband Wireless 3/1Mbps,5
+2021,3,CommunityNET,W75,Broadband Wireless 7/3mbps,14
+2021,3,Highland,W75,Broadband Wireless 7/3mbps,126
+2021,3,Methownet.com,W75,Broadband Wireless 7/3mbps,19
+2021,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,41
+2021,3,PC Telecom,W75,Broadband Wireless 7/3mbps,7
+2021,3,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2021,3,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,3,CommunityNET,W76,Broadband Wireless 12/6mbps,20
+2021,3,Highland,W76,Broadband Wireless 12/6mbps,70
+2021,3,Methownet.com,W76,Broadband Wireless 12/6mbps,5
+2021,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,20
+2021,3,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,3,Will Connect,W76,Broadband Wireless 12/6mbps,6
+2021,3,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,3,CommunityNET,W77,Broadband Wireless 20/10mbps,23
+2021,3,Highland,W77,Broadband Wireless 20/10mbps,53
+2021,3,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,27
+2021,3,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,3,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2021,4,CommunityNET,W06,Cambium Wireless 3/1mbps,50
+2021,4,Highland,W06,Cambium Wireless 3/1mbps,89
+2021,4,Methownet.com,W06,Cambium Wireless 3/1mbps,146
+2021,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,101
+2021,4,PC Telecom,W06,Cambium Wireless 3/1mbps,50
+2021,4,Will Connect,W06,Cambium Wireless 3/1mbps,8
+2021,4,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,4,CommunityNET,W07,Cambium Wireless 7/2mbps,109
+2021,4,Highland,W07,Cambium Wireless 7/2mbps,322
+2021,4,Methownet.com,W07,Cambium Wireless 7/2mbps,124
+2021,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2021,4,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2021,4,Will Connect,W07,Cambium Wireless 7/2mbps,32
+2021,4,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,4,CommunityNET,W08,Cambium Wireless 12/3mbps,202
+2021,4,Highland,W08,Cambium Wireless 12/3mbps,171
+2021,4,Methownet.com,W08,Cambium Wireless 12/3mbps,30
+2021,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,116
+2021,4,PC Telecom,W08,Cambium Wireless 12/3mbps,12
+2021,4,Will Connect,W08,Cambium Wireless 12/3mbps,27
+2021,4,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,4,CommunityNET,W09,Cambium Wireless 20/5mbps,201
+2021,4,Highland,W09,Cambium Wireless 20/5mbps,200
+2021,4,Methownet.com,W09,Cambium Wireless 20/5mbps,21
+2021,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,94
+2021,4,PC Telecom,W09,Cambium Wireless 20/5mbps,6
+2021,4,Will Connect,W09,Cambium Wireless 20/5mbps,83
+2021,4,CommunityNET,W71,Broadband Wireless 3/1Mbps,7
+2021,4,Highland,W71,Broadband Wireless 3/1Mbps,63
+2021,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,14
+2021,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,18
+2021,4,PC Telecom,W71,Broadband Wireless 3/1Mbps,6
+2021,4,Will Connect,W71,Broadband Wireless 3/1Mbps,6
+2021,4,CommunityNET,W75,Broadband Wireless 7/3mbps,13
+2021,4,Highland,W75,Broadband Wireless 7/3mbps,123
+2021,4,Methownet.com,W75,Broadband Wireless 7/3mbps,15
+2021,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,38
+2021,4,PC Telecom,W75,Broadband Wireless 7/3mbps,7
+2021,4,Will Connect,W75,Broadband Wireless 7/3mbps,11
+2021,4,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,4,CommunityNET,W76,Broadband Wireless 12/6mbps,20
+2021,4,Highland,W76,Broadband Wireless 12/6mbps,68
+2021,4,Methownet.com,W76,Broadband Wireless 12/6mbps,4
+2021,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,15
+2021,4,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,4,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2021,4,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,4,CommunityNET,W77,Broadband Wireless 20/10mbps,23
+2021,4,Highland,W77,Broadband Wireless 20/10mbps,53
+2021,4,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2021,4,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,4,Will Connect,W77,Broadband Wireless 20/10mbps,12
+2021,5,CommunityNET,W06,Cambium Wireless 3/1mbps,50
+2021,5,Highland,W06,Cambium Wireless 3/1mbps,91
+2021,5,Methownet.com,W06,Cambium Wireless 3/1mbps,145
+2021,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,101
+2021,5,PC Telecom,W06,Cambium Wireless 3/1mbps,52
+2021,5,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2021,5,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,5,CommunityNET,W07,Cambium Wireless 7/2mbps,110
+2021,5,Highland,W07,Cambium Wireless 7/2mbps,341
+2021,5,Methownet.com,W07,Cambium Wireless 7/2mbps,125
+2021,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,243
+2021,5,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2021,5,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2021,5,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,5,CommunityNET,W08,Cambium Wireless 12/3mbps,201
+2021,5,Highland,W08,Cambium Wireless 12/3mbps,178
+2021,5,Methownet.com,W08,Cambium Wireless 12/3mbps,33
+2021,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,132
+2021,5,PC Telecom,W08,Cambium Wireless 12/3mbps,13
+2021,5,Will Connect,W08,Cambium Wireless 12/3mbps,25
+2021,5,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,5,CommunityNET,W09,Cambium Wireless 20/5mbps,208
+2021,5,Highland,W09,Cambium Wireless 20/5mbps,218
+2021,5,Methownet.com,W09,Cambium Wireless 20/5mbps,22
+2021,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,96
+2021,5,PC Telecom,W09,Cambium Wireless 20/5mbps,6
+2021,5,Will Connect,W09,Cambium Wireless 20/5mbps,86
+2021,5,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,5,Highland,W71,Broadband Wireless 3/1Mbps,59
+2021,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,12
+2021,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,18
+2021,5,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,5,Will Connect,W71,Broadband Wireless 3/1Mbps,5
+2021,5,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,5,Highland,W75,Broadband Wireless 7/3mbps,109
+2021,5,Methownet.com,W75,Broadband Wireless 7/3mbps,14
+2021,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,37
+2021,5,PC Telecom,W75,Broadband Wireless 7/3mbps,7
+2021,5,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2021,5,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,5,CommunityNET,W76,Broadband Wireless 12/6mbps,17
+2021,5,Highland,W76,Broadband Wireless 12/6mbps,61
+2021,5,Methownet.com,W76,Broadband Wireless 12/6mbps,4
+2021,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2021,5,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,5,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2021,5,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,5,CommunityNET,W77,Broadband Wireless 20/10mbps,25
+2021,5,Highland,W77,Broadband Wireless 20/10mbps,52
+2021,5,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2021,5,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,5,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2021,6,CommunityNET,W06,Cambium Wireless 3/1mbps,49
+2021,6,Highland,W06,Cambium Wireless 3/1mbps,94
+2021,6,Methownet.com,W06,Cambium Wireless 3/1mbps,143
+2021,6,NCI Datacom,W06,Cambium Wireless 3/1mbps,97
+2021,6,PC Telecom,W06,Cambium Wireless 3/1mbps,51
+2021,6,Will Connect,W06,Cambium Wireless 3/1mbps,11
+2021,6,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,6,CommunityNET,W07,Cambium Wireless 7/2mbps,111
+2021,6,Highland,W07,Cambium Wireless 7/2mbps,355
+2021,6,Methownet.com,W07,Cambium Wireless 7/2mbps,128
+2021,6,NCI Datacom,W07,Cambium Wireless 7/2mbps,251
+2021,6,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2021,6,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2021,6,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,6,CommunityNET,W08,Cambium Wireless 12/3mbps,202
+2021,6,Highland,W08,Cambium Wireless 12/3mbps,180
+2021,6,Methownet.com,W08,Cambium Wireless 12/3mbps,33
+2021,6,NCI Datacom,W08,Cambium Wireless 12/3mbps,137
+2021,6,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,6,Will Connect,W08,Cambium Wireless 12/3mbps,27
+2021,6,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,6,CommunityNET,W09,Cambium Wireless 20/5mbps,213
+2021,6,Highland,W09,Cambium Wireless 20/5mbps,228
+2021,6,Methownet.com,W09,Cambium Wireless 20/5mbps,23
+2021,6,NCI Datacom,W09,Cambium Wireless 20/5mbps,101
+2021,6,PC Telecom,W09,Cambium Wireless 20/5mbps,6
+2021,6,Will Connect,W09,Cambium Wireless 20/5mbps,85
+2021,6,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,6,Highland,W71,Broadband Wireless 3/1Mbps,57
+2021,6,Methownet.com,W71,Broadband Wireless 3/1Mbps,12
+2021,6,NCI Datacom,W71,Broadband Wireless 3/1Mbps,18
+2021,6,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,6,Will Connect,W71,Broadband Wireless 3/1Mbps,5
+2021,6,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,6,Highland,W75,Broadband Wireless 7/3mbps,98
+2021,6,Methownet.com,W75,Broadband Wireless 7/3mbps,14
+2021,6,NCI Datacom,W75,Broadband Wireless 7/3mbps,35
+2021,6,PC Telecom,W75,Broadband Wireless 7/3mbps,6
+2021,6,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2021,6,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,6,CommunityNET,W76,Broadband Wireless 12/6mbps,17
+2021,6,Highland,W76,Broadband Wireless 12/6mbps,56
+2021,6,Methownet.com,W76,Broadband Wireless 12/6mbps,4
+2021,6,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2021,6,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,6,Will Connect,W76,Broadband Wireless 12/6mbps,6
+2021,6,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,6,CommunityNET,W77,Broadband Wireless 20/10mbps,21
+2021,6,Highland,W77,Broadband Wireless 20/10mbps,43
+2021,6,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,6,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2021,6,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,6,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2021,7,CommunityNET,W06,Cambium Wireless 3/1mbps,49
+2021,7,Highland,W06,Cambium Wireless 3/1mbps,96
+2021,7,Methownet.com,W06,Cambium Wireless 3/1mbps,142
+2021,7,NCI Datacom,W06,Cambium Wireless 3/1mbps,101
+2021,7,PC Telecom,W06,Cambium Wireless 3/1mbps,49
+2021,7,Will Connect,W06,Cambium Wireless 3/1mbps,11
+2021,7,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,7,CommunityNET,W07,Cambium Wireless 7/2mbps,108
+2021,7,Highland,W07,Cambium Wireless 7/2mbps,355
+2021,7,Methownet.com,W07,Cambium Wireless 7/2mbps,132
+2021,7,NCI Datacom,W07,Cambium Wireless 7/2mbps,249
+2021,7,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2021,7,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2021,7,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,7,CommunityNET,W08,Cambium Wireless 12/3mbps,204
+2021,7,Highland,W08,Cambium Wireless 12/3mbps,183
+2021,7,Methownet.com,W08,Cambium Wireless 12/3mbps,32
+2021,7,NCI Datacom,W08,Cambium Wireless 12/3mbps,167
+2021,7,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,7,Will Connect,W08,Cambium Wireless 12/3mbps,28
+2021,7,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,7,CommunityNET,W09,Cambium Wireless 20/5mbps,230
+2021,7,Highland,W09,Cambium Wireless 20/5mbps,228
+2021,7,Methownet.com,W09,Cambium Wireless 20/5mbps,24
+2021,7,NCI Datacom,W09,Cambium Wireless 20/5mbps,102
+2021,7,PC Telecom,W09,Cambium Wireless 20/5mbps,6
+2021,7,Will Connect,W09,Cambium Wireless 20/5mbps,92
+2021,7,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,7,Highland,W71,Broadband Wireless 3/1Mbps,52
+2021,7,Methownet.com,W71,Broadband Wireless 3/1Mbps,11
+2021,7,NCI Datacom,W71,Broadband Wireless 3/1Mbps,17
+2021,7,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,7,Will Connect,W71,Broadband Wireless 3/1Mbps,5
+2021,7,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,7,Highland,W75,Broadband Wireless 7/3mbps,95
+2021,7,Methownet.com,W75,Broadband Wireless 7/3mbps,15
+2021,7,NCI Datacom,W75,Broadband Wireless 7/3mbps,36
+2021,7,PC Telecom,W75,Broadband Wireless 7/3mbps,6
+2021,7,Will Connect,W75,Broadband Wireless 7/3mbps,9
+2021,7,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,7,CommunityNET,W76,Broadband Wireless 12/6mbps,17
+2021,7,Highland,W76,Broadband Wireless 12/6mbps,55
+2021,7,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,7,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2021,7,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,7,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2021,7,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,7,CommunityNET,W77,Broadband Wireless 20/10mbps,21
+2021,7,Highland,W77,Broadband Wireless 20/10mbps,44
+2021,7,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2021,7,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2021,7,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,7,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2021,8,CommunityNET,W06,Cambium Wireless 3/1mbps,49
+2021,8,Highland,W06,Cambium Wireless 3/1mbps,93
+2021,8,Methownet.com,W06,Cambium Wireless 3/1mbps,137
+2021,8,NCI Datacom,W06,Cambium Wireless 3/1mbps,101
+2021,8,PC Telecom,W06,Cambium Wireless 3/1mbps,49
+2021,8,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2021,8,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,8,CommunityNET,W07,Cambium Wireless 7/2mbps,107
+2021,8,Highland,W07,Cambium Wireless 7/2mbps,359
+2021,8,Methownet.com,W07,Cambium Wireless 7/2mbps,140
+2021,8,NCI Datacom,W07,Cambium Wireless 7/2mbps,250
+2021,8,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2021,8,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2021,8,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,8,CommunityNET,W08,Cambium Wireless 12/3mbps,197
+2021,8,Highland,W08,Cambium Wireless 12/3mbps,188
+2021,8,Methownet.com,W08,Cambium Wireless 12/3mbps,35
+2021,8,NCI Datacom,W08,Cambium Wireless 12/3mbps,167
+2021,8,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,8,Will Connect,W08,Cambium Wireless 12/3mbps,30
+2021,8,BHPcom,W09,Cambium Wireless 20/5mbps,9
+2021,8,CommunityNET,W09,Cambium Wireless 20/5mbps,242
+2021,8,Highland,W09,Cambium Wireless 20/5mbps,233
+2021,8,Methownet.com,W09,Cambium Wireless 20/5mbps,25
+2021,8,NCI Datacom,W09,Cambium Wireless 20/5mbps,105
+2021,8,PC Telecom,W09,Cambium Wireless 20/5mbps,7
+2021,8,Will Connect,W09,Cambium Wireless 20/5mbps,92
+2021,8,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,8,Highland,W71,Broadband Wireless 3/1Mbps,51
+2021,8,Methownet.com,W71,Broadband Wireless 3/1Mbps,11
+2021,8,NCI Datacom,W71,Broadband Wireless 3/1Mbps,17
+2021,8,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,8,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,8,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,8,Highland,W75,Broadband Wireless 7/3mbps,100
+2021,8,Methownet.com,W75,Broadband Wireless 7/3mbps,15
+2021,8,NCI Datacom,W75,Broadband Wireless 7/3mbps,34
+2021,8,PC Telecom,W75,Broadband Wireless 7/3mbps,6
+2021,8,Will Connect,W75,Broadband Wireless 7/3mbps,11
+2021,8,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,8,CommunityNET,W76,Broadband Wireless 12/6mbps,15
+2021,8,Highland,W76,Broadband Wireless 12/6mbps,51
+2021,8,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,8,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2021,8,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,8,Will Connect,W76,Broadband Wireless 12/6mbps,3
+2021,8,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,8,CommunityNET,W77,Broadband Wireless 20/10mbps,21
+2021,8,Highland,W77,Broadband Wireless 20/10mbps,46
+2021,8,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2021,8,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2021,8,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,8,Will Connect,W77,Broadband Wireless 20/10mbps,17
+2021,9,CommunityNET,W06,Cambium Wireless 3/1mbps,48
+2021,9,Highland,W06,Cambium Wireless 3/1mbps,93
+2021,9,Methownet.com,W06,Cambium Wireless 3/1mbps,134
+2021,9,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2021,9,PC Telecom,W06,Cambium Wireless 3/1mbps,49
+2021,9,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2021,9,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,9,CommunityNET,W07,Cambium Wireless 7/2mbps,108
+2021,9,Highland,W07,Cambium Wireless 7/2mbps,362
+2021,9,Methownet.com,W07,Cambium Wireless 7/2mbps,143
+2021,9,NCI Datacom,W07,Cambium Wireless 7/2mbps,253
+2021,9,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2021,9,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2021,9,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,9,CommunityNET,W08,Cambium Wireless 12/3mbps,195
+2021,9,Highland,W08,Cambium Wireless 12/3mbps,188
+2021,9,Methownet.com,W08,Cambium Wireless 12/3mbps,38
+2021,9,NCI Datacom,W08,Cambium Wireless 12/3mbps,167
+2021,9,PC Telecom,W08,Cambium Wireless 12/3mbps,15
+2021,9,Will Connect,W08,Cambium Wireless 12/3mbps,29
+2021,9,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2021,9,CommunityNET,W09,Cambium Wireless 20/5mbps,244
+2021,9,Highland,W09,Cambium Wireless 20/5mbps,242
+2021,9,Highland,W09,Cambium Wireless 20/5mbps-WAIVE,-1
+2021,9,Methownet.com,W09,Cambium Wireless 20/5mbps,24
+2021,9,NCI Datacom,W09,Cambium Wireless 20/5mbps,106
+2021,9,PC Telecom,W09,Cambium Wireless 20/5mbps,7
+2021,9,Will Connect,W09,Cambium Wireless 20/5mbps,99
+2021,9,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,9,Highland,W71,Broadband Wireless 3/1Mbps,50
+2021,9,Methownet.com,W71,Broadband Wireless 3/1Mbps,11
+2021,9,NCI Datacom,W71,Broadband Wireless 3/1Mbps,17
+2021,9,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,9,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,9,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,9,Highland,W75,Broadband Wireless 7/3mbps,98
+2021,9,Methownet.com,W75,Broadband Wireless 7/3mbps,15
+2021,9,NCI Datacom,W75,Broadband Wireless 7/3mbps,37
+2021,9,PC Telecom,W75,Broadband Wireless 7/3mbps,6
+2021,9,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2021,9,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,9,CommunityNET,W76,Broadband Wireless 12/6mbps,15
+2021,9,Highland,W76,Broadband Wireless 12/6mbps,53
+2021,9,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,9,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2021,9,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,9,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2021,9,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,9,CommunityNET,W77,Broadband Wireless 20/10mbps,21
+2021,9,Highland,W77,Broadband Wireless 20/10mbps,48
+2021,9,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2021,9,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2021,9,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,9,Will Connect,W77,Broadband Wireless 20/10mbps,19
+2021,10,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2021,10,Highland,W06,Cambium Wireless 3/1mbps,91
+2021,10,Methownet.com,W06,Cambium Wireless 3/1mbps,131
+2021,10,NCI Datacom,W06,Cambium Wireless 3/1mbps,99
+2021,10,PC Telecom,W06,Cambium Wireless 3/1mbps,48
+2021,10,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2021,10,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,10,CommunityNET,W07,Cambium Wireless 7/2mbps,108
+2021,10,Highland,W07,Cambium Wireless 7/2mbps,365
+2021,10,Methownet.com,W07,Cambium Wireless 7/2mbps,153
+2021,10,NCI Datacom,W07,Cambium Wireless 7/2mbps,254
+2021,10,PC Telecom,W07,Cambium Wireless 7/2mbps,40
+2021,10,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2021,10,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,10,CommunityNET,W08,Cambium Wireless 12/3mbps,197
+2021,10,Highland,W08,Cambium Wireless 12/3mbps,189
+2021,10,Methownet.com,W08,Cambium Wireless 12/3mbps,38
+2021,10,NCI Datacom,W08,Cambium Wireless 12/3mbps,171
+2021,10,PC Telecom,W08,Cambium Wireless 12/3mbps,16
+2021,10,Will Connect,W08,Cambium Wireless 12/3mbps,30
+2021,10,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2021,10,CommunityNET,W09,Cambium Wireless 20/5mbps,244
+2021,10,Highland,W09,Cambium Wireless 20/5mbps,242
+2021,10,Methownet.com,W09,Cambium Wireless 20/5mbps,21
+2021,10,NCI Datacom,W09,Cambium Wireless 20/5mbps,111
+2021,10,PC Telecom,W09,Cambium Wireless 20/5mbps,8
+2021,10,Will Connect,W09,Cambium Wireless 20/5mbps,99
+2021,10,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,10,Highland,W71,Broadband Wireless 3/1Mbps,47
+2021,10,Methownet.com,W71,Broadband Wireless 3/1Mbps,10
+2021,10,NCI Datacom,W71,Broadband Wireless 3/1Mbps,17
+2021,10,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,10,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,10,CommunityNET,W75,Broadband Wireless 7/3mbps,11
+2021,10,Highland,W75,Broadband Wireless 7/3mbps,99
+2021,10,Methownet.com,W75,Broadband Wireless 7/3mbps,11
+2021,10,NCI Datacom,W75,Broadband Wireless 7/3mbps,36
+2021,10,PC Telecom,W75,Broadband Wireless 7/3mbps,6
+2021,10,Will Connect,W75,Broadband Wireless 7/3mbps,11
+2021,10,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,10,CommunityNET,W76,Broadband Wireless 12/6mbps,13
+2021,10,Highland,W76,Broadband Wireless 12/6mbps,49
+2021,10,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,10,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2021,10,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,10,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2021,10,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,10,CommunityNET,W77,Broadband Wireless 20/10mbps,21
+2021,10,Highland,W77,Broadband Wireless 20/10mbps,47
+2021,10,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2021,10,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2021,10,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,10,Will Connect,W77,Broadband Wireless 20/10mbps,19
+2021,11,CommunityNET,W06,Cambium Wireless 3/1mbps,48
+2021,11,Highland,W06,Cambium Wireless 3/1mbps,99
+2021,11,Methownet.com,W06,Cambium Wireless 3/1mbps,128
+2021,11,NCI Datacom,W06,Cambium Wireless 3/1mbps,99
+2021,11,PC Telecom,W06,Cambium Wireless 3/1mbps,48
+2021,11,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2021,11,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,11,CommunityNET,W07,Cambium Wireless 7/2mbps,107
+2021,11,Highland,W07,Cambium Wireless 7/2mbps,374
+2021,11,Methownet.com,W07,Cambium Wireless 7/2mbps,158
+2021,11,NCI Datacom,W07,Cambium Wireless 7/2mbps,250
+2021,11,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2021,11,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2021,11,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,11,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2021,11,Highland,W08,Cambium Wireless 12/3mbps,193
+2021,11,Methownet.com,W08,Cambium Wireless 12/3mbps,36
+2021,11,NCI Datacom,W08,Cambium Wireless 12/3mbps,177
+2021,11,PC Telecom,W08,Cambium Wireless 12/3mbps,17
+2021,11,Will Connect,W08,Cambium Wireless 12/3mbps,30
+2021,11,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2021,11,CommunityNET,W09,Cambium Wireless 20/5mbps,247
+2021,11,Highland,W09,Cambium Wireless 20/5mbps,247
+2021,11,Methownet.com,W09,Cambium Wireless 20/5mbps,22
+2021,11,NCI Datacom,W09,Cambium Wireless 20/5mbps,113
+2021,11,PC Telecom,W09,Cambium Wireless 20/5mbps,9
+2021,11,Will Connect,W09,Cambium Wireless 20/5mbps,98
+2021,11,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,11,Highland,W71,Broadband Wireless 3/1Mbps,39
+2021,11,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2021,11,NCI Datacom,W71,Broadband Wireless 3/1Mbps,16
+2021,11,PC Telecom,W71,Broadband Wireless 3/1Mbps,4
+2021,11,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,11,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2021,11,Highland,W75,Broadband Wireless 7/3mbps,89
+2021,11,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2021,11,NCI Datacom,W75,Broadband Wireless 7/3mbps,38
+2021,11,PC Telecom,W75,Broadband Wireless 7/3mbps,4
+2021,11,Will Connect,W75,Broadband Wireless 7/3mbps,11
+2021,11,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,11,CommunityNET,W76,Broadband Wireless 12/6mbps,11
+2021,11,Highland,W76,Broadband Wireless 12/6mbps,39
+2021,11,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,11,NCI Datacom,W76,Broadband Wireless 12/6mbps,12
+2021,11,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,11,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2021,11,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,11,CommunityNET,W77,Broadband Wireless 20/10mbps,14
+2021,11,Highland,W77,Broadband Wireless 20/10mbps,40
+2021,11,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2021,11,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2021,11,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,11,Will Connect,W77,Broadband Wireless 20/10mbps,18
+2021,12,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2021,12,Highland,W06,Cambium Wireless 3/1mbps,98
+2021,12,Methownet.com,W06,Cambium Wireless 3/1mbps,129
+2021,12,NCI Datacom,W06,Cambium Wireless 3/1mbps,100
+2021,12,PC Telecom,W06,Cambium Wireless 3/1mbps,47
+2021,12,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2021,12,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2021,12,CommunityNET,W07,Cambium Wireless 7/2mbps,104
+2021,12,Highland,W07,Cambium Wireless 7/2mbps,381
+2021,12,Methownet.com,W07,Cambium Wireless 7/2mbps,157
+2021,12,NCI Datacom,W07,Cambium Wireless 7/2mbps,247
+2021,12,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2021,12,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2021,12,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2021,12,CommunityNET,W08,Cambium Wireless 12/3mbps,199
+2021,12,Highland,W08,Cambium Wireless 12/3mbps,196
+2021,12,Methownet.com,W08,Cambium Wireless 12/3mbps,36
+2021,12,NCI Datacom,W08,Cambium Wireless 12/3mbps,173
+2021,12,PC Telecom,W08,Cambium Wireless 12/3mbps,18
+2021,12,Will Connect,W08,Cambium Wireless 12/3mbps,32
+2021,12,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2021,12,CommunityNET,W09,Cambium Wireless 20/5mbps,209
+2021,12,Highland,W09,Cambium Wireless 20/5mbps,248
+2021,12,Methownet.com,W09,Cambium Wireless 20/5mbps,23
+2021,12,NCI Datacom,W09,Cambium Wireless 20/5mbps,113
+2021,12,PC Telecom,W09,Cambium Wireless 20/5mbps,11
+2021,12,Will Connect,W09,Cambium Wireless 20/5mbps,87
+2021,12,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2021,12,Highland,W71,Broadband Wireless 3/1Mbps,37
+2021,12,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2021,12,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2021,12,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2021,12,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2021,12,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2021,12,Highland,W75,Broadband Wireless 7/3mbps,81
+2021,12,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2021,12,NCI Datacom,W75,Broadband Wireless 7/3mbps,38
+2021,12,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2021,12,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2021,12,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2021,12,CommunityNET,W76,Broadband Wireless 12/6mbps,11
+2021,12,Highland,W76,Broadband Wireless 12/6mbps,38
+2021,12,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2021,12,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2021,12,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2021,12,Will Connect,W76,Broadband Wireless 12/6mbps,3
+2021,12,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2021,12,CommunityNET,W77,Broadband Wireless 20/10mbps,14
+2021,12,Highland,W77,Broadband Wireless 20/10mbps,36
+2021,12,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2021,12,NCI Datacom,W77,Broadband Wireless 20/10mbps,20
+2021,12,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2021,12,Will Connect,W77,Broadband Wireless 20/10mbps,13
+2022,1,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,1,Highland,W06,Cambium Wireless 3/1mbps,96
+2022,1,Methownet.com,W06,Cambium Wireless 3/1mbps,129
+2022,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2022,1,PC Telecom,W06,Cambium Wireless 3/1mbps,47
+2022,1,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2022,1,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,1,CommunityNET,W07,Cambium Wireless 7/2mbps,104
+2022,1,Highland,W07,Cambium Wireless 7/2mbps,377
+2022,1,Methownet.com,W07,Cambium Wireless 7/2mbps,161
+2022,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,244
+2022,1,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2022,1,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2022,1,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,1,CommunityNET,W08,Cambium Wireless 12/3mbps,196
+2022,1,Highland,W08,Cambium Wireless 12/3mbps,201
+2022,1,Methownet.com,W08,Cambium Wireless 12/3mbps,36
+2022,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,132
+2022,1,PC Telecom,W08,Cambium Wireless 12/3mbps,17
+2022,1,Will Connect,W08,Cambium Wireless 12/3mbps,33
+2022,1,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2022,1,CommunityNET,W09,Cambium Wireless 20/5mbps,210
+2022,1,Highland,W09,Cambium Wireless 20/5mbps,247
+2022,1,Methownet.com,W09,Cambium Wireless 20/5mbps,22
+2022,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,114
+2022,1,PC Telecom,W09,Cambium Wireless 20/5mbps,11
+2022,1,Will Connect,W09,Cambium Wireless 20/5mbps,84
+2022,1,CommunityNET,W71,Broadband Wireless 3/1Mbps,6
+2022,1,Highland,W71,Broadband Wireless 3/1Mbps,37
+2022,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2022,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,1,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,1,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,1,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,1,Highland,W75,Broadband Wireless 7/3mbps,79
+2022,1,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2022,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,1,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,1,Will Connect,W75,Broadband Wireless 7/3mbps,10
+2022,1,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2022,1,CommunityNET,W76,Broadband Wireless 12/6mbps,10
+2022,1,Highland,W76,Broadband Wireless 12/6mbps,38
+2022,1,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2022,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,11
+2022,1,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,1,Will Connect,W76,Broadband Wireless 12/6mbps,3
+2022,1,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2022,1,CommunityNET,W77,Broadband Wireless 20/10mbps,14
+2022,1,Highland,W77,Broadband Wireless 20/10mbps,37
+2022,1,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2022,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,19
+2022,1,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,1,Will Connect,W77,Broadband Wireless 20/10mbps,13
+2022,2,CommunityNET,W06,Cambium Wireless 3/1mbps,48
+2022,2,Highland,W06,Cambium Wireless 3/1mbps,96
+2022,2,Methownet.com,W06,Cambium Wireless 3/1mbps,124
+2022,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2022,2,PC Telecom,W06,Cambium Wireless 3/1mbps,47
+2022,2,Will Connect,W06,Cambium Wireless 3/1mbps,13
+2022,2,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,2,CommunityNET,W07,Cambium Wireless 7/2mbps,103
+2022,2,Highland,W07,Cambium Wireless 7/2mbps,380
+2022,2,Methownet.com,W07,Cambium Wireless 7/2mbps,167
+2022,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,242
+2022,2,PC Telecom,W07,Cambium Wireless 7/2mbps,44
+2022,2,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2022,2,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,2,CommunityNET,W08,Cambium Wireless 12/3mbps,193
+2022,2,Highland,W08,Cambium Wireless 12/3mbps,205
+2022,2,Methownet.com,W08,Cambium Wireless 12/3mbps,40
+2022,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,128
+2022,2,PC Telecom,W08,Cambium Wireless 12/3mbps,17
+2022,2,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2022,2,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2022,2,CommunityNET,W09,Cambium Wireless 20/5mbps,210
+2022,2,Highland,W09,Cambium Wireless 20/5mbps,260
+2022,2,Methownet.com,W09,Cambium Wireless 20/5mbps,23
+2022,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,114
+2022,2,PC Telecom,W09,Cambium Wireless 20/5mbps,10
+2022,2,Will Connect,W09,Cambium Wireless 20/5mbps,88
+2022,2,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,2,Highland,W71,Broadband Wireless 3/1Mbps,36
+2022,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,10
+2022,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,2,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,2,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,2,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,2,Highland,W75,Broadband Wireless 7/3mbps,68
+2022,2,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,34
+2022,2,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,2,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,2,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2022,2,CommunityNET,W76,Broadband Wireless 12/6mbps,11
+2022,2,Highland,W76,Broadband Wireless 12/6mbps,36
+2022,2,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2022,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,11
+2022,2,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,2,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2022,2,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2022,2,CommunityNET,W77,Broadband Wireless 20/10mbps,13
+2022,2,Highland,W77,Broadband Wireless 20/10mbps,31
+2022,2,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2022,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,19
+2022,2,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,2,Will Connect,W77,Broadband Wireless 20/10mbps,12
+2022,3,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,3,Highland,W06,Cambium Wireless 3/1mbps,97
+2022,3,Methownet.com,W06,Cambium Wireless 3/1mbps,126
+2022,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2022,3,PC Telecom,W06,Cambium Wireless 3/1mbps,44
+2022,3,Will Connect,W06,Cambium Wireless 3/1mbps,9
+2022,3,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,3,CommunityNET,W07,Cambium Wireless 7/2mbps,98
+2022,3,Highland,W07,Cambium Wireless 7/2mbps,386
+2022,3,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2022,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,244
+2022,3,PC Telecom,W07,Cambium Wireless 7/2mbps,48
+2022,3,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2022,3,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,3,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2022,3,Highland,W08,Cambium Wireless 12/3mbps,204
+2022,3,Methownet.com,W08,Cambium Wireless 12/3mbps,39
+2022,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,130
+2022,3,PC Telecom,W08,Cambium Wireless 12/3mbps,16
+2022,3,Will Connect,W08,Cambium Wireless 12/3mbps,34
+2022,3,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2022,3,CommunityNET,W09,Cambium Wireless 20/5mbps,210
+2022,3,Highland,W09,Cambium Wireless 20/5mbps,265
+2022,3,Methownet.com,W09,Cambium Wireless 20/5mbps,24
+2022,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,115
+2022,3,PC Telecom,W09,Cambium Wireless 20/5mbps,10
+2022,3,Will Connect,W09,Cambium Wireless 20/5mbps,92
+2022,3,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,3,Highland,W71,Broadband Wireless 3/1Mbps,34
+2022,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2022,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,3,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,3,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,3,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,3,Highland,W75,Broadband Wireless 7/3mbps,65
+2022,3,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2022,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,34
+2022,3,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,3,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,3,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2022,3,CommunityNET,W76,Broadband Wireless 12/6mbps,9
+2022,3,Highland,W76,Broadband Wireless 12/6mbps,36
+2022,3,Methownet.com,W76,Broadband Wireless 12/6mbps,3
+2022,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,11
+2022,3,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,3,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2022,3,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2022,3,CommunityNET,W77,Broadband Wireless 20/10mbps,13
+2022,3,Highland,W77,Broadband Wireless 20/10mbps,31
+2022,3,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,19
+2022,3,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,3,Will Connect,W77,Broadband Wireless 20/10mbps,12
+2022,4,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2022,4,Highland,W06,Cambium Wireless 3/1mbps,97
+2022,4,Methownet.com,W06,Cambium Wireless 3/1mbps,122
+2022,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,101
+2022,4,PC Telecom,W06,Cambium Wireless 3/1mbps,44
+2022,4,Will Connect,W06,Cambium Wireless 3/1mbps,9
+2022,4,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,4,CommunityNET,W07,Cambium Wireless 7/2mbps,93
+2022,4,Highland,W07,Cambium Wireless 7/2mbps,387
+2022,4,Methownet.com,W07,Cambium Wireless 7/2mbps,170
+2022,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,244
+2022,4,PC Telecom,W07,Cambium Wireless 7/2mbps,47
+2022,4,Will Connect,W07,Cambium Wireless 7/2mbps,34
+2022,4,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,4,CommunityNET,W08,Cambium Wireless 12/3mbps,202
+2022,4,Highland,W08,Cambium Wireless 12/3mbps,202
+2022,4,Methownet.com,W08,Cambium Wireless 12/3mbps,43
+2022,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,138
+2022,4,PC Telecom,W08,Cambium Wireless 12/3mbps,19
+2022,4,Will Connect,W08,Cambium Wireless 12/3mbps,34
+2022,4,BHPcom,W09,Cambium Wireless 20/5mbps,10
+2022,4,CommunityNET,W09,Cambium Wireless 20/5mbps,214
+2022,4,Highland,W09,Cambium Wireless 20/5mbps,266
+2022,4,Methownet.com,W09,Cambium Wireless 20/5mbps,23
+2022,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,119
+2022,4,PC Telecom,W09,Cambium Wireless 20/5mbps,9
+2022,4,Will Connect,W09,Cambium Wireless 20/5mbps,95
+2022,4,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,4,Highland,W71,Broadband Wireless 3/1Mbps,33
+2022,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2022,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,15
+2022,4,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,4,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,4,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,4,Highland,W75,Broadband Wireless 7/3mbps,66
+2022,4,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2022,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,34
+2022,4,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,4,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,4,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2022,4,CommunityNET,W76,Broadband Wireless 12/6mbps,9
+2022,4,Highland,W76,Broadband Wireless 12/6mbps,36
+2022,4,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2022,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,12
+2022,4,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,4,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2022,4,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2022,4,CommunityNET,W77,Broadband Wireless 20/10mbps,12
+2022,4,Highland,W77,Broadband Wireless 20/10mbps,29
+2022,4,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,20
+2022,4,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,4,Will Connect,W77,Broadband Wireless 20/10mbps,12
+2022,5,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2022,5,Highland,W06,Cambium Wireless 3/1mbps,101
+2022,5,Methownet.com,W06,Cambium Wireless 3/1mbps,121
+2022,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2022,5,PC Telecom,W06,Cambium Wireless 3/1mbps,45
+2022,5,Will Connect,W06,Cambium Wireless 3/1mbps,10
+2022,5,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,5,CommunityNET,W07,Cambium Wireless 7/2mbps,91
+2022,5,Highland,W07,Cambium Wireless 7/2mbps,379
+2022,5,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2022,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,247
+2022,5,PC Telecom,W07,Cambium Wireless 7/2mbps,47
+2022,5,Will Connect,W07,Cambium Wireless 7/2mbps,34
+2022,5,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,5,CommunityNET,W08,Cambium Wireless 12/3mbps,201
+2022,5,Highland,W08,Cambium Wireless 12/3mbps,210
+2022,5,Methownet.com,W08,Cambium Wireless 12/3mbps,46
+2022,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,164
+2022,5,PC Telecom,W08,Cambium Wireless 12/3mbps,19
+2022,5,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2022,5,BHPcom,W09,Cambium Wireless 20/5mbps,13
+2022,5,CommunityNET,W09,Cambium Wireless 20/5mbps,212
+2022,5,Highland,W09,Cambium Wireless 20/5mbps,272
+2022,5,Methownet.com,W09,Cambium Wireless 20/5mbps,25
+2022,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,119
+2022,5,PC Telecom,W09,Cambium Wireless 20/5mbps,9
+2022,5,Will Connect,W09,Cambium Wireless 20/5mbps,95
+2022,5,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,5,Highland,W71,Broadband Wireless 3/1Mbps,31
+2022,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2022,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,15
+2022,5,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,5,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,5,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,5,Highland,W75,Broadband Wireless 7/3mbps,62
+2022,5,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2022,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,5,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,5,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,5,BHPcom,W76,Broadband Wireless 12/6mbps,2
+2022,5,CommunityNET,W76,Broadband Wireless 12/6mbps,8
+2022,5,Highland,W76,Broadband Wireless 12/6mbps,32
+2022,5,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2022,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,15
+2022,5,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,5,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2022,5,BHPcom,W77,Broadband Wireless 20/10mbps,5
+2022,5,CommunityNET,W77,Broadband Wireless 20/10mbps,13
+2022,5,Highland,W77,Broadband Wireless 20/10mbps,27
+2022,5,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,20
+2022,5,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,5,Will Connect,W77,Broadband Wireless 20/10mbps,13
+2022,6,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2022,6,Highland,W06,Cambium Wireless 3/1mbps,100
+2022,6,Methownet.com,W06,Cambium Wireless 3/1mbps,118
+2022,6,NCI Datacom,W06,Cambium Wireless 3/1mbps,99
+2022,6,PC Telecom,W06,Cambium Wireless 3/1mbps,41
+2022,6,Will Connect,W06,Cambium Wireless 3/1mbps,8
+2022,6,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,6,CommunityNET,W07,Cambium Wireless 7/2mbps,91
+2022,6,Highland,W07,Cambium Wireless 7/2mbps,382
+2022,6,Methownet.com,W07,Cambium Wireless 7/2mbps,167
+2022,6,NCI Datacom,W07,Cambium Wireless 7/2mbps,248
+2022,6,PC Telecom,W07,Cambium Wireless 7/2mbps,45
+2022,6,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2022,6,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2022,6,CommunityNET,W08,Cambium Wireless 12/3mbps,205
+2022,6,Highland,W08,Cambium Wireless 12/3mbps,209
+2022,6,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2022,6,NCI Datacom,W08,Cambium Wireless 12/3mbps,172
+2022,6,PC Telecom,W08,Cambium Wireless 12/3mbps,20
+2022,6,Will Connect,W08,Cambium Wireless 12/3mbps,34
+2022,6,BHPcom,W09,Cambium Wireless 20/5mbps,16
+2022,6,CommunityNET,W09,Cambium Wireless 20/5mbps,210
+2022,6,Highland,W09,Cambium Wireless 20/5mbps,280
+2022,6,Methownet.com,W09,Cambium Wireless 20/5mbps,26
+2022,6,NCI Datacom,W09,Cambium Wireless 20/5mbps,121
+2022,6,PC Telecom,W09,Cambium Wireless 20/5mbps,13
+2022,6,Will Connect,W09,Cambium Wireless 20/5mbps,98
+2022,6,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,6,Highland,W71,Broadband Wireless 3/1Mbps,30
+2022,6,Methownet.com,W71,Broadband Wireless 3/1Mbps,9
+2022,6,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,6,PC Telecom,W71,Broadband Wireless 3/1Mbps,3
+2022,6,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,6,CommunityNET,W75,Broadband Wireless 7/3mbps,10
+2022,6,Highland,W75,Broadband Wireless 7/3mbps,61
+2022,6,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2022,6,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,6,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,6,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,6,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,6,CommunityNET,W76,Broadband Wireless 12/6mbps,8
+2022,6,Highland,W76,Broadband Wireless 12/6mbps,32
+2022,6,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2022,6,NCI Datacom,W76,Broadband Wireless 12/6mbps,17
+2022,6,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,6,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2022,6,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,6,CommunityNET,W77,Broadband Wireless 20/10mbps,13
+2022,6,Highland,W77,Broadband Wireless 20/10mbps,26
+2022,6,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,6,NCI Datacom,W77,Broadband Wireless 20/10mbps,20
+2022,6,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,6,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2022,7,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,7,Highland,W06,Cambium Wireless 3/1mbps,97
+2022,7,Methownet.com,W06,Cambium Wireless 3/1mbps,117
+2022,7,NCI Datacom,W06,Cambium Wireless 3/1mbps,99
+2022,7,PC Telecom,W06,Cambium Wireless 3/1mbps,43
+2022,7,Will Connect,W06,Cambium Wireless 3/1mbps,9
+2022,7,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,7,CommunityNET,W07,Cambium Wireless 7/2mbps,92
+2022,7,Highland,W07,Cambium Wireless 7/2mbps,392
+2022,7,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2022,7,NCI Datacom,W07,Cambium Wireless 7/2mbps,245
+2022,7,PC Telecom,W07,Cambium Wireless 7/2mbps,43
+2022,7,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2022,7,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,7,CommunityNET,W08,Cambium Wireless 12/3mbps,208
+2022,7,Highland,W08,Cambium Wireless 12/3mbps,214
+2022,7,Methownet.com,W08,Cambium Wireless 12/3mbps,46
+2022,7,NCI Datacom,W08,Cambium Wireless 12/3mbps,198
+2022,7,PC Telecom,W08,Cambium Wireless 12/3mbps,21
+2022,7,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2022,7,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,7,CommunityNET,W09,Cambium Wireless 20/5mbps,211
+2022,7,Highland,W09,Cambium Wireless 20/5mbps,280
+2022,7,Methownet.com,W09,Cambium Wireless 20/5mbps,28
+2022,7,NCI Datacom,W09,Cambium Wireless 20/5mbps,125
+2022,7,PC Telecom,W09,Cambium Wireless 20/5mbps,13
+2022,7,Will Connect,W09,Cambium Wireless 20/5mbps,104
+2022,7,CommunityNET,W71,Broadband Wireless 3/1Mbps,5
+2022,7,Highland,W71,Broadband Wireless 3/1Mbps,28
+2022,7,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,7,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,7,PC Telecom,W71,Broadband Wireless 3/1Mbps,2
+2022,7,Will Connect,W71,Broadband Wireless 3/1Mbps,4
+2022,7,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,7,Highland,W75,Broadband Wireless 7/3mbps,61
+2022,7,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,7,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,7,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,7,Will Connect,W75,Broadband Wireless 7/3mbps,12
+2022,7,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,7,CommunityNET,W76,Broadband Wireless 12/6mbps,7
+2022,7,Highland,W76,Broadband Wireless 12/6mbps,27
+2022,7,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2022,7,NCI Datacom,W76,Broadband Wireless 12/6mbps,17
+2022,7,PC Telecom,W76,Broadband Wireless 12/6mbps,2
+2022,7,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2022,7,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,7,CommunityNET,W77,Broadband Wireless 20/10mbps,12
+2022,7,Highland,W77,Broadband Wireless 20/10mbps,26
+2022,7,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,7,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2022,7,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2022,7,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2022,8,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,8,Highland,W06,Cambium Wireless 3/1mbps,99
+2022,8,Methownet.com,W06,Cambium Wireless 3/1mbps,115
+2022,8,NCI Datacom,W06,Cambium Wireless 3/1mbps,98
+2022,8,PC Telecom,W06,Cambium Wireless 3/1mbps,42
+2022,8,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2022,8,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,8,CommunityNET,W07,Cambium Wireless 7/2mbps,93
+2022,8,Highland,W07,Cambium Wireless 7/2mbps,389
+2022,8,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2022,8,NCI Datacom,W07,Cambium Wireless 7/2mbps,247
+2022,8,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2022,8,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2022,8,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,8,CommunityNET,W08,Cambium Wireless 12/3mbps,207
+2022,8,Highland,W08,Cambium Wireless 12/3mbps,223
+2022,8,Methownet.com,W08,Cambium Wireless 12/3mbps,47
+2022,8,NCI Datacom,W08,Cambium Wireless 12/3mbps,208
+2022,8,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2022,8,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2022,8,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,8,CommunityNET,W09,Cambium Wireless 20/5mbps,210
+2022,8,Highland,W09,Cambium Wireless 20/5mbps,281
+2022,8,Methownet.com,W09,Cambium Wireless 20/5mbps,30
+2022,8,NCI Datacom,W09,Cambium Wireless 20/5mbps,129
+2022,8,PC Telecom,W09,Cambium Wireless 20/5mbps,15
+2022,8,Will Connect,W09,Cambium Wireless 20/5mbps,109
+2022,8,CommunityNET,W71,Broadband Wireless 3/1Mbps,3
+2022,8,Highland,W71,Broadband Wireless 3/1Mbps,29
+2022,8,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,8,NCI Datacom,W71,Broadband Wireless 3/1Mbps,14
+2022,8,PC Telecom,W71,Broadband Wireless 3/1Mbps,2
+2022,8,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2022,8,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,8,Highland,W75,Broadband Wireless 7/3mbps,58
+2022,8,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,8,NCI Datacom,W75,Broadband Wireless 7/3mbps,34
+2022,8,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,8,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2022,8,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,8,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2022,8,Highland,W76,Broadband Wireless 12/6mbps,22
+2022,8,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2022,8,NCI Datacom,W76,Broadband Wireless 12/6mbps,17
+2022,8,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,8,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2022,8,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,8,CommunityNET,W77,Broadband Wireless 20/10mbps,10
+2022,8,Highland,W77,Broadband Wireless 20/10mbps,28
+2022,8,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,8,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2022,8,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2022,9,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,9,Highland,W06,Cambium Wireless 3/1mbps,104
+2022,9,Methownet.com,W06,Cambium Wireless 3/1mbps,113
+2022,9,NCI Datacom,W06,Cambium Wireless 3/1mbps,94
+2022,9,PC Telecom,W06,Cambium Wireless 3/1mbps,40
+2022,9,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2022,9,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,9,CommunityNET,W07,Cambium Wireless 7/2mbps,92
+2022,9,Highland,W07,Cambium Wireless 7/2mbps,403
+2022,9,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2022,9,NCI Datacom,W07,Cambium Wireless 7/2mbps,247
+2022,9,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2022,9,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2022,9,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,9,CommunityNET,W08,Cambium Wireless 12/3mbps,203
+2022,9,Highland,W08,Cambium Wireless 12/3mbps,221
+2022,9,Methownet.com,W08,Cambium Wireless 12/3mbps,44
+2022,9,NCI Datacom,W08,Cambium Wireless 12/3mbps,200
+2022,9,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2022,9,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2022,9,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,9,CommunityNET,W09,Cambium Wireless 20/5mbps,206
+2022,9,Highland,W09,Cambium Wireless 20/5mbps,280
+2022,9,Methownet.com,W09,Cambium Wireless 20/5mbps,30
+2022,9,NCI Datacom,W09,Cambium Wireless 20/5mbps,127
+2022,9,PC Telecom,W09,Cambium Wireless 20/5mbps,16
+2022,9,Will Connect,W09,Cambium Wireless 20/5mbps,107
+2022,9,CommunityNET,W71,Broadband Wireless 3/1Mbps,3
+2022,9,Highland,W71,Broadband Wireless 3/1Mbps,25
+2022,9,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,9,NCI Datacom,W71,Broadband Wireless 3/1Mbps,12
+2022,9,PC Telecom,W71,Broadband Wireless 3/1Mbps,2
+2022,9,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2022,9,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,9,Highland,W75,Broadband Wireless 7/3mbps,50
+2022,9,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,9,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,9,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,9,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2022,9,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,9,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2022,9,Highland,W76,Broadband Wireless 12/6mbps,20
+2022,9,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2022,9,NCI Datacom,W76,Broadband Wireless 12/6mbps,18
+2022,9,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,9,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2022,9,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,9,CommunityNET,W77,Broadband Wireless 20/10mbps,9
+2022,9,Highland,W77,Broadband Wireless 20/10mbps,25
+2022,9,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,9,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2022,9,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2022,10,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2022,10,Highland,W06,Cambium Wireless 3/1mbps,108
+2022,10,Methownet.com,W06,Cambium Wireless 3/1mbps,111
+2022,10,NCI Datacom,W06,Cambium Wireless 3/1mbps,91
+2022,10,PC Telecom,W06,Cambium Wireless 3/1mbps,37
+2022,10,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2022,10,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,10,CommunityNET,W07,Cambium Wireless 7/2mbps,93
+2022,10,Highland,W07,Cambium Wireless 7/2mbps,406
+2022,10,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2022,10,NCI Datacom,W07,Cambium Wireless 7/2mbps,258
+2022,10,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2022,10,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2022,10,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,10,CommunityNET,W08,Cambium Wireless 12/3mbps,199
+2022,10,Highland,W08,Cambium Wireless 12/3mbps,211
+2022,10,Methownet.com,W08,Cambium Wireless 12/3mbps,44
+2022,10,NCI Datacom,W08,Cambium Wireless 12/3mbps,199
+2022,10,PC Telecom,W08,Cambium Wireless 12/3mbps,25
+2022,10,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2022,10,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,10,CommunityNET,W09,Cambium Wireless 20/5mbps,205
+2022,10,Highland,W09,Cambium Wireless 20/5mbps,276
+2022,10,Methownet.com,W09,Cambium Wireless 20/5mbps,29
+2022,10,NCI Datacom,W09,Cambium Wireless 20/5mbps,129
+2022,10,PC Telecom,W09,Cambium Wireless 20/5mbps,15
+2022,10,Will Connect,W09,Cambium Wireless 20/5mbps,114
+2022,10,CommunityNET,W71,Broadband Wireless 3/1Mbps,2
+2022,10,Highland,W71,Broadband Wireless 3/1Mbps,23
+2022,10,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,10,NCI Datacom,W71,Broadband Wireless 3/1Mbps,12
+2022,10,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2022,10,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2022,10,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,10,Highland,W75,Broadband Wireless 7/3mbps,49
+2022,10,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,10,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,10,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2022,10,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2022,10,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,10,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2022,10,Highland,W76,Broadband Wireless 12/6mbps,18
+2022,10,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2022,10,NCI Datacom,W76,Broadband Wireless 12/6mbps,18
+2022,10,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,10,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2022,10,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,10,CommunityNET,W77,Broadband Wireless 20/10mbps,9
+2022,10,Highland,W77,Broadband Wireless 20/10mbps,26
+2022,10,Methownet.com,W77,Broadband Wireless 20/10mbps,3
+2022,10,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2022,10,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2022,11,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2022,11,Highland,W06,Cambium Wireless 3/1mbps,111
+2022,11,Methownet.com,W06,Cambium Wireless 3/1mbps,108
+2022,11,NCI Datacom,W06,Cambium Wireless 3/1mbps,86
+2022,11,PC Telecom,W06,Cambium Wireless 3/1mbps,35
+2022,11,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2022,11,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,11,CommunityNET,W07,Cambium Wireless 7/2mbps,92
+2022,11,Highland,W07,Cambium Wireless 7/2mbps,402
+2022,11,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2022,11,NCI Datacom,W07,Cambium Wireless 7/2mbps,260
+2022,11,PC Telecom,W07,Cambium Wireless 7/2mbps,39
+2022,11,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2022,11,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,11,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2022,11,Highland,W08,Cambium Wireless 12/3mbps,208
+2022,11,Methownet.com,W08,Cambium Wireless 12/3mbps,43
+2022,11,NCI Datacom,W08,Cambium Wireless 12/3mbps,204
+2022,11,PC Telecom,W08,Cambium Wireless 12/3mbps,23
+2022,11,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2022,11,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,11,CommunityNET,W09,Cambium Wireless 20/5mbps,203
+2022,11,Highland,W09,Cambium Wireless 20/5mbps,279
+2022,11,Methownet.com,W09,Cambium Wireless 20/5mbps,28
+2022,11,NCI Datacom,W09,Cambium Wireless 20/5mbps,133
+2022,11,PC Telecom,W09,Cambium Wireless 20/5mbps,13
+2022,11,Will Connect,W09,Cambium Wireless 20/5mbps,103
+2022,11,CommunityNET,W71,Broadband Wireless 3/1Mbps,2
+2022,11,Highland,W71,Broadband Wireless 3/1Mbps,24
+2022,11,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,11,NCI Datacom,W71,Broadband Wireless 3/1Mbps,12
+2022,11,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2022,11,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2022,11,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,11,Highland,W75,Broadband Wireless 7/3mbps,47
+2022,11,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,11,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2022,11,PC Telecom,W75,Broadband Wireless 7/3mbps,4
+2022,11,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2022,11,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,11,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2022,11,Highland,W76,Broadband Wireless 12/6mbps,19
+2022,11,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2022,11,NCI Datacom,W76,Broadband Wireless 12/6mbps,19
+2022,11,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,11,Will Connect,W76,Broadband Wireless 12/6mbps,5
+2022,11,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,11,CommunityNET,W77,Broadband Wireless 20/10mbps,10
+2022,11,Highland,W77,Broadband Wireless 20/10mbps,27
+2022,11,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2022,11,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2022,11,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2022,12,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2022,12,Highland,W06,Cambium Wireless 3/1mbps,112
+2022,12,Methownet.com,W06,Cambium Wireless 3/1mbps,109
+2022,12,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2022,12,PC Telecom,W06,Cambium Wireless 3/1mbps,35
+2022,12,Will Connect,W06,Cambium Wireless 3/1mbps,13
+2022,12,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2022,12,CommunityNET,W07,Cambium Wireless 7/2mbps,90
+2022,12,Highland,W07,Cambium Wireless 7/2mbps,399
+2022,12,Methownet.com,W07,Cambium Wireless 7/2mbps,159
+2022,12,NCI Datacom,W07,Cambium Wireless 7/2mbps,260
+2022,12,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2022,12,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2022,12,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2022,12,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2022,12,Highland,W08,Cambium Wireless 12/3mbps,205
+2022,12,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2022,12,NCI Datacom,W08,Cambium Wireless 12/3mbps,201
+2022,12,PC Telecom,W08,Cambium Wireless 12/3mbps,21
+2022,12,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2022,12,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2022,12,CommunityNET,W09,Cambium Wireless 20/5mbps,205
+2022,12,Highland,W09,Cambium Wireless 20/5mbps,281
+2022,12,Methownet.com,W09,Cambium Wireless 20/5mbps,27
+2022,12,NCI Datacom,W09,Cambium Wireless 20/5mbps,135
+2022,12,PC Telecom,W09,Cambium Wireless 20/5mbps,12
+2022,12,Will Connect,W09,Cambium Wireless 20/5mbps,106
+2022,12,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2022,12,Highland,W71,Broadband Wireless 3/1Mbps,23
+2022,12,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2022,12,NCI Datacom,W71,Broadband Wireless 3/1Mbps,12
+2022,12,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2022,12,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2022,12,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2022,12,Highland,W75,Broadband Wireless 7/3mbps,46
+2022,12,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2022,12,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2022,12,PC Telecom,W75,Broadband Wireless 7/3mbps,4
+2022,12,Will Connect,W75,Broadband Wireless 7/3mbps,8
+2022,12,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2022,12,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2022,12,Highland,W76,Broadband Wireless 12/6mbps,19
+2022,12,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2022,12,NCI Datacom,W76,Broadband Wireless 12/6mbps,20
+2022,12,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2022,12,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2022,12,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2022,12,CommunityNET,W77,Broadband Wireless 20/10mbps,10
+2022,12,Highland,W77,Broadband Wireless 20/10mbps,27
+2022,12,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2022,12,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2022,12,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2023,1,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2023,1,Highland,W06,Cambium Wireless 3/1mbps,112
+2023,1,Methownet.com,W06,Cambium Wireless 3/1mbps,107
+2023,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2023,1,PC Telecom,W06,Cambium Wireless 3/1mbps,35
+2023,1,Will Connect,W06,Cambium Wireless 3/1mbps,11
+2023,1,BHPcom,W07,Cambium Wireless 7/2mbps,3
+2023,1,CommunityNET,W07,Cambium Wireless 7/2mbps,90
+2023,1,Highland,W07,Cambium Wireless 7/2mbps,391
+2023,1,Methownet.com,W07,Cambium Wireless 7/2mbps,161
+2023,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,252
+2023,1,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2023,1,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2023,1,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,1,CommunityNET,W08,Cambium Wireless 12/3mbps,196
+2023,1,Highland,W08,Cambium Wireless 12/3mbps,208
+2023,1,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2023,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,209
+2023,1,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2023,1,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2023,1,BHPcom,W09,Cambium Wireless 20/5mbps,17
+2023,1,CommunityNET,W09,Cambium Wireless 20/5mbps,205
+2023,1,Highland,W09,Cambium Wireless 20/5mbps,284
+2023,1,Methownet.com,W09,Cambium Wireless 20/5mbps,28
+2023,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,132
+2023,1,PC Telecom,W09,Cambium Wireless 20/5mbps,12
+2023,1,Will Connect,W09,Cambium Wireless 20/5mbps,106
+2023,1,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,1,Highland,W71,Broadband Wireless 3/1Mbps,24
+2023,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2023,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,12
+2023,1,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2023,1,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,1,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2023,1,Highland,W75,Broadband Wireless 7/3mbps,46
+2023,1,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2023,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2023,1,PC Telecom,W75,Broadband Wireless 7/3mbps,4
+2023,1,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2023,1,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,1,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2023,1,Highland,W76,Broadband Wireless 12/6mbps,19
+2023,1,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,20
+2023,1,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,1,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,1,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,1,CommunityNET,W77,Broadband Wireless 20/10mbps,10
+2023,1,Highland,W77,Broadband Wireless 20/10mbps,26
+2023,1,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2023,1,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2023,2,CommunityNET,W06,Cambium Wireless 3/1mbps,47
+2023,2,Highland,W06,Cambium Wireless 3/1mbps,109
+2023,2,Methownet.com,W06,Cambium Wireless 3/1mbps,103
+2023,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,85
+2023,2,PC Telecom,W06,Cambium Wireless 3/1mbps,35
+2023,2,Will Connect,W06,Cambium Wireless 3/1mbps,14
+2023,2,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,2,CommunityNET,W07,Cambium Wireless 7/2mbps,90
+2023,2,Highland,W07,Cambium Wireless 7/2mbps,390
+2023,2,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2023,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,251
+2023,2,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2023,2,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2023,2,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,2,CommunityNET,W08,Cambium Wireless 12/3mbps,193
+2023,2,Highland,W08,Cambium Wireless 12/3mbps,209
+2023,2,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2023,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,210
+2023,2,PC Telecom,W08,Cambium Wireless 12/3mbps,20
+2023,2,Will Connect,W08,Cambium Wireless 12/3mbps,34
+2023,2,BHPcom,W09,Cambium Wireless 20/5mbps,18
+2023,2,CommunityNET,W09,Cambium Wireless 20/5mbps,211
+2023,2,Highland,W09,Cambium Wireless 20/5mbps,284
+2023,2,Methownet.com,W09,Cambium Wireless 20/5mbps,27
+2023,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,140
+2023,2,PC Telecom,W09,Cambium Wireless 20/5mbps,13
+2023,2,Will Connect,W09,Cambium Wireless 20/5mbps,105
+2023,2,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,2,Highland,W71,Broadband Wireless 3/1Mbps,24
+2023,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2023,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,11
+2023,2,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2023,2,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,2,CommunityNET,W75,Broadband Wireless 7/3mbps,9
+2023,2,Highland,W75,Broadband Wireless 7/3mbps,44
+2023,2,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2023,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2023,2,PC Telecom,W75,Broadband Wireless 7/3mbps,4
+2023,2,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2023,2,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,2,CommunityNET,W76,Broadband Wireless 12/6mbps,6
+2023,2,Highland,W76,Broadband Wireless 12/6mbps,21
+2023,2,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,19
+2023,2,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,2,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,2,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,2,CommunityNET,W77,Broadband Wireless 20/10mbps,10
+2023,2,Highland,W77,Broadband Wireless 20/10mbps,26
+2023,2,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2023,2,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2023,3,CommunityNET,W06,Cambium Wireless 3/1mbps,46
+2023,3,Highland,W06,Cambium Wireless 3/1mbps,106
+2023,3,Methownet.com,W06,Cambium Wireless 3/1mbps,102
+2023,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,3,PC Telecom,W06,Cambium Wireless 3/1mbps,34
+2023,3,Will Connect,W06,Cambium Wireless 3/1mbps,15
+2023,3,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,3,CommunityNET,W07,Cambium Wireless 7/2mbps,91
+2023,3,Highland,W07,Cambium Wireless 7/2mbps,395
+2023,3,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2023,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,252
+2023,3,PC Telecom,W07,Cambium Wireless 7/2mbps,39
+2023,3,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2023,3,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,3,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2023,3,Highland,W08,Cambium Wireless 12/3mbps,210
+2023,3,Methownet.com,W08,Cambium Wireless 12/3mbps,47
+2023,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,209
+2023,3,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2023,3,Will Connect,W08,Cambium Wireless 12/3mbps,32
+2023,3,BHPcom,W09,Cambium Wireless 20/5mbps,18
+2023,3,CommunityNET,W09,Cambium Wireless 20/5mbps,215
+2023,3,Highland,W09,Cambium Wireless 20/5mbps,289
+2023,3,Methownet.com,W09,Cambium Wireless 20/5mbps,30
+2023,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,135
+2023,3,PC Telecom,W09,Cambium Wireless 20/5mbps,13
+2023,3,Will Connect,W09,Cambium Wireless 20/5mbps,109
+2023,3,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,3,Highland,W71,Broadband Wireless 3/1Mbps,22
+2023,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,8
+2023,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,11
+2023,3,PC Telecom,W71,Broadband Wireless 3/1Mbps,1
+2023,3,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,3,CommunityNET,W75,Broadband Wireless 7/3mbps,8
+2023,3,Highland,W75,Broadband Wireless 7/3mbps,46
+2023,3,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2023,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,33
+2023,3,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,3,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2023,3,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,3,CommunityNET,W76,Broadband Wireless 12/6mbps,5
+2023,3,Highland,W76,Broadband Wireless 12/6mbps,20
+2023,3,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,20
+2023,3,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,3,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,3,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,3,CommunityNET,W77,Broadband Wireless 20/10mbps,8
+2023,3,Highland,W77,Broadband Wireless 20/10mbps,24
+2023,3,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,22
+2023,3,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2023,4,CommunityNET,W06,Cambium Wireless 3/1mbps,43
+2023,4,Highland,W06,Cambium Wireless 3/1mbps,106
+2023,4,Methownet.com,W06,Cambium Wireless 3/1mbps,98
+2023,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,4,PC Telecom,W06,Cambium Wireless 3/1mbps,34
+2023,4,Will Connect,W06,Cambium Wireless 3/1mbps,15
+2023,4,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,4,CommunityNET,W07,Cambium Wireless 7/2mbps,91
+2023,4,Highland,W07,Cambium Wireless 7/2mbps,394
+2023,4,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2023,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,248
+2023,4,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2023,4,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2023,4,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,4,CommunityNET,W08,Cambium Wireless 12/3mbps,196
+2023,4,Highland,W08,Cambium Wireless 12/3mbps,215
+2023,4,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2023,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,236
+2023,4,PC Telecom,W08,Cambium Wireless 12/3mbps,21
+2023,4,Will Connect,W08,Cambium Wireless 12/3mbps,32
+2023,4,BHPcom,W09,Cambium Wireless 20/5mbps,18
+2023,4,CommunityNET,W09,Cambium Wireless 20/5mbps,218
+2023,4,Highland,W09,Cambium Wireless 20/5mbps,290
+2023,4,Methownet.com,W09,Cambium Wireless 20/5mbps,33
+2023,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,133
+2023,4,PC Telecom,W09,Cambium Wireless 20/5mbps,17
+2023,4,Will Connect,W09,Cambium Wireless 20/5mbps,110
+2023,4,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,4,Highland,W71,Broadband Wireless 3/1Mbps,21
+2023,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,7
+2023,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,11
+2023,4,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,4,CommunityNET,W75,Broadband Wireless 7/3mbps,5
+2023,4,Highland,W75,Broadband Wireless 7/3mbps,41
+2023,4,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2023,4,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,4,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2023,4,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,4,CommunityNET,W76,Broadband Wireless 12/6mbps,5
+2023,4,Highland,W76,Broadband Wireless 12/6mbps,18
+2023,4,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,19
+2023,4,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,4,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,4,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,4,CommunityNET,W77,Broadband Wireless 20/10mbps,6
+2023,4,Highland,W77,Broadband Wireless 20/10mbps,20
+2023,4,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,26
+2023,4,Will Connect,W77,Broadband Wireless 20/10mbps,10
+2023,5,CommunityNET,W06,Cambium Wireless 3/1mbps,43
+2023,5,Highland,W06,Cambium Wireless 3/1mbps,109
+2023,5,Methownet.com,W06,Cambium Wireless 3/1mbps,96
+2023,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,90
+2023,5,PC Telecom,W06,Cambium Wireless 3/1mbps,33
+2023,5,Will Connect,W06,Cambium Wireless 3/1mbps,14
+2023,5,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,5,CommunityNET,W07,Cambium Wireless 7/2mbps,90
+2023,5,Highland,W07,Cambium Wireless 7/2mbps,393
+2023,5,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2023,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,253
+2023,5,PC Telecom,W07,Cambium Wireless 7/2mbps,35
+2023,5,Will Connect,W07,Cambium Wireless 7/2mbps,39
+2023,5,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,5,CommunityNET,W08,Cambium Wireless 12/3mbps,201
+2023,5,Highland,W08,Cambium Wireless 12/3mbps,211
+2023,5,Methownet.com,W08,Cambium Wireless 12/3mbps,46
+2023,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,234
+2023,5,PC Telecom,W08,Cambium Wireless 12/3mbps,23
+2023,5,Will Connect,W08,Cambium Wireless 12/3mbps,33
+2023,5,BHPcom,W09,Cambium Wireless 20/5mbps,18
+2023,5,CommunityNET,W09,Cambium Wireless 20/5mbps,219
+2023,5,Highland,W09,Cambium Wireless 20/5mbps,294
+2023,5,Methownet.com,W09,Cambium Wireless 20/5mbps,35
+2023,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,138
+2023,5,PC Telecom,W09,Cambium Wireless 20/5mbps,16
+2023,5,Will Connect,W09,Cambium Wireless 20/5mbps,111
+2023,5,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,5,Highland,W71,Broadband Wireless 3/1Mbps,19
+2023,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,7
+2023,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,11
+2023,5,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,5,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,5,Highland,W75,Broadband Wireless 7/3mbps,43
+2023,5,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2023,5,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,5,Will Connect,W75,Broadband Wireless 7/3mbps,9
+2023,5,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,5,CommunityNET,W76,Broadband Wireless 12/6mbps,1
+2023,5,Highland,W76,Broadband Wireless 12/6mbps,18
+2023,5,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,17
+2023,5,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,5,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,5,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,5,CommunityNET,W77,Broadband Wireless 20/10mbps,6
+2023,5,Highland,W77,Broadband Wireless 20/10mbps,18
+2023,5,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,27
+2023,5,Will Connect,W77,Broadband Wireless 20/10mbps,9
+2023,6,CommunityNET,W06,Cambium Wireless 3/1mbps,42
+2023,6,Highland,W06,Cambium Wireless 3/1mbps,104
+2023,6,Methownet.com,W06,Cambium Wireless 3/1mbps,93
+2023,6,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,6,PC Telecom,W06,Cambium Wireless 3/1mbps,32
+2023,6,Will Connect,W06,Cambium Wireless 3/1mbps,12
+2023,6,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,6,CommunityNET,W07,Cambium Wireless 7/2mbps,89
+2023,6,Highland,W07,Cambium Wireless 7/2mbps,394
+2023,6,Methownet.com,W07,Cambium Wireless 7/2mbps,167
+2023,6,NCI Datacom,W07,Cambium Wireless 7/2mbps,260
+2023,6,PC Telecom,W07,Cambium Wireless 7/2mbps,35
+2023,6,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2023,6,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,6,CommunityNET,W08,Cambium Wireless 12/3mbps,202
+2023,6,Highland,W08,Cambium Wireless 12/3mbps,213
+2023,6,Methownet.com,W08,Cambium Wireless 12/3mbps,46
+2023,6,NCI Datacom,W08,Cambium Wireless 12/3mbps,206
+2023,6,PC Telecom,W08,Cambium Wireless 12/3mbps,21
+2023,6,Will Connect,W08,Cambium Wireless 12/3mbps,33
+2023,6,BHPcom,W09,Cambium Wireless 20/5mbps,18
+2023,6,CommunityNET,W09,Cambium Wireless 20/5mbps,222
+2023,6,Highland,W09,Cambium Wireless 20/5mbps,304
+2023,6,Methownet.com,W09,Cambium Wireless 20/5mbps,36
+2023,6,NCI Datacom,W09,Cambium Wireless 20/5mbps,142
+2023,6,PC Telecom,W09,Cambium Wireless 20/5mbps,18
+2023,6,Will Connect,W09,Cambium Wireless 20/5mbps,116
+2023,6,CommunityNET,W71,Broadband Wireless 3/1Mbps,1
+2023,6,Highland,W71,Broadband Wireless 3/1Mbps,19
+2023,6,Methownet.com,W71,Broadband Wireless 3/1Mbps,7
+2023,6,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,6,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,6,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,6,Highland,W75,Broadband Wireless 7/3mbps,38
+2023,6,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,6,NCI Datacom,W75,Broadband Wireless 7/3mbps,30
+2023,6,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,6,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2023,6,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,6,CommunityNET,W76,Broadband Wireless 12/6mbps,1
+2023,6,Highland,W76,Broadband Wireless 12/6mbps,18
+2023,6,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,6,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2023,6,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,6,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,6,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,6,CommunityNET,W77,Broadband Wireless 20/10mbps,6
+2023,6,Highland,W77,Broadband Wireless 20/10mbps,19
+2023,6,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,6,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2023,6,Will Connect,W77,Broadband Wireless 20/10mbps,7
+2023,7,CommunityNET,W06,Cambium Wireless 3/1mbps,43
+2023,7,Highland,W06,Cambium Wireless 3/1mbps,104
+2023,7,Methownet.com,W06,Cambium Wireless 3/1mbps,93
+2023,7,NCI Datacom,W06,Cambium Wireless 3/1mbps,89
+2023,7,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,7,Will Connect,W06,Cambium Wireless 3/1mbps,13
+2023,7,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,7,CommunityNET,W07,Cambium Wireless 7/2mbps,90
+2023,7,Highland,W07,Cambium Wireless 7/2mbps,391
+2023,7,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2023,7,NCI Datacom,W07,Cambium Wireless 7/2mbps,262
+2023,7,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2023,7,Will Connect,W07,Cambium Wireless 7/2mbps,42
+2023,7,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,7,CommunityNET,W08,Cambium Wireless 12/3mbps,202
+2023,7,Highland,W08,Cambium Wireless 12/3mbps,214
+2023,7,Methownet.com,W08,Cambium Wireless 12/3mbps,47
+2023,7,NCI Datacom,W08,Cambium Wireless 12/3mbps,211
+2023,7,PC Telecom,W08,Cambium Wireless 12/3mbps,23
+2023,7,Will Connect,W08,Cambium Wireless 12/3mbps,31
+2023,7,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2023,7,CommunityNET,W09,Cambium Wireless 20/5mbps,222
+2023,7,Highland,W09,Cambium Wireless 20/5mbps,322
+2023,7,Methownet.com,W09,Cambium Wireless 20/5mbps,36
+2023,7,NCI Datacom,W09,Cambium Wireless 20/5mbps,145
+2023,7,PC Telecom,W09,Cambium Wireless 20/5mbps,20
+2023,7,Will Connect,W09,Cambium Wireless 20/5mbps,128
+2023,7,Highland,W71,Broadband Wireless 3/1Mbps,18
+2023,7,Methownet.com,W71,Broadband Wireless 3/1Mbps,7
+2023,7,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,7,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,7,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,7,Highland,W75,Broadband Wireless 7/3mbps,35
+2023,7,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,7,NCI Datacom,W75,Broadband Wireless 7/3mbps,29
+2023,7,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,7,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2023,7,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,7,CommunityNET,W76,Broadband Wireless 12/6mbps,1
+2023,7,Highland,W76,Broadband Wireless 12/6mbps,17
+2023,7,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,7,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2023,7,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,7,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,7,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,7,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2023,7,Highland,W77,Broadband Wireless 20/10mbps,16
+2023,7,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,7,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2023,7,Will Connect,W77,Broadband Wireless 20/10mbps,10
+2023,8,CommunityNET,W06,Cambium Wireless 3/1mbps,40
+2023,8,Highland,W06,Cambium Wireless 3/1mbps,103
+2023,8,Methownet.com,W06,Cambium Wireless 3/1mbps,91
+2023,8,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2023,8,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,8,Will Connect,W06,Cambium Wireless 3/1mbps,13
+2023,8,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,8,CommunityNET,W07,Cambium Wireless 7/2mbps,89
+2023,8,Highland,W07,Cambium Wireless 7/2mbps,383
+2023,8,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2023,8,NCI Datacom,W07,Cambium Wireless 7/2mbps,258
+2023,8,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2023,8,Will Connect,W07,Cambium Wireless 7/2mbps,42
+2023,8,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,8,CommunityNET,W08,Cambium Wireless 12/3mbps,201
+2023,8,Highland,W08,Cambium Wireless 12/3mbps,216
+2023,8,Methownet.com,W08,Cambium Wireless 12/3mbps,49
+2023,8,NCI Datacom,W08,Cambium Wireless 12/3mbps,230
+2023,8,PC Telecom,W08,Cambium Wireless 12/3mbps,24
+2023,8,Will Connect,W08,Cambium Wireless 12/3mbps,32
+2023,8,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2023,8,CommunityNET,W09,Cambium Wireless 20/5mbps,227
+2023,8,Highland,W09,Cambium Wireless 20/5mbps,329
+2023,8,Methownet.com,W09,Cambium Wireless 20/5mbps,37
+2023,8,NCI Datacom,W09,Cambium Wireless 20/5mbps,140
+2023,8,PC Telecom,W09,Cambium Wireless 20/5mbps,19
+2023,8,Will Connect,W09,Cambium Wireless 20/5mbps,126
+2023,8,Highland,W71,Broadband Wireless 3/1Mbps,18
+2023,8,Methownet.com,W71,Broadband Wireless 3/1Mbps,7
+2023,8,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,8,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,8,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,8,Highland,W75,Broadband Wireless 7/3mbps,37
+2023,8,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,8,NCI Datacom,W75,Broadband Wireless 7/3mbps,29
+2023,8,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,8,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2023,8,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,8,CommunityNET,W76,Broadband Wireless 12/6mbps,1
+2023,8,Highland,W76,Broadband Wireless 12/6mbps,16
+2023,8,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,8,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2023,8,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,8,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,8,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,8,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2023,8,Highland,W77,Broadband Wireless 20/10mbps,16
+2023,8,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,8,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2023,8,Will Connect,W77,Broadband Wireless 20/10mbps,10
+2023,9,CommunityNET,W06,Cambium Wireless 3/1mbps,41
+2023,9,Highland,W06,Cambium Wireless 3/1mbps,101
+2023,9,Methownet.com,W06,Cambium Wireless 3/1mbps,90
+2023,9,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2023,9,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,9,Will Connect,W06,Cambium Wireless 3/1mbps,14
+2023,9,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,9,CommunityNET,W07,Cambium Wireless 7/2mbps,88
+2023,9,Highland,W07,Cambium Wireless 7/2mbps,382
+2023,9,Methownet.com,W07,Cambium Wireless 7/2mbps,161
+2023,9,NCI Datacom,W07,Cambium Wireless 7/2mbps,256
+2023,9,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2023,9,Will Connect,W07,Cambium Wireless 7/2mbps,41
+2023,9,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,9,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2023,9,Highland,W08,Cambium Wireless 12/3mbps,215
+2023,9,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2023,9,NCI Datacom,W08,Cambium Wireless 12/3mbps,237
+2023,9,PC Telecom,W08,Cambium Wireless 12/3mbps,23
+2023,9,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2023,9,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2023,9,CommunityNET,W09,Cambium Wireless 20/5mbps,227
+2023,9,Highland,W09,Cambium Wireless 20/5mbps,334
+2023,9,Methownet.com,W09,Cambium Wireless 20/5mbps,37
+2023,9,NCI Datacom,W09,Cambium Wireless 20/5mbps,139
+2023,9,PC Telecom,W09,Cambium Wireless 20/5mbps,19
+2023,9,Will Connect,W09,Cambium Wireless 20/5mbps,132
+2023,9,Highland,W71,Broadband Wireless 3/1Mbps,18
+2023,9,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2023,9,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,9,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,9,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,9,Highland,W75,Broadband Wireless 7/3mbps,36
+2023,9,Methownet.com,W75,Broadband Wireless 7/3mbps,11
+2023,9,NCI Datacom,W75,Broadband Wireless 7/3mbps,29
+2023,9,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,9,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2023,9,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,9,CommunityNET,W76,Broadband Wireless 12/6mbps,1
+2023,9,Highland,W76,Broadband Wireless 12/6mbps,17
+2023,9,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,9,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2023,9,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,9,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,9,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,9,CommunityNET,W77,Broadband Wireless 20/10mbps,5
+2023,9,Highland,W77,Broadband Wireless 20/10mbps,16
+2023,9,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,9,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2023,9,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2023,10,CommunityNET,W06,Cambium Wireless 3/1mbps,40
+2023,10,Highland,W06,Cambium Wireless 3/1mbps,97
+2023,10,Methownet.com,W06,Cambium Wireless 3/1mbps,87
+2023,10,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,10,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,10,Will Connect,W06,Cambium Wireless 3/1mbps,13
+2023,10,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,10,CommunityNET,W07,Cambium Wireless 7/2mbps,89
+2023,10,Highland,W07,Cambium Wireless 7/2mbps,382
+2023,10,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2023,10,NCI Datacom,W07,Cambium Wireless 7/2mbps,258
+2023,10,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2023,10,Will Connect,W07,Cambium Wireless 7/2mbps,39
+2023,10,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,10,CommunityNET,W08,Cambium Wireless 12/3mbps,198
+2023,10,Highland,W08,Cambium Wireless 12/3mbps,218
+2023,10,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2023,10,NCI Datacom,W08,Cambium Wireless 12/3mbps,238
+2023,10,PC Telecom,W08,Cambium Wireless 12/3mbps,23
+2023,10,Will Connect,W08,Cambium Wireless 12/3mbps,35
+2023,10,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2023,10,CommunityNET,W09,Cambium Wireless 20/5mbps,227
+2023,10,Highland,W09,Cambium Wireless 20/5mbps,335
+2023,10,Methownet.com,W09,Cambium Wireless 20/5mbps,38
+2023,10,NCI Datacom,W09,Cambium Wireless 20/5mbps,139
+2023,10,PC Telecom,W09,Cambium Wireless 20/5mbps,19
+2023,10,Will Connect,W09,Cambium Wireless 20/5mbps,135
+2023,10,Highland,W71,Broadband Wireless 3/1Mbps,18
+2023,10,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2023,10,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,10,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,10,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,10,Highland,W75,Broadband Wireless 7/3mbps,36
+2023,10,Methownet.com,W75,Broadband Wireless 7/3mbps,11
+2023,10,NCI Datacom,W75,Broadband Wireless 7/3mbps,29
+2023,10,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,10,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2023,10,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,10,Highland,W76,Broadband Wireless 12/6mbps,17
+2023,10,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,10,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2023,10,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,10,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,10,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,10,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2023,10,Highland,W77,Broadband Wireless 20/10mbps,16
+2023,10,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,10,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2023,10,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2023,11,CommunityNET,W06,Cambium Wireless 3/1mbps,40
+2023,11,Highland,W06,Cambium Wireless 3/1mbps,100
+2023,11,Methownet.com,W06,Cambium Wireless 3/1mbps,84
+2023,11,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,11,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,11,Will Connect,W06,Cambium Wireless 3/1mbps,16
+2023,11,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,11,CommunityNET,W07,Cambium Wireless 7/2mbps,85
+2023,11,Highland,W07,Cambium Wireless 7/2mbps,380
+2023,11,Methownet.com,W07,Cambium Wireless 7/2mbps,168
+2023,11,NCI Datacom,W07,Cambium Wireless 7/2mbps,258
+2023,11,PC Telecom,W07,Cambium Wireless 7/2mbps,40
+2023,11,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2023,11,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,11,CommunityNET,W08,Cambium Wireless 12/3mbps,194
+2023,11,Highland,W08,Cambium Wireless 12/3mbps,220
+2023,11,Methownet.com,W08,Cambium Wireless 12/3mbps,49
+2023,11,NCI Datacom,W08,Cambium Wireless 12/3mbps,241
+2023,11,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2023,11,Will Connect,W08,Cambium Wireless 12/3mbps,33
+2023,11,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2023,11,CommunityNET,W09,Cambium Wireless 20/5mbps,231
+2023,11,Highland,W09,Cambium Wireless 20/5mbps,328
+2023,11,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2023,11,NCI Datacom,W09,Cambium Wireless 20/5mbps,138
+2023,11,PC Telecom,W09,Cambium Wireless 20/5mbps,20
+2023,11,Will Connect,W09,Cambium Wireless 20/5mbps,132
+2023,11,Highland,W71,Broadband Wireless 3/1Mbps,16
+2023,11,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2023,11,NCI Datacom,W71,Broadband Wireless 3/1Mbps,10
+2023,11,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,11,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,11,Highland,W75,Broadband Wireless 7/3mbps,35
+2023,11,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,11,NCI Datacom,W75,Broadband Wireless 7/3mbps,29
+2023,11,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,11,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2023,11,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,11,Highland,W76,Broadband Wireless 12/6mbps,17
+2023,11,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,11,NCI Datacom,W76,Broadband Wireless 12/6mbps,15
+2023,11,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,11,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,11,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,11,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2023,11,Highland,W77,Broadband Wireless 20/10mbps,17
+2023,11,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2023,11,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2023,11,Will Connect,W77,Broadband Wireless 20/10mbps,11
+2023,12,CommunityNET,W06,Cambium Wireless 3/1mbps,39
+2023,12,Highland,W06,Cambium Wireless 3/1mbps,98
+2023,12,Methownet.com,W06,Cambium Wireless 3/1mbps,85
+2023,12,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2023,12,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2023,12,Will Connect,W06,Cambium Wireless 3/1mbps,16
+2023,12,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2023,12,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2023,12,Highland,W07,Cambium Wireless 7/2mbps,380
+2023,12,Methownet.com,W07,Cambium Wireless 7/2mbps,169
+2023,12,NCI Datacom,W07,Cambium Wireless 7/2mbps,259
+2023,12,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2023,12,Will Connect,W07,Cambium Wireless 7/2mbps,41
+2023,12,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2023,12,CommunityNET,W08,Cambium Wireless 12/3mbps,194
+2023,12,Highland,W08,Cambium Wireless 12/3mbps,217
+2023,12,Methownet.com,W08,Cambium Wireless 12/3mbps,49
+2023,12,NCI Datacom,W08,Cambium Wireless 12/3mbps,241
+2023,12,PC Telecom,W08,Cambium Wireless 12/3mbps,20
+2023,12,Will Connect,W08,Cambium Wireless 12/3mbps,34
+2023,12,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2023,12,CommunityNET,W09,Cambium Wireless 20/5mbps,232
+2023,12,Highland,W09,Cambium Wireless 20/5mbps,322
+2023,12,Methownet.com,W09,Cambium Wireless 20/5mbps,39
+2023,12,NCI Datacom,W09,Cambium Wireless 20/5mbps,137
+2023,12,PC Telecom,W09,Cambium Wireless 20/5mbps,20
+2023,12,Will Connect,W09,Cambium Wireless 20/5mbps,126
+2023,12,Highland,W71,Broadband Wireless 3/1Mbps,16
+2023,12,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2023,12,NCI Datacom,W71,Broadband Wireless 3/1Mbps,9
+2023,12,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2023,12,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2023,12,Highland,W75,Broadband Wireless 7/3mbps,35
+2023,12,Methownet.com,W75,Broadband Wireless 7/3mbps,10
+2023,12,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2023,12,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2023,12,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2023,12,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2023,12,Highland,W76,Broadband Wireless 12/6mbps,18
+2023,12,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2023,12,NCI Datacom,W76,Broadband Wireless 12/6mbps,15
+2023,12,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2023,12,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2023,12,BHPcom,W77,Broadband Wireless 20/10mbps,2
+2023,12,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2023,12,Highland,W77,Broadband Wireless 20/10mbps,17
+2023,12,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2023,12,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2023,12,Will Connect,W77,Broadband Wireless 20/10mbps,6
+2024,1,CommunityNET,W06,Cambium Wireless 3/1mbps,38
+2024,1,Highland,W06,Cambium Wireless 3/1mbps,99
+2024,1,Methownet.com,W06,Cambium Wireless 3/1mbps,86
+2024,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2024,1,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2024,1,Will Connect,W06,Cambium Wireless 3/1mbps,17
+2024,1,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,1,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2024,1,Highland,W07,Cambium Wireless 7/2mbps,380
+2024,1,Methownet.com,W07,Cambium Wireless 7/2mbps,169
+2024,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,261
+2024,1,PC Telecom,W07,Cambium Wireless 7/2mbps,39
+2024,1,Will Connect,W07,Cambium Wireless 7/2mbps,45
+2024,1,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2024,1,CommunityNET,W08,Cambium Wireless 12/3mbps,194
+2024,1,Highland,W08,Cambium Wireless 12/3mbps,216
+2024,1,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2024,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,239
+2024,1,PC Telecom,W08,Cambium Wireless 12/3mbps,22
+2024,1,Will Connect,W08,Cambium Wireless 12/3mbps,38
+2024,1,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2024,1,CommunityNET,W09,Cambium Wireless 20/5mbps,233
+2024,1,Highland,W09,Cambium Wireless 20/5mbps,324
+2024,1,Methownet.com,W09,Cambium Wireless 20/5mbps,38
+2024,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,136
+2024,1,PC Telecom,W09,Cambium Wireless 20/5mbps,20
+2024,1,Will Connect,W09,Cambium Wireless 20/5mbps,123
+2024,1,Highland,W71,Broadband Wireless 3/1Mbps,16
+2024,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,9
+2024,1,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,1,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2024,1,Highland,W75,Broadband Wireless 7/3mbps,35
+2024,1,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2024,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2024,1,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2024,1,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2024,1,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,1,Highland,W76,Broadband Wireless 12/6mbps,17
+2024,1,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,15
+2024,1,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,1,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,1,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,1,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,1,Highland,W77,Broadband Wireless 20/10mbps,17
+2024,1,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2024,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2024,1,Will Connect,W77,Broadband Wireless 20/10mbps,5
+2024,2,CommunityNET,W06,Cambium Wireless 3/1mbps,38
+2024,2,Highland,W06,Cambium Wireless 3/1mbps,97
+2024,2,Methownet.com,W06,Cambium Wireless 3/1mbps,86
+2024,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2024,2,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2024,2,Will Connect,W06,Cambium Wireless 3/1mbps,19
+2024,2,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,2,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2024,2,Highland,W07,Cambium Wireless 7/2mbps,380
+2024,2,Methownet.com,W07,Cambium Wireless 7/2mbps,167
+2024,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,262
+2024,2,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2024,2,Will Connect,W07,Cambium Wireless 7/2mbps,44
+2024,2,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2024,2,CommunityNET,W08,Cambium Wireless 12/3mbps,193
+2024,2,Highland,W08,Cambium Wireless 12/3mbps,211
+2024,2,Methownet.com,W08,Cambium Wireless 12/3mbps,52
+2024,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,240
+2024,2,PC Telecom,W08,Cambium Wireless 12/3mbps,24
+2024,2,Will Connect,W08,Cambium Wireless 12/3mbps,38
+2024,2,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2024,2,CommunityNET,W09,Cambium Wireless 20/5mbps,235
+2024,2,Highland,W09,Cambium Wireless 20/5mbps,321
+2024,2,Methownet.com,W09,Cambium Wireless 20/5mbps,39
+2024,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,138
+2024,2,PC Telecom,W09,Cambium Wireless 20/5mbps,19
+2024,2,Will Connect,W09,Cambium Wireless 20/5mbps,126
+2024,2,Highland,W71,Broadband Wireless 3/1Mbps,16
+2024,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,9
+2024,2,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,2,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2024,2,Highland,W75,Broadband Wireless 7/3mbps,33
+2024,2,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2024,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,30
+2024,2,PC Telecom,W75,Broadband Wireless 7/3mbps,3
+2024,2,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2024,2,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,2,Highland,W76,Broadband Wireless 12/6mbps,16
+2024,2,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,2,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,2,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,2,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,2,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,2,Highland,W77,Broadband Wireless 20/10mbps,19
+2024,2,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2024,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2024,2,Will Connect,W77,Broadband Wireless 20/10mbps,5
+2024,3,CommunityNET,W06,Cambium Wireless 3/1mbps,37
+2024,3,Highland,W06,Cambium Wireless 3/1mbps,95
+2024,3,Methownet.com,W06,Cambium Wireless 3/1mbps,85
+2024,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2024,3,PC Telecom,W06,Cambium Wireless 3/1mbps,31
+2024,3,Will Connect,W06,Cambium Wireless 3/1mbps,16
+2024,3,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,3,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2024,3,Highland,W07,Cambium Wireless 7/2mbps,384
+2024,3,Methownet.com,W07,Cambium Wireless 7/2mbps,169
+2024,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,261
+2024,3,PC Telecom,W07,Cambium Wireless 7/2mbps,39
+2024,3,Will Connect,W07,Cambium Wireless 7/2mbps,45
+2024,3,BHPcom,W08,Cambium Wireless 12/3mbps,8
+2024,3,CommunityNET,W08,Cambium Wireless 12/3mbps,192
+2024,3,Highland,W08,Cambium Wireless 12/3mbps,212
+2024,3,Methownet.com,W08,Cambium Wireless 12/3mbps,52
+2024,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,241
+2024,3,PC Telecom,W08,Cambium Wireless 12/3mbps,24
+2024,3,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2024,3,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2024,3,CommunityNET,W09,Cambium Wireless 20/5mbps,234
+2024,3,Highland,W09,Cambium Wireless 20/5mbps,321
+2024,3,Methownet.com,W09,Cambium Wireless 20/5mbps,39
+2024,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,139
+2024,3,PC Telecom,W09,Cambium Wireless 20/5mbps,19
+2024,3,Will Connect,W09,Cambium Wireless 20/5mbps,128
+2024,3,Highland,W71,Broadband Wireless 3/1Mbps,16
+2024,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,8
+2024,3,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,3,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2024,3,Highland,W75,Broadband Wireless 7/3mbps,31
+2024,3,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2024,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2024,3,PC Telecom,W75,Broadband Wireless 7/3mbps,2
+2024,3,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2024,3,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,3,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,3,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,3,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,3,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,3,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,3,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,3,Highland,W77,Broadband Wireless 20/10mbps,20
+2024,3,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2024,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2024,3,Will Connect,W77,Broadband Wireless 20/10mbps,5
+2024,4,CommunityNET,W06,Cambium Wireless 3/1mbps,36
+2024,4,Highland,W06,Cambium Wireless 3/1mbps,96
+2024,4,Methownet.com,W06,Cambium Wireless 3/1mbps,85
+2024,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,88
+2024,4,PC Telecom,W06,Cambium Wireless 3/1mbps,30
+2024,4,Will Connect,W06,Cambium Wireless 3/1mbps,21
+2024,4,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,4,CommunityNET,W07,Cambium Wireless 7/2mbps,83
+2024,4,Highland,W07,Cambium Wireless 7/2mbps,393
+2024,4,Methownet.com,W07,Cambium Wireless 7/2mbps,170
+2024,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,263
+2024,4,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2024,4,Will Connect,W07,Cambium Wireless 7/2mbps,45
+2024,4,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,4,CommunityNET,W08,Cambium Wireless 12/3mbps,190
+2024,4,Highland,W08,Cambium Wireless 12/3mbps,215
+2024,4,Methownet.com,W08,Cambium Wireless 12/3mbps,51
+2024,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,242
+2024,4,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2024,4,Will Connect,W08,Cambium Wireless 12/3mbps,36
+2024,4,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2024,4,CommunityNET,W09,Cambium Wireless 20/5mbps,235
+2024,4,Highland,W09,Cambium Wireless 20/5mbps,323
+2024,4,Methownet.com,W09,Cambium Wireless 20/5mbps,41
+2024,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,140
+2024,4,PC Telecom,W09,Cambium Wireless 20/5mbps,21
+2024,4,Will Connect,W09,Cambium Wireless 20/5mbps,128
+2024,4,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,8
+2024,4,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,4,CommunityNET,W75,Broadband Wireless 7/3mbps,4
+2024,4,Highland,W75,Broadband Wireless 7/3mbps,26
+2024,4,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2024,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2024,4,PC Telecom,W75,Broadband Wireless 7/3mbps,2
+2024,4,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2024,4,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,4,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,4,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,4,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,4,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2024,4,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,4,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,4,Highland,W77,Broadband Wireless 20/10mbps,18
+2024,4,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2024,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2024,4,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2024,5,CommunityNET,W06,Cambium Wireless 3/1mbps,35
+2024,5,Highland,W06,Cambium Wireless 3/1mbps,95
+2024,5,Methownet.com,W06,Cambium Wireless 3/1mbps,83
+2024,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,90
+2024,5,PC Telecom,W06,Cambium Wireless 3/1mbps,30
+2024,5,Will Connect,W06,Cambium Wireless 3/1mbps,20
+2024,5,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,5,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2024,5,Highland,W07,Cambium Wireless 7/2mbps,400
+2024,5,Methownet.com,W07,Cambium Wireless 7/2mbps,172
+2024,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,262
+2024,5,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2024,5,Will Connect,W07,Cambium Wireless 7/2mbps,45
+2024,5,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,5,CommunityNET,W08,Cambium Wireless 12/3mbps,188
+2024,5,Highland,W08,Cambium Wireless 12/3mbps,213
+2024,5,Methownet.com,W08,Cambium Wireless 12/3mbps,49
+2024,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,245
+2024,5,PC Telecom,W08,Cambium Wireless 12/3mbps,27
+2024,5,Will Connect,W08,Cambium Wireless 12/3mbps,37
+2024,5,BHPcom,W09,Cambium Wireless 20/5mbps,23
+2024,5,CommunityNET,W09,Cambium Wireless 20/5mbps,242
+2024,5,Highland,W09,Cambium Wireless 20/5mbps,327
+2024,5,Methownet.com,W09,Cambium Wireless 20/5mbps,42
+2024,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,139
+2024,5,PC Telecom,W09,Cambium Wireless 20/5mbps,22
+2024,5,Will Connect,W09,Cambium Wireless 20/5mbps,127
+2024,5,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,8
+2024,5,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,5,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,5,Highland,W75,Broadband Wireless 7/3mbps,25
+2024,5,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2024,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,31
+2024,5,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,5,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2024,5,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,5,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,5,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,5,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,5,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2024,5,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,5,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,5,Highland,W77,Broadband Wireless 20/10mbps,17
+2024,5,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2024,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,24
+2024,5,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2024,6,CommunityNET,W06,Cambium Wireless 3/1mbps,35
+2024,6,Highland,W06,Cambium Wireless 3/1mbps,95
+2024,6,Methownet.com,W06,Cambium Wireless 3/1mbps,83
+2024,6,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2024,6,PC Telecom,W06,Cambium Wireless 3/1mbps,30
+2024,6,Will Connect,W06,Cambium Wireless 3/1mbps,23
+2024,6,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,6,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2024,6,Highland,W07,Cambium Wireless 7/2mbps,400
+2024,6,Methownet.com,W07,Cambium Wireless 7/2mbps,169
+2024,6,NCI Datacom,W07,Cambium Wireless 7/2mbps,259
+2024,6,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2024,6,Will Connect,W07,Cambium Wireless 7/2mbps,43
+2024,6,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,6,CommunityNET,W08,Cambium Wireless 12/3mbps,182
+2024,6,Highland,W08,Cambium Wireless 12/3mbps,213
+2024,6,Methownet.com,W08,Cambium Wireless 12/3mbps,48
+2024,6,NCI Datacom,W08,Cambium Wireless 12/3mbps,242
+2024,6,PC Telecom,W08,Cambium Wireless 12/3mbps,25
+2024,6,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2024,6,BHPcom,W09,Cambium Wireless 20/5mbps,23
+2024,6,CommunityNET,W09,Cambium Wireless 20/5mbps,238
+2024,6,Highland,W09,Cambium Wireless 20/5mbps,330
+2024,6,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2024,6,NCI Datacom,W09,Cambium Wireless 20/5mbps,142
+2024,6,PC Telecom,W09,Cambium Wireless 20/5mbps,23
+2024,6,Will Connect,W09,Cambium Wireless 20/5mbps,127
+2024,6,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,6,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,6,NCI Datacom,W71,Broadband Wireless 3/1Mbps,6
+2024,6,Will Connect,W71,Broadband Wireless 3/1Mbps,1
+2024,6,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,6,Highland,W75,Broadband Wireless 7/3mbps,26
+2024,6,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,6,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2024,6,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,6,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2024,6,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,6,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,6,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,6,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,6,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,6,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,6,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,6,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,6,Highland,W77,Broadband Wireless 20/10mbps,16
+2024,6,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,6,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2024,6,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2024,7,CommunityNET,W06,Cambium Wireless 3/1mbps,35
+2024,7,Highland,W06,Cambium Wireless 3/1mbps,92
+2024,7,Methownet.com,W06,Cambium Wireless 3/1mbps,85
+2024,7,NCI Datacom,W06,Cambium Wireless 3/1mbps,87
+2024,7,PC Telecom,W06,Cambium Wireless 3/1mbps,30
+2024,7,Will Connect,W06,Cambium Wireless 3/1mbps,18
+2024,7,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,7,CommunityNET,W07,Cambium Wireless 7/2mbps,80
+2024,7,Highland,W07,Cambium Wireless 7/2mbps,398
+2024,7,Methownet.com,W07,Cambium Wireless 7/2mbps,168
+2024,7,NCI Datacom,W07,Cambium Wireless 7/2mbps,252
+2024,7,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2024,7,Will Connect,W07,Cambium Wireless 7/2mbps,43
+2024,7,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,7,CommunityNET,W08,Cambium Wireless 12/3mbps,179
+2024,7,Highland,W08,Cambium Wireless 12/3mbps,218
+2024,7,Methownet.com,W08,Cambium Wireless 12/3mbps,46
+2024,7,NCI Datacom,W08,Cambium Wireless 12/3mbps,234
+2024,7,PC Telecom,W08,Cambium Wireless 12/3mbps,25
+2024,7,Will Connect,W08,Cambium Wireless 12/3mbps,40
+2024,7,BHPcom,W09,Cambium Wireless 20/5mbps,24
+2024,7,CommunityNET,W09,Cambium Wireless 20/5mbps,240
+2024,7,Highland,W09,Cambium Wireless 20/5mbps,334
+2024,7,Methownet.com,W09,Cambium Wireless 20/5mbps,44
+2024,7,NCI Datacom,W09,Cambium Wireless 20/5mbps,156
+2024,7,PC Telecom,W09,Cambium Wireless 20/5mbps,23
+2024,7,Will Connect,W09,Cambium Wireless 20/5mbps,134
+2024,7,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,7,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,7,NCI Datacom,W71,Broadband Wireless 3/1Mbps,6
+2024,7,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,7,Highland,W75,Broadband Wireless 7/3mbps,26
+2024,7,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,7,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2024,7,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,7,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2024,7,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,7,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,7,NCI Datacom,W76,Broadband Wireless 12/6mbps,16
+2024,7,PC Telecom,W76,Broadband Wireless 12/6mbps,1
+2024,7,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,7,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,7,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,7,Highland,W77,Broadband Wireless 20/10mbps,16
+2024,7,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,7,NCI Datacom,W77,Broadband Wireless 20/10mbps,23
+2024,7,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2024,8,CommunityNET,W06,Cambium Wireless 3/1mbps,34
+2024,8,Highland,W06,Cambium Wireless 3/1mbps,89
+2024,8,Methownet.com,W06,Cambium Wireless 3/1mbps,85
+2024,8,NCI Datacom,W06,Cambium Wireless 3/1mbps,86
+2024,8,PC Telecom,W06,Cambium Wireless 3/1mbps,30
+2024,8,Will Connect,W06,Cambium Wireless 3/1mbps,19
+2024,8,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,8,CommunityNET,W07,Cambium Wireless 7/2mbps,81
+2024,8,Highland,W07,Cambium Wireless 7/2mbps,394
+2024,8,Methownet.com,W07,Cambium Wireless 7/2mbps,165
+2024,8,NCI Datacom,W07,Cambium Wireless 7/2mbps,248
+2024,8,PC Telecom,W07,Cambium Wireless 7/2mbps,40
+2024,8,Will Connect,W07,Cambium Wireless 7/2mbps,41
+2024,8,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,8,CommunityNET,W08,Cambium Wireless 12/3mbps,178
+2024,8,Highland,W08,Cambium Wireless 12/3mbps,219
+2024,8,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2024,8,NCI Datacom,W08,Cambium Wireless 12/3mbps,222
+2024,8,PC Telecom,W08,Cambium Wireless 12/3mbps,25
+2024,8,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2024,8,BHPcom,W09,Cambium Wireless 20/5mbps,24
+2024,8,CommunityNET,W09,Cambium Wireless 20/5mbps,248
+2024,8,Highland,W09,Cambium Wireless 20/5mbps,333
+2024,8,Methownet.com,W09,Cambium Wireless 20/5mbps,43
+2024,8,NCI Datacom,W09,Cambium Wireless 20/5mbps,166
+2024,8,PC Telecom,W09,Cambium Wireless 20/5mbps,23
+2024,8,Will Connect,W09,Cambium Wireless 20/5mbps,133
+2024,8,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,8,Methownet.com,W71,Broadband Wireless 3/1Mbps,6
+2024,8,NCI Datacom,W71,Broadband Wireless 3/1Mbps,6
+2024,8,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,8,Highland,W75,Broadband Wireless 7/3mbps,26
+2024,8,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,8,NCI Datacom,W75,Broadband Wireless 7/3mbps,32
+2024,8,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,8,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2024,8,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,8,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,8,NCI Datacom,W76,Broadband Wireless 12/6mbps,18
+2024,8,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,8,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,8,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,8,Highland,W77,Broadband Wireless 20/10mbps,16
+2024,8,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,8,NCI Datacom,W77,Broadband Wireless 20/10mbps,21
+2024,8,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2024,9,CommunityNET,W06,Cambium Wireless 3/1mbps,33
+2024,9,Highland,W06,Cambium Wireless 3/1mbps,86
+2024,9,Methownet.com,W06,Cambium Wireless 3/1mbps,82
+2024,9,NCI Datacom,W06,Cambium Wireless 3/1mbps,82
+2024,9,PC Telecom,W06,Cambium Wireless 3/1mbps,29
+2024,9,Will Connect,W06,Cambium Wireless 3/1mbps,20
+2024,9,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,9,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2024,9,Highland,W07,Cambium Wireless 7/2mbps,384
+2024,9,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2024,9,NCI Datacom,W07,Cambium Wireless 7/2mbps,241
+2024,9,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2024,9,Will Connect,W07,Cambium Wireless 7/2mbps,43
+2024,9,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,9,CommunityNET,W08,Cambium Wireless 12/3mbps,179
+2024,9,Highland,W08,Cambium Wireless 12/3mbps,218
+2024,9,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2024,9,NCI Datacom,W08,Cambium Wireless 12/3mbps,208
+2024,9,PC Telecom,W08,Cambium Wireless 12/3mbps,27
+2024,9,Will Connect,W08,Cambium Wireless 12/3mbps,40
+2024,9,BHPcom,W09,Cambium Wireless 20/5mbps,24
+2024,9,CommunityNET,W09,Cambium Wireless 20/5mbps,250
+2024,9,Highland,W09,Cambium Wireless 20/5mbps,337
+2024,9,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2024,9,NCI Datacom,W09,Cambium Wireless 20/5mbps,164
+2024,9,PC Telecom,W09,Cambium Wireless 20/5mbps,22
+2024,9,Will Connect,W09,Cambium Wireless 20/5mbps,136
+2024,9,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,9,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2024,9,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2024,9,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,9,Highland,W75,Broadband Wireless 7/3mbps,26
+2024,9,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,9,NCI Datacom,W75,Broadband Wireless 7/3mbps,27
+2024,9,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,9,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2024,9,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,9,Highland,W76,Broadband Wireless 12/6mbps,14
+2024,9,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,9,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2024,9,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,9,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,9,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,9,Highland,W77,Broadband Wireless 20/10mbps,12
+2024,9,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,9,NCI Datacom,W77,Broadband Wireless 20/10mbps,16
+2024,9,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2024,10,CommunityNET,W06,Cambium Wireless 3/1mbps,32
+2024,10,Highland,W06,Cambium Wireless 3/1mbps,85
+2024,10,Methownet.com,W06,Cambium Wireless 3/1mbps,83
+2024,10,NCI Datacom,W06,Cambium Wireless 3/1mbps,81
+2024,10,PC Telecom,W06,Cambium Wireless 3/1mbps,28
+2024,10,Will Connect,W06,Cambium Wireless 3/1mbps,21
+2024,10,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,10,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2024,10,Highland,W07,Cambium Wireless 7/2mbps,378
+2024,10,Methownet.com,W07,Cambium Wireless 7/2mbps,163
+2024,10,NCI Datacom,W07,Cambium Wireless 7/2mbps,243
+2024,10,PC Telecom,W07,Cambium Wireless 7/2mbps,42
+2024,10,Will Connect,W07,Cambium Wireless 7/2mbps,41
+2024,10,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,10,CommunityNET,W08,Cambium Wireless 12/3mbps,176
+2024,10,Highland,W08,Cambium Wireless 12/3mbps,217
+2024,10,Methownet.com,W08,Cambium Wireless 12/3mbps,50
+2024,10,NCI Datacom,W08,Cambium Wireless 12/3mbps,206
+2024,10,PC Telecom,W08,Cambium Wireless 12/3mbps,27
+2024,10,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2024,10,BHPcom,W09,Cambium Wireless 20/5mbps,24
+2024,10,CommunityNET,W09,Cambium Wireless 20/5mbps,251
+2024,10,Highland,W09,Cambium Wireless 20/5mbps,331
+2024,10,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2024,10,NCI Datacom,W09,Cambium Wireless 20/5mbps,163
+2024,10,PC Telecom,W09,Cambium Wireless 20/5mbps,20
+2024,10,Will Connect,W09,Cambium Wireless 20/5mbps,133
+2024,10,Highland,W71,Broadband Wireless 3/1Mbps,12
+2024,10,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2024,10,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2024,10,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,10,Highland,W75,Broadband Wireless 7/3mbps,25
+2024,10,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,10,NCI Datacom,W75,Broadband Wireless 7/3mbps,27
+2024,10,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,10,Will Connect,W75,Broadband Wireless 7/3mbps,7
+2024,10,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,10,Highland,W76,Broadband Wireless 12/6mbps,15
+2024,10,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,10,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2024,10,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,10,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,10,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,10,Highland,W77,Broadband Wireless 20/10mbps,12
+2024,10,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,10,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2024,10,Will Connect,W77,Broadband Wireless 20/10mbps,8
+2024,11,CommunityNET,W06,Cambium Wireless 3/1mbps,34
+2024,11,Highland,W06,Cambium Wireless 3/1mbps,94
+2024,11,Methownet.com,W06,Cambium Wireless 3/1mbps,77
+2024,11,NCI Datacom,W06,Cambium Wireless 3/1mbps,79
+2024,11,PC Telecom,W06,Cambium Wireless 3/1mbps,26
+2024,11,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2024,11,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,11,CommunityNET,W07,Cambium Wireless 7/2mbps,83
+2024,11,Highland,W07,Cambium Wireless 7/2mbps,381
+2024,11,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2024,11,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2024,11,PC Telecom,W07,Cambium Wireless 7/2mbps,41
+2024,11,Will Connect,W07,Cambium Wireless 7/2mbps,41
+2024,11,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,11,CommunityNET,W08,Cambium Wireless 12/3mbps,174
+2024,11,Highland,W08,Cambium Wireless 12/3mbps,213
+2024,11,Methownet.com,W08,Cambium Wireless 12/3mbps,51
+2024,11,NCI Datacom,W08,Cambium Wireless 12/3mbps,194
+2024,11,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2024,11,Will Connect,W08,Cambium Wireless 12/3mbps,40
+2024,11,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2024,11,CommunityNET,W09,Cambium Wireless 20/5mbps,255
+2024,11,Highland,W09,Cambium Wireless 20/5mbps,321
+2024,11,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2024,11,NCI Datacom,W09,Cambium Wireless 20/5mbps,162
+2024,11,PC Telecom,W09,Cambium Wireless 20/5mbps,22
+2024,11,Will Connect,W09,Cambium Wireless 20/5mbps,133
+2024,11,Highland,W71,Broadband Wireless 3/1Mbps,10
+2024,11,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2024,11,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2024,11,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,11,Highland,W75,Broadband Wireless 7/3mbps,24
+2024,11,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,11,NCI Datacom,W75,Broadband Wireless 7/3mbps,27
+2024,11,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,11,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2024,11,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,11,Highland,W76,Broadband Wireless 12/6mbps,16
+2024,11,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,11,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2024,11,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,11,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,11,CommunityNET,W77,Broadband Wireless 20/10mbps,3
+2024,11,Highland,W77,Broadband Wireless 20/10mbps,11
+2024,11,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,11,NCI Datacom,W77,Broadband Wireless 20/10mbps,16
+2024,11,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2024,12,CommunityNET,W06,Cambium Wireless 3/1mbps,34
+2024,12,Highland,W06,Cambium Wireless 3/1mbps,94
+2024,12,Methownet.com,W06,Cambium Wireless 3/1mbps,78
+2024,12,NCI Datacom,W06,Cambium Wireless 3/1mbps,79
+2024,12,PC Telecom,W06,Cambium Wireless 3/1mbps,26
+2024,12,Will Connect,W06,Cambium Wireless 3/1mbps,21
+2024,12,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2024,12,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2024,12,Highland,W07,Cambium Wireless 7/2mbps,379
+2024,12,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2024,12,NCI Datacom,W07,Cambium Wireless 7/2mbps,234
+2024,12,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2024,12,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2024,12,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2024,12,CommunityNET,W08,Cambium Wireless 12/3mbps,171
+2024,12,Highland,W08,Cambium Wireless 12/3mbps,216
+2024,12,Methownet.com,W08,Cambium Wireless 12/3mbps,52
+2024,12,NCI Datacom,W08,Cambium Wireless 12/3mbps,196
+2024,12,PC Telecom,W08,Cambium Wireless 12/3mbps,29
+2024,12,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2024,12,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2024,12,CommunityNET,W09,Cambium Wireless 20/5mbps,259
+2024,12,Highland,W09,Cambium Wireless 20/5mbps,322
+2024,12,Methownet.com,W09,Cambium Wireless 20/5mbps,38
+2024,12,NCI Datacom,W09,Cambium Wireless 20/5mbps,167
+2024,12,PC Telecom,W09,Cambium Wireless 20/5mbps,21
+2024,12,Will Connect,W09,Cambium Wireless 20/5mbps,133
+2024,12,Highland,W71,Broadband Wireless 3/1Mbps,10
+2024,12,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2024,12,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2024,12,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2024,12,Highland,W75,Broadband Wireless 7/3mbps,24
+2024,12,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2024,12,NCI Datacom,W75,Broadband Wireless 7/3mbps,26
+2024,12,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2024,12,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2024,12,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2024,12,Highland,W76,Broadband Wireless 12/6mbps,16
+2024,12,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2024,12,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2024,12,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2024,12,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2024,12,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2024,12,Highland,W77,Broadband Wireless 20/10mbps,11
+2024,12,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2024,12,NCI Datacom,W77,Broadband Wireless 20/10mbps,16
+2024,12,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2025,1,CommunityNET,W06,Cambium Wireless 3/1mbps,32
+2025,1,Highland,W06,Cambium Wireless 3/1mbps,95
+2025,1,Methownet.com,W06,Cambium Wireless 3/1mbps,78
+2025,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,76
+2025,1,PC Telecom,W06,Cambium Wireless 3/1mbps,26
+2025,1,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2025,1,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,1,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2025,1,Highland,W07,Cambium Wireless 7/2mbps,382
+2025,1,Methownet.com,W07,Cambium Wireless 7/2mbps,161
+2025,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,234
+2025,1,PC Telecom,W07,Cambium Wireless 7/2mbps,39
+2025,1,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2025,1,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,1,CommunityNET,W08,Cambium Wireless 12/3mbps,174
+2025,1,Highland,W08,Cambium Wireless 12/3mbps,207
+2025,1,Methownet.com,W08,Cambium Wireless 12/3mbps,54
+2025,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,201
+2025,1,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,1,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2025,1,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2025,1,CommunityNET,W09,Cambium Wireless 20/5mbps,258
+2025,1,Highland,W09,Cambium Wireless 20/5mbps,322
+2025,1,Methownet.com,W09,Cambium Wireless 20/5mbps,38
+2025,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,158
+2025,1,PC Telecom,W09,Cambium Wireless 20/5mbps,23
+2025,1,Will Connect,W09,Cambium Wireless 20/5mbps,132
+2025,1,Highland,W71,Broadband Wireless 3/1Mbps,10
+2025,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,1,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,1,Highland,W75,Broadband Wireless 7/3mbps,23
+2025,1,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,27
+2025,1,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2025,1,Will Connect,W75,Broadband Wireless 7/3mbps,6
+2025,1,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,1,Highland,W76,Broadband Wireless 12/6mbps,16
+2025,1,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,1,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2025,1,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,1,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,1,Highland,W77,Broadband Wireless 20/10mbps,10
+2025,1,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,1,Will Connect,W77,Broadband Wireless 20/10mbps,2
+2025,2,CommunityNET,W06,Cambium Wireless 3/1mbps,31
+2025,2,Highland,W06,Cambium Wireless 3/1mbps,93
+2025,2,Methownet.com,W06,Cambium Wireless 3/1mbps,77
+2025,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,74
+2025,2,PC Telecom,W06,Cambium Wireless 3/1mbps,26
+2025,2,Will Connect,W06,Cambium Wireless 3/1mbps,24
+2025,2,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,2,CommunityNET,W07,Cambium Wireless 7/2mbps,81
+2025,2,Highland,W07,Cambium Wireless 7/2mbps,377
+2025,2,Methownet.com,W07,Cambium Wireless 7/2mbps,161
+2025,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,232
+2025,2,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,2,Will Connect,W07,Cambium Wireless 7/2mbps,34
+2025,2,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,2,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,2,Highland,W08,Cambium Wireless 12/3mbps,211
+2025,2,Methownet.com,W08,Cambium Wireless 12/3mbps,55
+2025,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,198
+2025,2,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,2,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2025,2,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2025,2,CommunityNET,W09,Cambium Wireless 20/5mbps,255
+2025,2,Highland,W09,Cambium Wireless 20/5mbps,315
+2025,2,Methownet.com,W09,Cambium Wireless 20/5mbps,37
+2025,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,152
+2025,2,PC Telecom,W09,Cambium Wireless 20/5mbps,23
+2025,2,Will Connect,W09,Cambium Wireless 20/5mbps,125
+2025,2,Highland,W71,Broadband Wireless 3/1Mbps,10
+2025,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,2,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,2,Highland,W75,Broadband Wireless 7/3mbps,22
+2025,2,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,2,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2025,2,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,2,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,2,Highland,W76,Broadband Wireless 12/6mbps,16
+2025,2,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2025,2,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,2,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,2,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,2,Highland,W77,Broadband Wireless 20/10mbps,10
+2025,2,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,2,Will Connect,W77,Broadband Wireless 20/10mbps,2
+2025,3,CommunityNET,W06,Cambium Wireless 3/1mbps,31
+2025,3,Highland,W06,Cambium Wireless 3/1mbps,93
+2025,3,Methownet.com,W06,Cambium Wireless 3/1mbps,79
+2025,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,72
+2025,3,PC Telecom,W06,Cambium Wireless 3/1mbps,25
+2025,3,Will Connect,W06,Cambium Wireless 3/1mbps,21
+2025,3,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,3,CommunityNET,W07,Cambium Wireless 7/2mbps,82
+2025,3,Highland,W07,Cambium Wireless 7/2mbps,376
+2025,3,Methownet.com,W07,Cambium Wireless 7/2mbps,160
+2025,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2025,3,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,3,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2025,3,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,3,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,3,Highland,W08,Cambium Wireless 12/3mbps,212
+2025,3,Methownet.com,W08,Cambium Wireless 12/3mbps,55
+2025,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,194
+2025,3,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,3,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,3,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,3,CommunityNET,W09,Cambium Wireless 20/5mbps,254
+2025,3,Highland,W09,Cambium Wireless 20/5mbps,315
+2025,3,Methownet.com,W09,Cambium Wireless 20/5mbps,37
+2025,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,156
+2025,3,PC Telecom,W09,Cambium Wireless 20/5mbps,25
+2025,3,Will Connect,W09,Cambium Wireless 20/5mbps,135
+2025,3,Highland,W71,Broadband Wireless 3/1Mbps,10
+2025,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,3,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,3,Highland,W75,Broadband Wireless 7/3mbps,22
+2025,3,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,3,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2025,3,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,3,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,3,Highland,W76,Broadband Wireless 12/6mbps,16
+2025,3,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,14
+2025,3,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2025,3,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,3,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,3,Highland,W77,Broadband Wireless 20/10mbps,10
+2025,3,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,3,Will Connect,W77,Broadband Wireless 20/10mbps,2
+2025,4,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,4,CommunityNET,W06,Cambium Wireless 3/1mbps,29
+2025,4,Highland,W06,Cambium Wireless 3/1mbps,91
+2025,4,Methownet.com,W06,Cambium Wireless 3/1mbps,77
+2025,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,72
+2025,4,PC Telecom,W06,Cambium Wireless 3/1mbps,24
+2025,4,Will Connect,W06,Cambium Wireless 3/1mbps,24
+2025,4,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,4,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2025,4,Highland,W07,Cambium Wireless 7/2mbps,386
+2025,4,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2025,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2025,4,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,4,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2025,4,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,4,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,4,Highland,W08,Cambium Wireless 12/3mbps,207
+2025,4,Methownet.com,W08,Cambium Wireless 12/3mbps,55
+2025,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,191
+2025,4,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,4,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,4,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,4,CommunityNET,W09,Cambium Wireless 20/5mbps,253
+2025,4,Highland,W09,Cambium Wireless 20/5mbps,309
+2025,4,Methownet.com,W09,Cambium Wireless 20/5mbps,37
+2025,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,168
+2025,4,PC Telecom,W09,Cambium Wireless 20/5mbps,25
+2025,4,Will Connect,W09,Cambium Wireless 20/5mbps,139
+2025,4,Highland,W71,Broadband Wireless 3/1Mbps,10
+2025,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,4,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,4,Highland,W75,Broadband Wireless 7/3mbps,20
+2025,4,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,4,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2025,4,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,4,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,4,Highland,W76,Broadband Wireless 12/6mbps,16
+2025,4,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,4,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2025,4,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,4,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,4,Highland,W77,Broadband Wireless 20/10mbps,11
+2025,4,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,4,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2025,4,Will Connect,W77,Broadband Wireless 20/10mbps,2
+2025,5,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,5,CommunityNET,W06,Cambium Wireless 3/1mbps,25
+2025,5,Highland,W06,Cambium Wireless 3/1mbps,91
+2025,5,Methownet.com,W06,Cambium Wireless 3/1mbps,71
+2025,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,72
+2025,5,PC Telecom,W06,Cambium Wireless 3/1mbps,24
+2025,5,Will Connect,W06,Cambium Wireless 3/1mbps,23
+2025,5,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,5,CommunityNET,W07,Cambium Wireless 7/2mbps,84
+2025,5,Highland,W07,Cambium Wireless 7/2mbps,388
+2025,5,Methownet.com,W07,Cambium Wireless 7/2mbps,164
+2025,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2025,5,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,5,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2025,5,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,5,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,5,Highland,W08,Cambium Wireless 12/3mbps,203
+2025,5,Methownet.com,W08,Cambium Wireless 12/3mbps,57
+2025,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,192
+2025,5,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,5,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,5,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,5,CommunityNET,W09,Cambium Wireless 20/5mbps,257
+2025,5,Highland,W09,Cambium Wireless 20/5mbps,311
+2025,5,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2025,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,169
+2025,5,PC Telecom,W09,Cambium Wireless 20/5mbps,24
+2025,5,Will Connect,W09,Cambium Wireless 20/5mbps,142
+2025,5,Highland,W71,Broadband Wireless 3/1Mbps,10
+2025,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,5,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,5,Highland,W75,Broadband Wireless 7/3mbps,21
+2025,5,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,5,PC Telecom,W75,Broadband Wireless 7/3mbps,1
+2025,5,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,5,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,5,Highland,W76,Broadband Wireless 12/6mbps,16
+2025,5,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,5,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2025,5,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,5,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,5,Highland,W77,Broadband Wireless 20/10mbps,12
+2025,5,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,5,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2025,5,Will Connect,W77,Broadband Wireless 20/10mbps,2
+2025,6,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,6,CommunityNET,W06,Cambium Wireless 3/1mbps,25
+2025,6,Highland,W06,Cambium Wireless 3/1mbps,89
+2025,6,Methownet.com,W06,Cambium Wireless 3/1mbps,68
+2025,6,NCI Datacom,W06,Cambium Wireless 3/1mbps,70
+2025,6,PC Telecom,W06,Cambium Wireless 3/1mbps,24
+2025,6,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2025,6,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,6,CommunityNET,W07,Cambium Wireless 7/2mbps,83
+2025,6,Highland,W07,Cambium Wireless 7/2mbps,390
+2025,6,Methownet.com,W07,Cambium Wireless 7/2mbps,166
+2025,6,NCI Datacom,W07,Cambium Wireless 7/2mbps,238
+2025,6,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2025,6,Will Connect,W07,Cambium Wireless 7/2mbps,35
+2025,6,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,6,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,6,Highland,W08,Cambium Wireless 12/3mbps,203
+2025,6,Methownet.com,W08,Cambium Wireless 12/3mbps,57
+2025,6,NCI Datacom,W08,Cambium Wireless 12/3mbps,192
+2025,6,PC Telecom,W08,Cambium Wireless 12/3mbps,28
+2025,6,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2025,6,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,6,CommunityNET,W09,Cambium Wireless 20/5mbps,262
+2025,6,Highland,W09,Cambium Wireless 20/5mbps,320
+2025,6,Methownet.com,W09,Cambium Wireless 20/5mbps,40
+2025,6,NCI Datacom,W09,Cambium Wireless 20/5mbps,171
+2025,6,PC Telecom,W09,Cambium Wireless 20/5mbps,24
+2025,6,Will Connect,W09,Cambium Wireless 20/5mbps,143
+2025,6,Highland,W71,Broadband Wireless 3/1Mbps,9
+2025,6,Methownet.com,W71,Broadband Wireless 3/1Mbps,5
+2025,6,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,6,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,6,Highland,W75,Broadband Wireless 7/3mbps,21
+2025,6,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,6,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,6,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,6,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,6,Highland,W76,Broadband Wireless 12/6mbps,12
+2025,6,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,6,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,6,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,6,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,6,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,6,Highland,W77,Broadband Wireless 20/10mbps,12
+2025,6,Methownet.com,W77,Broadband Wireless 20/10mbps,2
+2025,6,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,6,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,6,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2025,7,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,7,CommunityNET,W06,Cambium Wireless 3/1mbps,25
+2025,7,Highland,W06,Cambium Wireless 3/1mbps,89
+2025,7,Methownet.com,W06,Cambium Wireless 3/1mbps,67
+2025,7,NCI Datacom,W06,Cambium Wireless 3/1mbps,69
+2025,7,PC Telecom,W06,Cambium Wireless 3/1mbps,24
+2025,7,Will Connect,W06,Cambium Wireless 3/1mbps,25
+2025,7,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,7,CommunityNET,W07,Cambium Wireless 7/2mbps,81
+2025,7,Highland,W07,Cambium Wireless 7/2mbps,397
+2025,7,Methownet.com,W07,Cambium Wireless 7/2mbps,163
+2025,7,NCI Datacom,W07,Cambium Wireless 7/2mbps,241
+2025,7,PC Telecom,W07,Cambium Wireless 7/2mbps,36
+2025,7,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2025,7,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,7,CommunityNET,W08,Cambium Wireless 12/3mbps,175
+2025,7,Highland,W08,Cambium Wireless 12/3mbps,203
+2025,7,Methownet.com,W08,Cambium Wireless 12/3mbps,53
+2025,7,NCI Datacom,W08,Cambium Wireless 12/3mbps,191
+2025,7,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2025,7,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2025,7,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,7,CommunityNET,W09,Cambium Wireless 20/5mbps,260
+2025,7,Highland,W09,Cambium Wireless 20/5mbps,319
+2025,7,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2025,7,NCI Datacom,W09,Cambium Wireless 20/5mbps,174
+2025,7,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2025,7,Will Connect,W09,Cambium Wireless 20/5mbps,141
+2025,7,Highland,W71,Broadband Wireless 3/1Mbps,8
+2025,7,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,7,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,7,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,7,Highland,W75,Broadband Wireless 7/3mbps,15
+2025,7,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,7,NCI Datacom,W75,Broadband Wireless 7/3mbps,25
+2025,7,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,7,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,7,Highland,W76,Broadband Wireless 12/6mbps,12
+2025,7,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,7,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,7,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,7,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,7,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,7,Highland,W77,Broadband Wireless 20/10mbps,11
+2025,7,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,7,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,7,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,7,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2025,8,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,8,CommunityNET,W06,Cambium Wireless 3/1mbps,25
+2025,8,Highland,W06,Cambium Wireless 3/1mbps,86
+2025,8,Methownet.com,W06,Cambium Wireless 3/1mbps,66
+2025,8,NCI Datacom,W06,Cambium Wireless 3/1mbps,70
+2025,8,PC Telecom,W06,Cambium Wireless 3/1mbps,23
+2025,8,Will Connect,W06,Cambium Wireless 3/1mbps,27
+2025,8,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,8,CommunityNET,W07,Cambium Wireless 7/2mbps,80
+2025,8,Highland,W07,Cambium Wireless 7/2mbps,392
+2025,8,Methownet.com,W07,Cambium Wireless 7/2mbps,163
+2025,8,NCI Datacom,W07,Cambium Wireless 7/2mbps,236
+2025,8,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2025,8,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2025,8,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,8,CommunityNET,W08,Cambium Wireless 12/3mbps,173
+2025,8,Highland,W08,Cambium Wireless 12/3mbps,207
+2025,8,Methownet.com,W08,Cambium Wireless 12/3mbps,53
+2025,8,NCI Datacom,W08,Cambium Wireless 12/3mbps,194
+2025,8,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2025,8,Will Connect,W08,Cambium Wireless 12/3mbps,38
+2025,8,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,8,CommunityNET,W09,Cambium Wireless 20/5mbps,256
+2025,8,Highland,W09,Cambium Wireless 20/5mbps,327
+2025,8,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2025,8,NCI Datacom,W09,Cambium Wireless 20/5mbps,173
+2025,8,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2025,8,Will Connect,W09,Cambium Wireless 20/5mbps,142
+2025,8,Highland,W71,Broadband Wireless 3/1Mbps,7
+2025,8,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,8,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,8,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,8,Highland,W75,Broadband Wireless 7/3mbps,15
+2025,8,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,8,NCI Datacom,W75,Broadband Wireless 7/3mbps,23
+2025,8,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,8,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,8,Highland,W76,Broadband Wireless 12/6mbps,12
+2025,8,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,8,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,8,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,8,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,8,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,8,Highland,W77,Broadband Wireless 20/10mbps,13
+2025,8,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,8,NCI Datacom,W77,Broadband Wireless 20/10mbps,17
+2025,8,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,8,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2025,9,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,9,CommunityNET,W06,Cambium Wireless 3/1mbps,25
+2025,9,Highland,W06,Cambium Wireless 3/1mbps,85
+2025,9,Methownet.com,W06,Cambium Wireless 3/1mbps,66
+2025,9,NCI Datacom,W06,Cambium Wireless 3/1mbps,69
+2025,9,PC Telecom,W06,Cambium Wireless 3/1mbps,22
+2025,9,Will Connect,W06,Cambium Wireless 3/1mbps,26
+2025,9,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,9,CommunityNET,W07,Cambium Wireless 7/2mbps,80
+2025,9,Highland,W07,Cambium Wireless 7/2mbps,394
+2025,9,Methownet.com,W07,Cambium Wireless 7/2mbps,163
+2025,9,NCI Datacom,W07,Cambium Wireless 7/2mbps,234
+2025,9,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2025,9,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2025,9,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,9,CommunityNET,W08,Cambium Wireless 12/3mbps,171
+2025,9,Highland,W08,Cambium Wireless 12/3mbps,206
+2025,9,Methownet.com,W08,Cambium Wireless 12/3mbps,52
+2025,9,NCI Datacom,W08,Cambium Wireless 12/3mbps,194
+2025,9,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2025,9,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2025,9,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,9,CommunityNET,W09,Cambium Wireless 20/5mbps,256
+2025,9,Highland,W09,Cambium Wireless 20/5mbps,329
+2025,9,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2025,9,NCI Datacom,W09,Cambium Wireless 20/5mbps,174
+2025,9,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2025,9,Will Connect,W09,Cambium Wireless 20/5mbps,141
+2025,9,Highland,W71,Broadband Wireless 3/1Mbps,7
+2025,9,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,9,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,9,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,9,Highland,W75,Broadband Wireless 7/3mbps,14
+2025,9,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,9,NCI Datacom,W75,Broadband Wireless 7/3mbps,23
+2025,9,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,9,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,9,Highland,W76,Broadband Wireless 12/6mbps,11
+2025,9,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,9,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,9,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,9,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,9,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,9,Highland,W77,Broadband Wireless 20/10mbps,13
+2025,9,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,9,NCI Datacom,W77,Broadband Wireless 20/10mbps,16
+2025,9,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,9,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2025,10,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,10,CommunityNET,W06,Cambium Wireless 3/1mbps,24
+2025,10,Highland,W06,Cambium Wireless 3/1mbps,84
+2025,10,Methownet.com,W06,Cambium Wireless 3/1mbps,66
+2025,10,NCI Datacom,W06,Cambium Wireless 3/1mbps,68
+2025,10,PC Telecom,W06,Cambium Wireless 3/1mbps,21
+2025,10,Will Connect,W06,Cambium Wireless 3/1mbps,24
+2025,10,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,10,CommunityNET,W07,Cambium Wireless 7/2mbps,80
+2025,10,Highland,W07,Cambium Wireless 7/2mbps,388
+2025,10,Methownet.com,W07,Cambium Wireless 7/2mbps,159
+2025,10,NCI Datacom,W07,Cambium Wireless 7/2mbps,230
+2025,10,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,10,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2025,10,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,10,CommunityNET,W08,Cambium Wireless 12/3mbps,168
+2025,10,Highland,W08,Cambium Wireless 12/3mbps,201
+2025,10,Methownet.com,W08,Cambium Wireless 12/3mbps,49
+2025,10,NCI Datacom,W08,Cambium Wireless 12/3mbps,198
+2025,10,PC Telecom,W08,Cambium Wireless 12/3mbps,25
+2025,10,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,10,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,10,CommunityNET,W09,Cambium Wireless 20/5mbps,254
+2025,10,Highland,W09,Cambium Wireless 20/5mbps,330
+2025,10,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2025,10,NCI Datacom,W09,Cambium Wireless 20/5mbps,176
+2025,10,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2025,10,Will Connect,W09,Cambium Wireless 20/5mbps,139
+2025,10,Highland,W71,Broadband Wireless 3/1Mbps,6
+2025,10,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,10,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,10,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,10,Highland,W75,Broadband Wireless 7/3mbps,14
+2025,10,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,10,NCI Datacom,W75,Broadband Wireless 7/3mbps,23
+2025,10,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,10,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,10,Highland,W76,Broadband Wireless 12/6mbps,11
+2025,10,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,10,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,10,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,10,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,10,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,10,Highland,W77,Broadband Wireless 20/10mbps,13
+2025,10,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,10,NCI Datacom,W77,Broadband Wireless 20/10mbps,16
+2025,10,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,10,Will Connect,W77,Broadband Wireless 20/10mbps,5
+2025,11,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,11,CommunityNET,W06,Cambium Wireless 3/1mbps,23
+2025,11,Highland,W06,Cambium Wireless 3/1mbps,85
+2025,11,Methownet.com,W06,Cambium Wireless 3/1mbps,65
+2025,11,NCI Datacom,W06,Cambium Wireless 3/1mbps,66
+2025,11,PC Telecom,W06,Cambium Wireless 3/1mbps,21
+2025,11,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2025,11,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,11,CommunityNET,W07,Cambium Wireless 7/2mbps,80
+2025,11,Highland,W07,Cambium Wireless 7/2mbps,383
+2025,11,Methownet.com,W07,Cambium Wireless 7/2mbps,158
+2025,11,NCI Datacom,W07,Cambium Wireless 7/2mbps,229
+2025,11,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2025,11,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2025,11,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,11,CommunityNET,W08,Cambium Wireless 12/3mbps,167
+2025,11,Highland,W08,Cambium Wireless 12/3mbps,192
+2025,11,Methownet.com,W08,Cambium Wireless 12/3mbps,48
+2025,11,NCI Datacom,W08,Cambium Wireless 12/3mbps,192
+2025,11,PC Telecom,W08,Cambium Wireless 12/3mbps,27
+2025,11,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,11,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,11,CommunityNET,W09,Cambium Wireless 20/5mbps,254
+2025,11,Highland,W09,Cambium Wireless 20/5mbps,328
+2025,11,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2025,11,NCI Datacom,W09,Cambium Wireless 20/5mbps,170
+2025,11,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2025,11,Will Connect,W09,Cambium Wireless 20/5mbps,140
+2025,11,Highland,W71,Broadband Wireless 3/1Mbps,6
+2025,11,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,11,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,11,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,11,Highland,W75,Broadband Wireless 7/3mbps,12
+2025,11,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2025,11,NCI Datacom,W75,Broadband Wireless 7/3mbps,23
+2025,11,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,11,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,11,Highland,W76,Broadband Wireless 12/6mbps,11
+2025,11,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2025,11,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,11,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,11,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,11,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,11,Highland,W77,Broadband Wireless 20/10mbps,13
+2025,11,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,11,NCI Datacom,W77,Broadband Wireless 20/10mbps,14
+2025,11,PC Telecom,W77,Broadband Wireless 20/10mbps,2
+2025,11,Will Connect,W77,Broadband Wireless 20/10mbps,5
+2025,12,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2025,12,CommunityNET,W06,Cambium Wireless 3/1mbps,23
+2025,12,Highland,W06,Cambium Wireless 3/1mbps,83
+2025,12,Methownet.com,W06,Cambium Wireless 3/1mbps,64
+2025,12,NCI Datacom,W06,Cambium Wireless 3/1mbps,63
+2025,12,PC Telecom,W06,Cambium Wireless 3/1mbps,21
+2025,12,Will Connect,W06,Cambium Wireless 3/1mbps,21
+2025,12,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2025,12,CommunityNET,W07,Cambium Wireless 7/2mbps,78
+2025,12,Highland,W07,Cambium Wireless 7/2mbps,376
+2025,12,Methownet.com,W07,Cambium Wireless 7/2mbps,159
+2025,12,NCI Datacom,W07,Cambium Wireless 7/2mbps,216
+2025,12,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2025,12,Will Connect,W07,Cambium Wireless 7/2mbps,40
+2025,12,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2025,12,CommunityNET,W08,Cambium Wireless 12/3mbps,167
+2025,12,Highland,W08,Cambium Wireless 12/3mbps,190
+2025,12,Methownet.com,W08,Cambium Wireless 12/3mbps,47
+2025,12,NCI Datacom,W08,Cambium Wireless 12/3mbps,169
+2025,12,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2025,12,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2025,12,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2025,12,CommunityNET,W09,Cambium Wireless 20/5mbps,253
+2025,12,Highland,W09,Cambium Wireless 20/5mbps,326
+2025,12,Methownet.com,W09,Cambium Wireless 20/5mbps,43
+2025,12,NCI Datacom,W09,Cambium Wireless 20/5mbps,145
+2025,12,PC Telecom,W09,Cambium Wireless 20/5mbps,24
+2025,12,Will Connect,W09,Cambium Wireless 20/5mbps,140
+2025,12,Highland,W71,Broadband Wireless 3/1Mbps,5
+2025,12,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2025,12,NCI Datacom,W71,Broadband Wireless 3/1Mbps,3
+2025,12,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2025,12,Highland,W75,Broadband Wireless 7/3mbps,12
+2025,12,Methownet.com,W75,Broadband Wireless 7/3mbps,8
+2025,12,NCI Datacom,W75,Broadband Wireless 7/3mbps,20
+2025,12,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2025,12,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2025,12,Highland,W76,Broadband Wireless 12/6mbps,11
+2025,12,Methownet.com,W76,Broadband Wireless 12/6mbps,2
+2025,12,NCI Datacom,W76,Broadband Wireless 12/6mbps,13
+2025,12,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2025,12,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2025,12,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2025,12,Highland,W77,Broadband Wireless 20/10mbps,13
+2025,12,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2025,12,NCI Datacom,W77,Broadband Wireless 20/10mbps,12
+2025,12,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2025,12,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2026,1,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2026,1,CommunityNET,W06,Cambium Wireless 3/1mbps,23
+2026,1,Highland,W06,Cambium Wireless 3/1mbps,81
+2026,1,Methownet.com,W06,Cambium Wireless 3/1mbps,62
+2026,1,NCI Datacom,W06,Cambium Wireless 3/1mbps,61
+2026,1,PC Telecom,W06,Cambium Wireless 3/1mbps,20
+2026,1,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2026,1,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2026,1,CommunityNET,W07,Cambium Wireless 7/2mbps,76
+2026,1,Highland,W07,Cambium Wireless 7/2mbps,382
+2026,1,Methownet.com,W07,Cambium Wireless 7/2mbps,156
+2026,1,NCI Datacom,W07,Cambium Wireless 7/2mbps,216
+2026,1,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2026,1,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2026,1,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2026,1,CommunityNET,W08,Cambium Wireless 12/3mbps,170
+2026,1,Highland,W08,Cambium Wireless 12/3mbps,190
+2026,1,Methownet.com,W08,Cambium Wireless 12/3mbps,45
+2026,1,NCI Datacom,W08,Cambium Wireless 12/3mbps,135
+2026,1,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2026,1,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2026,1,BHPcom,W09,Cambium Wireless 20/5mbps,21
+2026,1,CommunityNET,W09,Cambium Wireless 20/5mbps,246
+2026,1,Highland,W09,Cambium Wireless 20/5mbps,328
+2026,1,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2026,1,NCI Datacom,W09,Cambium Wireless 20/5mbps,119
+2026,1,PC Telecom,W09,Cambium Wireless 20/5mbps,24
+2026,1,Will Connect,W09,Cambium Wireless 20/5mbps,138
+2026,1,Highland,W71,Broadband Wireless 3/1Mbps,5
+2026,1,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2026,1,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2026,1,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2026,1,Highland,W75,Broadband Wireless 7/3mbps,12
+2026,1,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2026,1,NCI Datacom,W75,Broadband Wireless 7/3mbps,21
+2026,1,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2026,1,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2026,1,Highland,W76,Broadband Wireless 12/6mbps,11
+2026,1,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2026,1,NCI Datacom,W76,Broadband Wireless 12/6mbps,12
+2026,1,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2026,1,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2026,1,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2026,1,Highland,W77,Broadband Wireless 20/10mbps,12
+2026,1,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2026,1,NCI Datacom,W77,Broadband Wireless 20/10mbps,12
+2026,1,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2026,1,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2026,2,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2026,2,CommunityNET,W06,Cambium Wireless 3/1mbps,23
+2026,2,Highland,W06,Cambium Wireless 3/1mbps,80
+2026,2,Methownet.com,W06,Cambium Wireless 3/1mbps,58
+2026,2,NCI Datacom,W06,Cambium Wireless 3/1mbps,59
+2026,2,PC Telecom,W06,Cambium Wireless 3/1mbps,20
+2026,2,Will Connect,W06,Cambium Wireless 3/1mbps,22
+2026,2,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2026,2,CommunityNET,W07,Cambium Wireless 7/2mbps,75
+2026,2,Highland,W07,Cambium Wireless 7/2mbps,380
+2026,2,Methownet.com,W07,Cambium Wireless 7/2mbps,156
+2026,2,NCI Datacom,W07,Cambium Wireless 7/2mbps,214
+2026,2,PC Telecom,W07,Cambium Wireless 7/2mbps,38
+2026,2,Will Connect,W07,Cambium Wireless 7/2mbps,36
+2026,2,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2026,2,CommunityNET,W08,Cambium Wireless 12/3mbps,169
+2026,2,Highland,W08,Cambium Wireless 12/3mbps,195
+2026,2,Methownet.com,W08,Cambium Wireless 12/3mbps,44
+2026,2,NCI Datacom,W08,Cambium Wireless 12/3mbps,136
+2026,2,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2026,2,Will Connect,W08,Cambium Wireless 12/3mbps,41
+2026,2,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2026,2,CommunityNET,W09,Cambium Wireless 20/5mbps,244
+2026,2,Highland,W09,Cambium Wireless 20/5mbps,326
+2026,2,Methownet.com,W09,Cambium Wireless 20/5mbps,45
+2026,2,NCI Datacom,W09,Cambium Wireless 20/5mbps,117
+2026,2,PC Telecom,W09,Cambium Wireless 20/5mbps,25
+2026,2,Will Connect,W09,Cambium Wireless 20/5mbps,143
+2026,2,Highland,W71,Broadband Wireless 3/1Mbps,5
+2026,2,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2026,2,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2026,2,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2026,2,Highland,W75,Broadband Wireless 7/3mbps,12
+2026,2,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2026,2,NCI Datacom,W75,Broadband Wireless 7/3mbps,20
+2026,2,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2026,2,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2026,2,Highland,W76,Broadband Wireless 12/6mbps,10
+2026,2,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2026,2,NCI Datacom,W76,Broadband Wireless 12/6mbps,12
+2026,2,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2026,2,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2026,2,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2026,2,Highland,W77,Broadband Wireless 20/10mbps,12
+2026,2,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2026,2,NCI Datacom,W77,Broadband Wireless 20/10mbps,12
+2026,2,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2026,2,Will Connect,W77,Broadband Wireless 20/10mbps,4
+2026,3,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2026,3,CommunityNET,W06,Cambium Wireless 3/1mbps,23
+2026,3,Highland,W06,Cambium Wireless 3/1mbps,79
+2026,3,Methownet.com,W06,Cambium Wireless 3/1mbps,57
+2026,3,NCI Datacom,W06,Cambium Wireless 3/1mbps,59
+2026,3,PC Telecom,W06,Cambium Wireless 3/1mbps,20
+2026,3,Will Connect,W06,Cambium Wireless 3/1mbps,20
+2026,3,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2026,3,CommunityNET,W07,Cambium Wireless 7/2mbps,75
+2026,3,Highland,W07,Cambium Wireless 7/2mbps,370
+2026,3,Methownet.com,W07,Cambium Wireless 7/2mbps,156
+2026,3,NCI Datacom,W07,Cambium Wireless 7/2mbps,212
+2026,3,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2026,3,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2026,3,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2026,3,CommunityNET,W08,Cambium Wireless 12/3mbps,168
+2026,3,Highland,W08,Cambium Wireless 12/3mbps,192
+2026,3,Methownet.com,W08,Cambium Wireless 12/3mbps,43
+2026,3,NCI Datacom,W08,Cambium Wireless 12/3mbps,129
+2026,3,PC Telecom,W08,Cambium Wireless 12/3mbps,27
+2026,3,Will Connect,W08,Cambium Wireless 12/3mbps,42
+2026,3,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2026,3,CommunityNET,W09,Cambium Wireless 20/5mbps,243
+2026,3,Highland,W09,Cambium Wireless 20/5mbps,325
+2026,3,Methownet.com,W09,Cambium Wireless 20/5mbps,42
+2026,3,NCI Datacom,W09,Cambium Wireless 20/5mbps,115
+2026,3,PC Telecom,W09,Cambium Wireless 20/5mbps,26
+2026,3,Will Connect,W09,Cambium Wireless 20/5mbps,141
+2026,3,Highland,W71,Broadband Wireless 3/1Mbps,5
+2026,3,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2026,3,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2026,3,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2026,3,Highland,W75,Broadband Wireless 7/3mbps,10
+2026,3,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2026,3,NCI Datacom,W75,Broadband Wireless 7/3mbps,19
+2026,3,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2026,3,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2026,3,Highland,W76,Broadband Wireless 12/6mbps,10
+2026,3,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2026,3,NCI Datacom,W76,Broadband Wireless 12/6mbps,11
+2026,3,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2026,3,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2026,3,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2026,3,Highland,W77,Broadband Wireless 20/10mbps,12
+2026,3,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2026,3,NCI Datacom,W77,Broadband Wireless 20/10mbps,10
+2026,3,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2026,3,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2026,4,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2026,4,CommunityNET,W06,Cambium Wireless 3/1mbps,21
+2026,4,Highland,W06,Cambium Wireless 3/1mbps,79
+2026,4,Methownet.com,W06,Cambium Wireless 3/1mbps,56
+2026,4,NCI Datacom,W06,Cambium Wireless 3/1mbps,58
+2026,4,PC Telecom,W06,Cambium Wireless 3/1mbps,20
+2026,4,Will Connect,W06,Cambium Wireless 3/1mbps,23
+2026,4,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2026,4,CommunityNET,W07,Cambium Wireless 7/2mbps,73
+2026,4,Highland,W07,Cambium Wireless 7/2mbps,357
+2026,4,Methownet.com,W07,Cambium Wireless 7/2mbps,149
+2026,4,NCI Datacom,W07,Cambium Wireless 7/2mbps,211
+2026,4,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2026,4,Will Connect,W07,Cambium Wireless 7/2mbps,37
+2026,4,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2026,4,CommunityNET,W08,Cambium Wireless 12/3mbps,169
+2026,4,Highland,W08,Cambium Wireless 12/3mbps,192
+2026,4,Methownet.com,W08,Cambium Wireless 12/3mbps,44
+2026,4,NCI Datacom,W08,Cambium Wireless 12/3mbps,130
+2026,4,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2026,4,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2026,4,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2026,4,CommunityNET,W09,Cambium Wireless 20/5mbps,238
+2026,4,Highland,W09,Cambium Wireless 20/5mbps,321
+2026,4,Methownet.com,W09,Cambium Wireless 20/5mbps,42
+2026,4,NCI Datacom,W09,Cambium Wireless 20/5mbps,124
+2026,4,PC Telecom,W09,Cambium Wireless 20/5mbps,25
+2026,4,Will Connect,W09,Cambium Wireless 20/5mbps,143
+2026,4,Highland,W71,Broadband Wireless 3/1Mbps,5
+2026,4,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2026,4,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2026,4,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2026,4,Highland,W75,Broadband Wireless 7/3mbps,10
+2026,4,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2026,4,NCI Datacom,W75,Broadband Wireless 7/3mbps,19
+2026,4,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2026,4,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2026,4,Highland,W76,Broadband Wireless 12/6mbps,10
+2026,4,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2026,4,NCI Datacom,W76,Broadband Wireless 12/6mbps,10
+2026,4,Will Connect,W76,Broadband Wireless 12/6mbps,2
+2026,4,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2026,4,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2026,4,Highland,W77,Broadband Wireless 20/10mbps,10
+2026,4,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2026,4,NCI Datacom,W77,Broadband Wireless 20/10mbps,9
+2026,4,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2026,4,Will Connect,W77,Broadband Wireless 20/10mbps,3
+2026,5,BHPcom,W06,Cambium Wireless 3/1mbps,1
+2026,5,CommunityNET,W06,Cambium Wireless 3/1mbps,21
+2026,5,Highland,W06,Cambium Wireless 3/1mbps,78
+2026,5,Methownet.com,W06,Cambium Wireless 3/1mbps,52
+2026,5,NCI Datacom,W06,Cambium Wireless 3/1mbps,55
+2026,5,PC Telecom,W06,Cambium Wireless 3/1mbps,20
+2026,5,Will Connect,W06,Cambium Wireless 3/1mbps,25
+2026,5,BHPcom,W07,Cambium Wireless 7/2mbps,2
+2026,5,CommunityNET,W07,Cambium Wireless 7/2mbps,71
+2026,5,Highland,W07,Cambium Wireless 7/2mbps,357
+2026,5,Methownet.com,W07,Cambium Wireless 7/2mbps,150
+2026,5,NCI Datacom,W07,Cambium Wireless 7/2mbps,207
+2026,5,PC Telecom,W07,Cambium Wireless 7/2mbps,37
+2026,5,Will Connect,W07,Cambium Wireless 7/2mbps,38
+2026,5,BHPcom,W08,Cambium Wireless 12/3mbps,7
+2026,5,CommunityNET,W08,Cambium Wireless 12/3mbps,168
+2026,5,Highland,W08,Cambium Wireless 12/3mbps,186
+2026,5,Methownet.com,W08,Cambium Wireless 12/3mbps,44
+2026,5,NCI Datacom,W08,Cambium Wireless 12/3mbps,125
+2026,5,PC Telecom,W08,Cambium Wireless 12/3mbps,26
+2026,5,Will Connect,W08,Cambium Wireless 12/3mbps,39
+2026,5,BHPcom,W09,Cambium Wireless 20/5mbps,22
+2026,5,CommunityNET,W09,Cambium Wireless 20/5mbps,238
+2026,5,Highland,W09,Cambium Wireless 20/5mbps,324
+2026,5,Methownet.com,W09,Cambium Wireless 20/5mbps,42
+2026,5,NCI Datacom,W09,Cambium Wireless 20/5mbps,121
+2026,5,PC Telecom,W09,Cambium Wireless 20/5mbps,24
+2026,5,Will Connect,W09,Cambium Wireless 20/5mbps,139
+2026,5,Highland,W71,Broadband Wireless 3/1Mbps,5
+2026,5,Methownet.com,W71,Broadband Wireless 3/1Mbps,3
+2026,5,NCI Datacom,W71,Broadband Wireless 3/1Mbps,4
+2026,5,CommunityNET,W75,Broadband Wireless 7/3mbps,3
+2026,5,Highland,W75,Broadband Wireless 7/3mbps,10
+2026,5,Methownet.com,W75,Broadband Wireless 7/3mbps,9
+2026,5,NCI Datacom,W75,Broadband Wireless 7/3mbps,18
+2026,5,Will Connect,W75,Broadband Wireless 7/3mbps,5
+2026,5,BHPcom,W76,Broadband Wireless 12/6mbps,1
+2026,5,Highland,W76,Broadband Wireless 12/6mbps,10
+2026,5,Methownet.com,W76,Broadband Wireless 12/6mbps,1
+2026,5,NCI Datacom,W76,Broadband Wireless 12/6mbps,8
+2026,5,Will Connect,W76,Broadband Wireless 12/6mbps,1
+2026,5,BHPcom,W77,Broadband Wireless 20/10mbps,1
+2026,5,CommunityNET,W77,Broadband Wireless 20/10mbps,4
+2026,5,Highland,W77,Broadband Wireless 20/10mbps,10
+2026,5,Methownet.com,W77,Broadband Wireless 20/10mbps,1
+2026,5,NCI Datacom,W77,Broadband Wireless 20/10mbps,8
+2026,5,PC Telecom,W77,Broadband Wireless 20/10mbps,1
+2026,5,Will Connect,W77,Broadband Wireless 20/10mbps,4
