@@ -121,6 +121,11 @@ h1{font-family:var(--serif);font-optical-sizing:auto;font-size:clamp(1.9rem,4vw,
 .doc-meta span{font-family:var(--mono);font-size:.68rem;color:var(--soft);background:#fff;border:1px solid var(--hair);
   border-radius:5px;padding:.22rem .55rem;white-space:nowrap}
 .doc-meta b{color:var(--navy);font-weight:600}
+.ghico{width:14px;height:14px;fill:currentColor;vertical-align:-2.5px;margin-right:.35rem}
+a.ghchip{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.68rem;font-weight:600;color:#fff;
+  background:var(--navy);border:1px solid var(--navy);border-radius:5px;padding:.22rem .6rem;white-space:nowrap}
+a.ghchip:hover{background:var(--rust-deep);border-color:var(--rust-deep);text-decoration:none}
+a.ghchip .ghico{margin-right:.4rem}
 
 /* ---- reading router cards ---- */
 .router{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.7rem 0 .4rem}
@@ -319,6 +324,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <li><a href="#s3-17"><span class="n">3.17</span>Glossary</a></li>
       </ul>
       <div class="side-links">
+        <a href="https://github.com/savelocalbroadband/savelocalbroadband"><svg class="ghico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>The model on GitHub</a>
         <a href="https://savelocalbroadband.com/how-we-modeled-risk.php">&larr; The model page &amp; live calculator</a>
         <a href="https://savelocalbroadband.com/case.php">The plain-language case</a>
         <a href="https://savelocalbroadband.com/financial-analysis.php">The financial analysis</a>
@@ -345,6 +351,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           <span>seed <b>20260629</b></span>
           <span>source <b>montecarlo_v2.py</b></span>
           <span>standard error <b>&plusmn;0.11 pts</b></span>
+          <a class="ghchip" href="https://github.com/savelocalbroadband/savelocalbroadband"><svg class="ghico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>code &amp; data on GitHub</a>
         </div>
       </div>
 
@@ -510,8 +517,10 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
             (from the District's own workbook, audit, or billing records) or <span class="tg inf">INFERRED</span> (a labeled modeling
             judgment) &mdash; is in the registers at <a class="xref" href="#s3-12">&sect;3.12</a> <a class="xref" href="#s3-13">&sect;3.13</a>.
             If you want to challenge the model, that's where its load-bearing walls are.</li>
-          <li><b>Re-run the code.</b> The full model is a single public Python file, <code>sources/analysis/montecarlo_v2.py</code>,
-            with its random <a class="tip" href="#g-seed" data-tip="The starting value for the random-number generator. A fixed, published seed means every re-run draws the identical random numbers — so anyone reproduces the exact published figures.">seed</a>            locked and published. <code>python montecarlo_v2.py</code> reproduces every figure on the model page exactly &mdash; see
+          <li><b>Re-run the code.</b> The full model is a single public Python file, <code>montecarlo_v2.py</code>, with its random
+            <a class="tip" href="#g-seed" data-tip="The starting value for the random-number generator. A fixed, published seed means every re-run draws the identical random numbers — so anyone reproduces the exact published figures.">seed</a>            locked and published &mdash; served on this site under <code>sources/analysis/</code> and mirrored as a public repository at
+            <a href="https://github.com/savelocalbroadband/savelocalbroadband"><svg class="ghico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>github.com/savelocalbroadband</a>. Clone it, run
+            <code>python montecarlo_v2.py</code>, and every figure on the model page reproduces exactly &mdash; see
             <a class="xref" href="#s3-14">&sect;3.14 reproducibility</a>.</li>
         </ol>
         <p>That third option is the real answer to &ldquo;why should I trust advocacy math?&rdquo; You shouldn't have to. A model you
@@ -1300,9 +1309,10 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
         </ul>
         <div class="box ex">
           <span class="bl">Re-run it yourself</span>
-          <p><code>cd sources/analysis &amp;&amp; python montecarlo_v2.py</code> &mdash; NumPy is the only dependency. Runtime is a few
-            minutes; it prints each ledger's summary and rewrites the five output JSONs. Diff them against the committed copies: they
-            should be byte-identical.</p>
+          <p><code>git clone https://github.com/savelocalbroadband/savelocalbroadband.git</code><br>
+            <code>python montecarlo_v2.py</code> &mdash; NumPy is the only dependency. Runtime is a few minutes; it prints each
+            ledger's summary and rewrites the five output JSONs. Diff them against the committed copies: they should be
+            byte-identical. (The same files are also served on this site under <code>sources/analysis/</code>.)</p>
         </div>
       </section>
 
@@ -1355,6 +1365,10 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
           calculator) and this page read the JSONs live; <a href="https://savelocalbroadband.com/financial-analysis.php">financial-analysis.php</a> presents the DCF
           companion; <a href="https://savelocalbroadband.com/risks.php">risks.php</a> argues the decision the numbers inform. The source workbooks, budgets, and audit
           PDFs sit under <code>sources/</code> one level up &mdash; indexed on <a href="https://savelocalbroadband.com/documents.php">the documents page</a>.</p>
+        <p><b>The public mirror:</b> the entire model directory &mdash; code, output data, review records, and a snapshot of this
+          documentation &mdash; is published as a standalone repository at
+          <a href="https://github.com/savelocalbroadband/savelocalbroadband"><svg class="ghico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>github.com/savelocalbroadband/savelocalbroadband</a>. Same files, same locked seed;
+          clone-and-run is the fastest path to checking our work.</p>
       </section>
 
       <section class="sec s-l3" id="s3-17">
