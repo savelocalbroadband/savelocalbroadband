@@ -511,8 +511,9 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <div class="secnum">&sect; 1.6 &middot; Layer 1</div>
         <h2 class="st">How you can check it &mdash; three ways, easiest first.</h2>
         <ol>
-          <li><b>Drag the sliders.</b> The <a href="https://savelocalbroadband.com/how-we-modeled-risk.php#calc">live calculator</a> runs ~8,000 futures in your
-            browser. Don't like an assumption? Change it and watch both answers move. Nothing to install, nothing to trust.</li>
+          <li><b>Drag the sliders.</b> The <a href="https://savelocalbroadband.com/how-we-modeled-risk.php#calc">live calculator</a> runs 40,000 futures in your
+            browser, drawing from the same distributions as the full model &mdash; at the presets it lands within a point or two of the
+            published numbers. Don't like an assumption? Change it and watch both answers move. Nothing to install, nothing to trust.</li>
           <li><b>Read the inputs.</b> Every variable, its range, and its source &mdash; marked <span class="tg doc">DOCUMENTED</span>
             (from the District's own workbook, audit, or billing records) or <span class="tg inf">INFERRED</span> (a labeled modeling
             judgment) &mdash; is in the registers at <a class="xref" href="#s3-12">&sect;3.12</a> <a class="xref" href="#s3-13">&sect;3.13</a>.
@@ -747,9 +748,10 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
             radios instead of crediting a capital saving &mdash; adopted precisely <em>because</em> it lowered our headline
             (<a class="xref" href="#s3-15">&sect;3.15</a>). v2.1 applied that timing only to the cost-recovery ledger; the v2.2 audit
             caught the county ledger still using the flattering at-start credit, and it now carries the same year-2 stranding.</li>
-          <li><b>The browser calculator reads several points lower</b> than the full model (triangular draws, 8K runs &mdash; roughly
-            5&ndash;8 points at the presets) &mdash; so the number a visitor checks is the conservative one
-            (<a class="xref" href="#s3-1">&sect;3.1</a>).</li>
+          <li><b>The browser calculator reproduces the published numbers</b> within a point or two &mdash; since v2.2 it draws from the
+            same PERT distributions as the full model at 40,000 runs per slider move, where the earlier triangular version read several
+            points low (<a class="xref" href="#s3-1">&sect;3.1</a>). Parity, not bias &mdash; a visitor's check now lands on the real
+            number.</li>
         </ul>
       </section>
 
@@ -851,10 +853,10 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           <tbody>
             <tr><td><b>Where</b></td><td><code>sources/analysis/montecarlo_v2.py</code> (NumPy)</td><td>Inline JavaScript on
               <a href="https://savelocalbroadband.com/how-we-modeled-risk.php#calc">the model page</a></td></tr>
-            <tr><td><b>Iterations</b></td><td>200,000, <a class="tip" href="#g-seed" data-tip="The starting value for the random-number generator. A fixed, published seed means every re-run draws the identical random numbers — so anyone reproduces the exact published figures.">seed</a> locked (20260629)</td><td>~8,000 per slider move, unseeded (live re-draws)</td></tr>
+            <tr><td><b>Iterations</b></td><td>200,000, <a class="tip" href="#g-seed" data-tip="The starting value for the random-number generator. A fixed, published seed means every re-run draws the identical random numbers — so anyone reproduces the exact published figures.">seed</a> locked (20260629)</td><td>40,000 per slider move, unseeded (live re-draws; was 8,000 pre-v2.2)</td></tr>
             <tr><td><b>Bounded draws</b></td><td><a class="tip" href="#g-pert" data-tip="A smooth three-point distribution (minimum / most-likely / maximum) built on a Beta curve. The standard for expert-estimated quantities: it respects hard bounds without piling probability at them.">PERT</a> (Beta-based three-point)</td><td>Triangular (same three points, straight-line shape)</td></tr>
             <tr><td><b>Debt service (DSCR)</b></td><td>Sized per run-set on funded P80 capex &mdash; $132K/yr in the scenario runs</td><td>Fixed $124,406/yr (the base-configuration P80 of ~$1.38M)</td></tr>
-            <tr><td><b>Bias of the difference</b></td><td>&mdash;</td><td>Reads several points <b>lower</b> &mdash; roughly 5&ndash;8 at the presets (triangular is fatter-shouldered than PERT; fewer runs; every v2.2 stressor ported) &mdash; conservative, and labeled as illustrative on the page</td></tr>
+            <tr><td><b>Bias of the difference</b></td><td>&mdash;</td><td>None worth naming since v2.2: the calculator draws the same PERT distributions and carries every stressor, so the presets agree with the published numbers within ~1&ndash;2 points (live re-draw noise). The pre-v2.2 version used triangular draws and read 5&ndash;8 points low.</td></tr>
           </tbody>
         </table></div>
         <div class="box note">
@@ -890,8 +892,8 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           <span class="bl">Why not clipped normal curves</span>
           <p>A Normal clipped to a range piles probability mass at the clip points &mdash; the model would keep drawing &ldquo;exactly
             the worst case,&rdquo; which is an artifact, not a belief. PERT respects the bounds smoothly and is the three-point standard
-            in GAO/PMI cost practice. (The browser calculator substitutes triangular draws &mdash; same three anchor points, simpler
-            shape, slightly fatter shoulders &mdash; which is one reason it reads lower; <a class="xref" href="#s3-1">&sect;3.1</a>.)</p>
+            in GAO/PMI cost practice. (The browser calculator drew triangular approximations until v2.2; it now samples the same PERT
+            via a Beta/Gamma sampler, which closed its old several-point low bias; <a class="xref" href="#s3-1">&sect;3.1</a>.)</p>
         </div>
         <h3>Bernoulli events &mdash; for things that either happen or don't</h3>
         <p>The NCI exit (p&nbsp;=&nbsp;0.85), a fiber overbuild (p&nbsp;&asymp;&nbsp;0.12 over the decade, macro-adjusted), a market
@@ -1333,8 +1335,9 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
             engines so ledgers don't share draws they shouldn't). Anyone running <code>python montecarlo_v2.py</code> gets every figure
             on this page <em>identically</em> &mdash; there is no &ldquo;lucky run&rdquo; to fish for.</li>
           <li><b>Convergence.</b> At n = 200,000, the binomial <a class="tip" href="#g-se" data-tip="Standard error: how much a simulated percentage would wobble if re-run with a different random seed. At n = 200,000 ours is about ±0.11 points — effectively no wobble.">standard error</a>            on a headline percentage is &radic;(p(1&minus;p)/n) &asymp; &plusmn;0.11 points &mdash; the Monte Carlo
-            noise is two orders of magnitude smaller than the input uncertainty it exists to measure. (The browser calculator's 8,000
-            runs wobble visibly &mdash; &plusmn;0.5pt &mdash; which is why the published headlines come from the full model.)</li>
+            noise is two orders of magnitude smaller than the input uncertainty it exists to measure. (The browser calculator's 40,000
+            runs still wobble a little between re-draws &mdash; &plusmn;0.2pt &mdash; which is why the published headlines come from the
+            full model.)</li>
           <li><b>Version pinning.</b> The output JSONs embed <code>model_version</code> (<code>v2.2-2026-07-10</code>) and
             the seed, so a figure can always be traced to the exact code that produced it. This documentation is written against that
             version; the pages read the JSONs live.</li>
@@ -1377,6 +1380,7 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
             <tr><td>v2.2: the literal 15-year rate freeze published as its own sensitivity (<code>true_freeze</code> &asymp; 25% floor-configuration / 34% from Balanced) &mdash; the RT&nbsp;0 &ldquo;floor&rdquo; lags inflation rather than freezing, and the prose now says so</td><td>internal audit: the site over-claimed its own conservatism</td><td>new floor-beneath-the-floor on the record</td></tr>
             <tr><td>v2.2: fixed-vs-variable opex bracket published (30% / 50% of starting-base opex held fixed: &minus;9 / &minus;15 pts from Balanced)</td><td>3rd-party review's one structural critique that survived adversarial verification</td><td class="neg">bracket ends read lower</td></tr>
             <tr><td>v2.2: county = household + district identity asserted at runtime; monotonicity, seed-sweep, and convergence guards added to the test suite; NumPy/Python versions + model-file SHA-256 stamped into every output JSON</td><td>internal audit (reproducibility hardening)</td><td>no numeric effect</td></tr>
+            <tr><td>v2.2: browser calculator brought to full distributional parity &mdash; PERT sampling ported (was triangular), 8K &rarr; 40K runs, and the flattering immediate-exit NCI treatment it still ran was replaced with the adopted year-2 stranding</td><td>internal audit; a reader asked why the calculator read below the published headline</td><td class="pos">calculator now lands on the real numbers (its old reading was ~5&ndash;8 low, and its NCI treatment was ~3 high before the other stressors were ported)</td></tr>
           </tbody>
         </table></div>
         <p>Every markdown was kept; every markup is documented with its reason. The full review records ship in the repository
