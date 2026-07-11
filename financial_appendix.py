@@ -23,7 +23,10 @@ CUST        = 878          # customers the 7 upgraded sites serve today (workboo
 RADIOS_PLAN = 1035         # radios the $1.2M already funds (headroom)
 TOWER_FIXED = 370_783      # 7-site fixed tower hardware (customer-independent; workbook-footed, synced to montecarlo_v2)
 RADIO_COST  = 787          # per served customer (RN $640 + unlock $100 + 1yr mgmt $47)
-CAPEX       = 1_178_368    # workbook grand total ("~$1.2M"); ~= TOWER_FIXED + 1035*787
+CAPEX       = 1_383_192    # v2.2: the Monte Carlo base-configuration funded P80 (hardware BOM
+                           # + 8% sales/use tax + tower labor + AACE Class-4 contingency at P80)
+                           # — was the bare $1,178,368 vendor sticker, which omits all three;
+                           # see montecarlo_v2.py
 ARPU_YR     = 480.0        # $40/mo, the District's PROPOSED single-tier wholesale rate
 ARPU_INFL   = 0.015        # cost-based drift (matches recovery_model)
 MARGIN      = 0.45         # wireless CASH margin, audit-anchored (SAO 2024; range .28-.58)
@@ -172,11 +175,14 @@ add("ARPU $31-$45 /mo",         npv(WACC,CAPEX,cashflows(arpu=31*12)),  npv(WACC
 add("Customers 685-1035",       npv(WACC,CAPEX,cashflows(n_cust=685)),  npv(WACC,CAPEX,cashflows(n_cust=RADIOS_PLAN)))
 add("Gear life 8-12 yr",        npv(WACC,CAPEX,cashflows(life=8)),      npv(WACC,CAPEX,cashflows(life=12)))
 add("Discount 6%-3%",           npv(0.06,CAPEX,base),                   npv(0.03,CAPEX,base))
-add("Capex +15% / -5%",         npv(WACC,CAPEX*1.15,base),              npv(WACC,CAPEX*0.95,base))
+# capex span widened -10%/+40% (was -5%/+15%) to match the documented AACE
+# Class-4 accuracy range the risk model (montecarlo_v2.py) uses for contingency
+add("Capex +40% / -10%",        npv(WACC,CAPEX*1.40,base),              npv(WACC,CAPEX*0.90,base))
 
-# worst-case stack (all bad at once): 685 cust, 28% margin, $31, 8yr, 6% disc, +15% capex
-worst = npv(0.06, CAPEX*1.15, cashflows(n_cust=685, margin=0.28, arpu=31*12, life=8))
-worst_irr = irr(CAPEX*1.15, cashflows(n_cust=685, margin=0.28, arpu=31*12, life=8))
+# worst-case stack (all bad at once): 685 cust, 28% margin, $31, 8yr, 6% disc, +40% capex
+# (capex stress matches the AACE Class-4 high end used in the sensitivity above)
+worst = npv(0.06, CAPEX*1.40, cashflows(n_cust=685, margin=0.28, arpu=31*12, life=8))
+worst_irr = irr(CAPEX*1.40, cashflows(n_cust=685, margin=0.28, arpu=31*12, life=8))
 print(f"\n  ALL-BAD-AT-ONCE NPV ......... ${worst:,.0f}  (IRR {worst_irr*100:.1f}%)")
 
 # ---- CURRENT-RATE BASE: same case but at the ~$31.2/mo ACTUALLY collected today ----

@@ -1,0 +1,53 @@
+{
+ "basis": "Balanced scenario, delay swept 0-5 years: district p_payback, median payback (conditional + unconditional), county-ahead at 10 yr. Feeds the homepage cost-of-waiting chart.",
+ "sweep": [
+  {
+   "delay": 0,
+   "district": 87.9,
+   "payback_P50_conditional": 9.0,
+   "payback_P50_uncond": 9.4,
+   "county10": 99.4
+  },
+  {
+   "delay": 1,
+   "district": 84.4,
+   "payback_P50_conditional": 9.4,
+   "payback_P50_uncond": 10.0,
+   "county10": 99.0
+  },
+  {
+   "delay": 2,
+   "district": 80.1,
+   "payback_P50_conditional": 9.8,
+   "payback_P50_uncond": 10.7,
+   "county10": 98.4
+  },
+  {
+   "delay": 3,
+   "district": 75.0,
+   "payback_P50_conditional": 10.4,
+   "payback_P50_uncond": 11.6,
+   "county10": 97.3
+  },
+  {
+   "delay": 4,
+   "district": 68.7,
+   "payback_P50_conditional": 10.9,
+   "payback_P50_uncond": 12.5,
+   "county10": 95.7
+  },
+  {
+   "delay": 5,
+   "district": 61.7,
+   "payback_P50_conditional": 11.4,
+   "payback_P50_uncond": 13.5,
+   "county10": 93.2
+  }
+ ],
+ "_model_version": "v2.2-2026-07-10",
+ "_env": {
+  "python": "3.12.10",
+  "numpy": "2.4.6"
+ },
+ "_sha256_model": "2d70d4495d0ac3300ade5a8b91419679f1b6abbf5dfa08da5b54a89b9da0a3a8"
+}

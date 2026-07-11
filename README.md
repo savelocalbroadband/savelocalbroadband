@@ -10,15 +10,15 @@ When the campaign says the ~$1.2M wireless upgrade is likely to pay for itself, 
 python montecarlo_v2.py
 ```
 
-The only dependency is NumPy. The random seed is locked (`20260629`) and every configuration runs 200,000 iterations, so a re-run reproduces the published numbers **exactly** — there is no lucky run to fish for. The script prints each ledger's summary and rewrites the five output JSON files, which should come back byte-identical to the committed copies.
+The only dependency is NumPy. The random seed is locked (`20260629`) and every configuration runs 200,000 iterations, so a re-run reproduces the published numbers **exactly** — there is no lucky run to fish for. The script prints each ledger's summary and rewrites the six output JSON files, which should come back byte-identical to the committed copies. Since v2.2 every output embeds the model version, seed, NumPy/Python versions, and the model file's SHA-256.
 
-`test_v2.py` runs the model's invariance checks (including the rate-independence of the county total).
+`test_v2.py` runs the guard suite: source-level guards on every audit correction, the runtime `county = household + district` identity, monotonicity checks (stress must hurt, upside must help), a 3-seed stability sweep, and an n-ladder convergence check. `sensitivity_levers.py` regenerates the published lever table (`sensitivity_levers_output.json`) from the live model.
 
 ## What the model answers — five ledgers
 
 | Ledger | Question |
 |---|---|
-| **A · Cost recovery** | Does the wireless line's *own* discounted cash earn the ~$1.2M back within the equipment's life? |
+| **A · Cost recovery** | Does the wireless line's *own* discounted cash earn the ~$1.2M back within the 15-year asset life (one wear-out refresh charged; the stricter before-wear-out test is published alongside)? |
 | **B · Ratepayer benefit** | How much do households avoid overpaying because the cost-based public rate disciplines the market? |
 | **C · County value** | Counting A and B honestly (the public rate cancels out): does the county come out ahead? |
 | **D · Scenarios** | How do A and C look under three coherent worldviews — pessimistic, balanced, optimistic? |
@@ -39,9 +39,9 @@ There is also a [live calculator](https://savelocalbroadband.com/how-we-modeled-
 
 | File(s) | Role |
 |---|---|
-| `montecarlo_v2.py` | **The model** (v2.1). Ledgers A–E; writes the five output JSONs. |
-| `*_output.json`, `scenarios_output*.json` | The published results this code produces (version + seed embedded). |
-| `test_v2.py` | Invariance checks. |
+| `montecarlo_v2.py` | **The model** (v2.2). Ledgers A–E plus the cost-of-waiting delay sweep; writes the six output JSONs. |
+| `*_output.json`, `scenarios_output*.json` | The published results this code produces (version + seed + environment + SHA-256 embedded). |
+| `test_v2.py` | The guard suite: audit-correction guards, ledger identity, monotonicity, seed stability, convergence. |
 | `FINDINGS.md`, `REVIEW_v2.md`, `PROMOTION_BUNDLE.md` | The adversarial review records — the audit trail of corrections. |
 | `montecarlo_robust.py`, `recovery_model.py` | Superseded earlier versions, kept public so the improvement is auditable. |
 | `financial_appendix.py` | The deterministic DCF companion analysis. |
@@ -51,7 +51,7 @@ There is also a [live calculator](https://savelocalbroadband.com/how-we-modeled-
 
 ## Is it rigged? Check the direction of the corrections.
 
-A tuned model's headline only ever improves. This one's history runs the other way: adding the labor and contingency a board member asked about dropped the headline from the 90s into the 70s; two adversarial audit passes flattened the growth assumption, discounted the recovery stream, and moved the largest reseller's exit to a timing that *strands* capital instead of saving it. Every markdown was kept and every markup is documented with its reason — the review records are in this repository, and the full correction log is [§3.15 of the documentation](https://savelocalbroadband.com/model-docs.php#s3-15).
+A tuned model's headline only ever improves. This one's history runs the other way: adding the labor and contingency a board member asked about dropped the headline from the 90s into the 70s; two adversarial audit passes flattened the growth assumption, discounted the recovery stream, and moved the second-largest reseller's exit to a timing that *strands* capital instead of saving it. The v2.2 release (2026-07-10) continued the pattern after a third-party review and an internal consistency audit: the sensitivity-table generator was found still pointed at the superseded model (every stale lever number had drifted in the *favorable* direction — all corrected downward), the year-2 exit stranding was extended to the county ledger, the macro-stress factor and overbuild tail were carried into every ledger, sales tax was extended to growth radios and the refresh, a fixed-vs-variable operating-cost bracket was published (−9 to −15 points at its ends), and the literal 15-year rate freeze — harsher than the model's own floor scenario — was published as its own sensitivity (~25%). Every markdown was kept and every markup is documented with its reason — the review records are in this repository, and the full correction log is [§3.15 of the documentation](https://savelocalbroadband.com/model-docs.php#s3-15).
 
 Every input is tagged **DOCUMENTED** (from the District's own workbook, the Washington State Auditor's 2024 audit, or billing records) or **INFERRED** (a labeled modeling judgment, bounded wide, leaning against the campaign's conclusion). The two numbers only the District can publish — a firm tower-labor figure and the wireless-only cost split — are modeled as wide ranges and are the subject of an open records request.
 

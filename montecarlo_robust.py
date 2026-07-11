@@ -37,7 +37,8 @@ FIXED capex -- the "you treat capex as certain" critique):
 
 Every distribution's basis is cited inline. DOCUMENTED = in workbook/audit;
 INFERRED = a labeled modeling judgment. Seed locked for reproducibility.
-Run:  python montecarlo_robust.py
+Run:  python montecarlo_robust.py   (writes pre_v2.*.json ONLY -- since v2.2 this archived
+script can no longer overwrite the live output files; regenerate those with montecarlo_v2.py)
 """
 import numpy as np, json
 
@@ -71,7 +72,7 @@ PULL_ELAST    = 0.30           # demand-pull: a flat cost-based rate grows more 
 BW_PRICE      = 1.50           # $/Mbps/mo charged to RSPs on 95th-percentile (FOI / RSP-reported); scn['bw_price'] can drop it
 # MODELING NOTE (2026-07): bandwidth resale is a SEPARATE, currently-billed revenue line ($193K in 2025,
 #   distinct from the $1.14M WISP access line -- both on the RSP bills, verified in yearly_revenue_by_category.csv).
-#   The books imply ~3.5 Mbps/customer AVERAGE ($193K / ~3,000 wireless customers / $1.50 / 12mo). We headline a
+#   The books imply ~2.8 Mbps/customer AVERAGE ($193K / ~3,800 retail end users on the same RSP 95th-pctile line / $1.50 / 12mo). We headline a
 #   deliberately conservative ~1.0 Mbps (mode) -- WELL below documented -- for two honest reasons NOT to bank the full
 #   figure: (a) a residual chance the audited margin anchor already reflects part of it, (b) modesty. But note the
 #   pressure runs the OTHER way: these 878 sit on the CONGESTED towers (demand is suppressed by the old gear, the
@@ -79,7 +80,7 @@ BW_PRICE      = 1.50           # $/Mbps/mo charged to RSPs on 95th-percentile (F
 #   volume grows faster. So 1.0 is a floor-ish headline, not a stretch. run_scenarios reports the documented-full
 #   (~2.8 Mbps) and a hypothetical ZERO as the range bounds. bw_price + bw_mbps are both sliders on the calculator.
 BW_LO         = 0.5            # per-customer 95th-pctile Mbps: FLOOR of the headline draw
-BW_MODE       = 1.0            # conservative headline CENTRAL -- well below the ~3.5 Mbps the books document (deliberately conservative)
+BW_MODE       = 1.0            # conservative headline CENTRAL -- well below the ~2.8 Mbps the books document (deliberately conservative)
 BW_HI         = 2.0            # upper draw -- still below the documented average
 BW_MBPS_CUST  = None           # None => draw the BW_LO/MODE/HI distribution; a scalar pins it (0.0 floor / 2.8 documented-full)
 BW_MARGIN     = 0.90           # near-pure margin (upstream ~$0 on the 100G NoaNet pipe; small shared-cost allowance)
@@ -452,7 +453,7 @@ def run_county():
 # Ported from the page's scenario presets so scenarios_output.json is reproducible
 # from committed code. BANDWIDTH IS ALWAYS-ON in the headline (a conservative random draw, never zero --
 # there is always some bandwidth revenue); each scenario also reports the accounting method flipped
-# (un-bundling the convention), the full-documented-1.0-Mbps top of range, and a hypothetical-zero floor.
+# (un-bundling the convention), the documented-full ~2.8-Mbps top of range, and a hypothetical-zero floor.
 SCENARIOS = {
     "pessimistic": {'rate_track': 0.0, 'premium': 0.06, 'cliff': True,  'starlink': 0.02, 'shock': 0.20},
     "balanced":    {'rate_track': 0.6, 'premium': 0.12, 'cliff': False, 'sticky': 0.004, 'community': 0.008, 'coverage': 180},   # EVIDENCE-ANCHORED: retention at researched setting (non-NCI base is observably sticky, Starlink only ~15% of churn); growth toward the District's OWN funded 1,035-radio plan (their budget, not our optimism); coverage = Tarana's documented NLOS reach (District Jackass Butte field test)
@@ -481,7 +482,7 @@ def run_scenarios():
         out[name] = {
             "district": d["p_payback"],
             "district_alt_method": d_alt["p_payback"],                  # same world, flipped cliff/full-life convention
-            "district_with_bandwidth": d_bw["p_payback"],              # TOP of range: full documented 1.0 Mbps bandwidth
+            "district_with_bandwidth": d_bw["p_payback"],              # TOP of range: full documented ~2.8 Mbps bandwidth
             "district_bw_zero": d_bw0["p_payback"],                    # EXTREME floor: even if bandwidth were zero
             "county10": c10["p_county_ahead"], "county15": c15["p_county_ahead"],
             "county_total15": c15["county_P50"], "hh15": c15["household_savings_P50"],
@@ -510,19 +511,24 @@ if __name__ == "__main__":
     print("\n" + "=" * 78)
     print("(C) DOES THE COUNTY COME OUT AHEAD?  --  both ledgers jointly"); print("=" * 78)
     county = run_county()
-    json.dump(county, open("county_value_output.json", "w"), indent=1)
+    # v2.2 GUARD: this script is ARCHIVED (pre-v2 numbers, un-fixed compounding overbuild). It used to
+    # write the SAME filenames as the live model, so running it per this file's old header instruction
+    # would silently overwrite the promoted outputs with superseded ones. It now writes pre_v2.* only.
+    json.dump(county, open("pre_v2.county_value_output.json", "w"), indent=1)
 
     json.dump({"seed": SEED, "n": 200_000, "cost_recovery": cost,
-               "note": ("Capex is now a distribution (hardware + tower-side labor + AACE Class-4 "
-                        "contingency); funded budget = P80. Margin derived from inflation-coupled "
-                        "opex vs ARPU. Gear life random + obsolescence hazard. NCI exit Bernoulli "
-                        "p=0.4. Starlink churn + fiber-overbuild tails included.")},
-              open("montecarlo_robust_output.json", "w"), indent=1)
+               "note": ("SUPERSEDED pre-v2 run -- kept for history only; the live outputs come from "
+                        "montecarlo_v2.py. Capex is now a distribution (hardware + tower-side labor + "
+                        "AACE Class-4 contingency); funded budget = P80. Margin derived from "
+                        "inflation-coupled opex vs ARPU. NCI exit Bernoulli. Starlink churn + "
+                        "fiber-overbuild tails included.")},
+              open("pre_v2.montecarlo_robust_output.json", "w"), indent=1)
     ben["floor_no_nci"] = ben_floor["horizons"]
-    json.dump(ben, open("ratepayer_benefit_output.json", "w"), indent=1)
+    json.dump(ben, open("pre_v2.ratepayer_benefit_output.json", "w"), indent=1)
     print("\n" + "=" * 78)
     print("(D) THE THREE HEADLINE SCENARIOS  --  generated here (reproducible)"); print("=" * 78)
     scenarios = run_scenarios()
-    json.dump(scenarios, open("scenarios_output.json", "w"), indent=1)
-    print("\n[wrote county_value_output.json, montecarlo_robust_output.json, "
-          "ratepayer_benefit_output.json, scenarios_output.json]")
+    json.dump(scenarios, open("pre_v2.scenarios_output.json", "w"), indent=1)
+    print("\n[ARCHIVED MODEL: wrote pre_v2.county_value_output.json, pre_v2.montecarlo_robust_output.json, "
+          "pre_v2.ratepayer_benefit_output.json, pre_v2.scenarios_output.json -- live outputs are "
+          "generated by montecarlo_v2.py]")

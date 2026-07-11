@@ -23,7 +23,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://savelocalbroadband.com/model-docs.php">
 <meta name="theme-color" content="#0c2340">
-<link rel="icon" type="image/svg+xml" href="okanogan_county.svg?v=1778616320">
+<link rel="icon" type="image/svg+xml" href="okanogan_county.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -346,7 +346,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           every formula, every deliberate omission. Nothing on the <a href="https://savelocalbroadband.com/how-we-modeled-risk.php">model page</a> is asserted that
           isn't documented here.</p>
         <div class="doc-meta">
-          <span>model <b>v2.1-2026-07-03</b></span>
+          <span>model <b>v2.2-2026-07-10</b></span>
           <span>iterations <b>200,000</b></span>
           <span>seed <b>20260629</b></span>
           <span>source <b>montecarlo_v2.py</b></span>
@@ -451,7 +451,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           for itself in time?</p>
         <p>That count is the headline. In the central (&ldquo;Balanced&rdquo;) scenario, the District earns its money back in about
           <b>88% of simulated futures</b>, and the county comes out ahead in
-          <b>~100%</b>. The method isn't exotic &mdash; the
+          <b>~99%</b>. The method isn't exotic &mdash; the
           <a class="tip" href="#g-gao" data-tip="The U.S. Government Accountability Office. Its cost-estimating guide (GAO-20-195G) requires probabilistic risk analysis on federal capital projects.">GAO</a>,
           the Federal Transit Administration, and state DOTs require exactly this kind of analysis for capital projects &mdash; it's just
           rarely offered to the public with the hood open.</p>
@@ -487,14 +487,14 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <p>We ran it three ways &mdash; a skeptical auditor's world, a neutral analyst's, and a believer's (<a href="#s2-3">&sect;2.3</a>
           defines them exactly). The honest summary:</p>
         <div class="stats">
-          <div class="stat g"><div class="v">88%</div><div class="k">of Balanced-scenario futures: the District earns its ~$1.2M back within the gear's life</div></div>
-          <div class="stat g"><div class="v">100%</div><div class="k">of Balanced futures: the county as a whole comes out ahead by year 10</div></div>
-          <div class="stat"><div class="v">8.9 yr</div><div class="k">typical (median) payback time when it pays back</div></div>
-          <div class="stat"><div class="v">88%&ndash;98%</div><div class="k">county still ahead even in the deliberately pessimistic scenario (10 yr &rarr; 15 yr)</div></div>
+          <div class="stat g"><div class="v">88%</div><div class="k">of Balanced-scenario futures: the District earns its ~$1.2M back within the 15-year asset life, one wear-out refresh honestly charged (66% under the stricter before-wear-out accounting)</div></div>
+          <div class="stat g"><div class="v">99%</div><div class="k">of Balanced futures: the county as a whole comes out ahead by year 10</div></div>
+          <div class="stat"><div class="v">9 yr</div><div class="k">typical (median) payback time when it pays back</div></div>
+          <div class="stat"><div class="v">82%&ndash;97%</div><div class="k">county still ahead even in the deliberately pessimistic scenario (10 yr &rarr; 15 yr)</div></div>
         </div>
         <p>Read that last chip again, because it's the campaign's whole argument in one number: <b>you can believe the gloomiest
           defensible story about the next 15 years &mdash; Starlink keeps poaching, a reseller collapses, the rate stays frozen &mdash;
-          and the county still comes out ahead about 88% of the time at ten years.</b> The scenarios
+          and the county still comes out ahead about 82% of the time at ten years.</b> The scenarios
           disagree about how fast the <em>District's own books</em> recover (from 19% in the harshest
           accounting to 97% in the favorable one). They barely disagree about the county.</p>
         <div class="box warn">
@@ -574,17 +574,18 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           <thead><tr><th>Ledger</th><th>Question</th><th>Headline result</th></tr></thead>
           <tbody>
             <tr><td><b>A &middot; Cost recovery</b></td><td>Does the wireless line's <em>own</em> discounted cash earn the ~$1.2M back
-              within the equipment's life?</td><td>Balanced: <b>88.4%</b>, median payback
-              8.9 yr &mdash; <a class="xref" href="#s3-8">&sect;3.8</a></td></tr>
+              within the 15-year asset life (one wear-out refresh charged; the stricter before-wear-out test is
+              <code>district_alt_method</code>)?</td><td>Balanced: <b>87.9%</b>, median payback
+              9 yr &mdash; <a class="xref" href="#s3-8">&sect;3.8</a></td></tr>
             <tr><td><b>B &middot; Ratepayer benefit</b></td><td>How much do households avoid overpaying because the cost-based public
-              rate disciplines the market?</td><td>P50 $463K (10 yr) / $921K (15 yr)
+              rate disciplines the market?</td><td>P50 $445K (10 yr) / $884K (15 yr)
               &mdash; <a class="xref" href="#s3-9">&sect;3.9</a></td></tr>
             <tr><td><b>C &middot; County value</b></td><td>Counting both A and B honestly (the rate cancels): does the county come out
-              ahead?</td><td>Balanced: <b>99.8%</b> at 10 yr &mdash; <a class="xref" href="#s3-9">&sect;3.9</a></td></tr>
+              ahead?</td><td>Balanced: <b>99.4%</b> at 10 yr &mdash; <a class="xref" href="#s3-9">&sect;3.9</a></td></tr>
             <tr><td><b>D &middot; Scenarios</b></td><td>How do A and C look under three coherent worldviews (pessimistic / balanced /
               optimistic)?</td><td>The table in <a class="xref" href="#s2-3">&sect;2.3</a></td></tr>
             <tr><td><b>E &middot; Build vs run-to-failure</b></td><td>How does building now compare against spending nothing and letting
-              the end-of-life network decline?</td><td>Protected cash P50 &asymp; $1.28M              &mdash; <a class="xref" href="#s3-10">&sect;3.10</a></td></tr>
+              the end-of-life network decline?</td><td>Protected cash P50 &asymp; $1.18M              &mdash; <a class="xref" href="#s3-10">&sect;3.10</a></td></tr>
           </tbody>
         </table></div>
         <p>Ledger A is the deliberately hard, self-contained test &mdash; the number a skeptical auditor asks for. Ledger C is the
@@ -610,21 +611,21 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <div class="tbl"><table>
           <thead><tr><th>Scenario</th><th>In one sentence</th><th class="num">District recoups</th><th class="num">County ahead 10&rarr;15 yr</th><th class="num">Min-year <span style="text-transform:none">DSCR</span></th></tr></thead>
           <tbody>
-            <tr><td><b>Pessimistic</b></td><td>Rate frozen forever, strictest recover-before-wear-out accounting, Starlink surge
+            <tr><td><b>Pessimistic</b></td><td>Rate lags inflation forever (recovering only a third to half of it), strictest recover-before-wear-out accounting, Starlink surge
               <em>and</em> a market shock, only a token 6% for-profit premium.</td>
               <td class="num"><b>19.3%</b></td>
-              <td class="num pos">87.6% &rarr; 98.2%</td>
+              <td class="num pos">82.4% &rarr; 97.0%</td>
               <td class="num">0.37&times;</td></tr>
             <tr style="background:#fbf8f0"><td><b>Balanced</b> <span class="tg scen">lead</span></td><td>Ordinary decade: partial rate
               recovery (60%), full-life accounting with a paid refresh, evidence-anchored retention and growth toward the District's own
               funded radio plan, 12% premium &mdash; plus the baseline Starlink churn and near-certain NCI exit that <em>every</em>
               scenario carries (&sect;3.6).</td>
-              <td class="num"><b>88.4%</b></td>
-              <td class="num pos">99.8% &rarr; 100.0%</td>
+              <td class="num"><b>87.9%</b></td>
+              <td class="num pos">99.4% &rarr; 100.0%</td>
               <td class="num">1.23&times;</td></tr>
             <tr><td><b>Optimistic</b></td><td>The utility simply rates the way utilities normally do (full cost recovery), coverage
               gains land, 22% premium &mdash; the favorable end of defensible, not fantasy.</td>
-              <td class="num"><b>96.9%</b></td>
+              <td class="num"><b>96.8%</b></td>
               <td class="num pos">100.0% &rarr; 100.0%</td>
               <td class="num">1.35&times;</td></tr>
           </tbody>
@@ -633,7 +634,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           moves</b> &mdash; that's the rate-cancellation at work (<a href="#s1-4">&sect;1.4</a>). Second, the pessimistic District figure
           (19.3%) is dominated by <em>choices</em>, not fears: freeze the rate and demand recovery before
           physical wear-out, and even a healthy line looks bad on paper. The same pessimistic world measured with ordinary utility
-          accounting recovers 32.0%; crediting the documented bandwidth line lifts it to
+          accounting recovers 31.3%; crediting the documented bandwidth line lifts it to
           39.7%.</p>
         <div class="box note">
           <span class="bl">No probabilities on worldviews</span>
@@ -691,25 +692,32 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <div class="tbl"><table>
           <thead><tr><th>Lever</th><th>Kind</th><th class="num">District payback</th><th class="num">shift</th></tr></thead>
           <tbody>
-            <tr><td>District freezes its rate flat (RT&nbsp;0, its 17-year habit)</td><td><span class="tg scen">CHOICE</span></td><td class="num">64%</td><td class="num neg">&minus;24</td></tr>
-            <tr><td>Strict recover-before-wear-out accounting</td><td><span class="tg scen">CHOICE</span></td><td class="num">71%</td><td class="num neg">&minus;17</td></tr>
-            <tr><td>Starlink surge (+2%/yr churn, front-loaded)</td><td><span class="tg evt">FEAR</span></td><td class="num">74%</td><td class="num neg">&minus;14</td></tr>
+            <tr><td>Rate <em>literally frozen</em> all 15 years (the 2009&ndash;26 record)</td><td><span class="tg scen">CHOICE</span></td><td class="num">34%</td><td class="num neg">&minus;54</td></tr>
+            <tr><td>District lets its rate lag inflation fully (RT&nbsp;0)</td><td><span class="tg scen">CHOICE</span></td><td class="num">62%</td><td class="num neg">&minus;26</td></tr>
+            <tr><td>Strict recover-before-wear-out accounting</td><td><span class="tg scen">CHOICE</span></td><td class="num">66%</td><td class="num neg">&minus;22</td></tr>
+            <tr><td>Starlink surge (+2%/yr churn, front-loaded)</td><td><span class="tg evt">FEAR</span></td><td class="num">72%</td><td class="num neg">&minus;16</td></tr>
+            <tr><td>Half of operating cost held fixed (v2.2 bracket end)</td><td><span class="tg scen">STRUCTURE</span></td><td class="num">73%</td><td class="num neg">&minus;15</td></tr>
             <tr><td>Bandwidth hypothetically zero (overlap-proof floor)</td><td><span class="tg evt">STRESS</span></td><td class="num">76%</td><td class="num neg">&minus;12</td></tr>
-            <tr><td>Board delays the build 2 more years</td><td><span class="tg evt">WAITING</span></td><td class="num">81%</td><td class="num neg">&minus;7</td></tr>
+            <tr><td>30% of operating cost held fixed (v2.2 bracket)</td><td><span class="tg scen">STRUCTURE</span></td><td class="num">79%</td><td class="num neg">&minus;9</td></tr>
+            <tr><td>Board delays the build 2 more years</td><td><span class="tg evt">WAITING</span></td><td class="num">80%</td><td class="num neg">&minus;8</td></tr>
+            <tr><td>Strip all retention &amp; funded-plan growth credit</td><td><span class="tg evt">SKEPTIC</span></td><td class="num">82%</td><td class="num neg">&minus;6</td></tr>
             <tr><td>Reseller / market shock (~20% loss, ~20% likely)</td><td><span class="tg evt">FEAR</span></td><td class="num">83%</td><td class="num neg">&minus;5</td></tr>
-            <tr><td>Strip all retention &amp; funded-plan growth credit</td><td><span class="tg evt">SKEPTIC</span></td><td class="num">83%</td><td class="num neg">&minus;5</td></tr>
             <tr><td>Data price cut $1.50 &rarr; $1.00/Mbps</td><td><span class="tg evt">PRICE</span></td><td class="num">85%</td><td class="num neg">&minus;3</td></tr>
             <tr><td>NCI price war (&minus;2 margin pts, 3 yr)</td><td><span class="tg evt">FEAR</span></td><td class="num">87%</td><td class="num neg">&minus;1</td></tr>
             <tr><td>Bandwidth at the documented ~2.8 Mbps</td><td><span class="tg doc">UPSIDE</span></td><td class="num pos">97%</td><td class="num pos">+9</td></tr>
-            <tr style="border-top:2px solid var(--hair)"><td><b>All three fears at once</b> (realistic-bad)</td><td></td><td class="num">66%</td><td class="num neg">&minus;22</td></tr>
+            <tr style="border-top:2px solid var(--hair)"><td><b>All three fears at once</b> (realistic-bad)</td><td></td><td class="num">63%</td><td class="num neg">&minus;25</td></tr>
           </tbody>
         </table></div>
         <p>Three readings. <b>(1)</b> No single market fear sinks the case below a coin flip, and even all three landing together holds
-          ~66% &mdash; while their <em>joint</em> probability is well under 1% (they're individually unlikely and largely independent).
-          <b>(2)</b> The rate-policy lever (&minus;24) moves the District's number more than any threat &mdash; and moves the county's
-          number almost not at all, which is the cancellation again. <b>(3)</b> The delay lever is the one the board fully controls:
-          each year of waiting costs roughly 3&ndash;4 points of payback probability (<a class="xref" href="#s3-6">&sect;3.6</a> for the
-          mechanism).</p>
+          ~63% &mdash; while their <em>joint</em> probability is well under 1% (they're individually unlikely and largely independent).
+          <b>(2)</b> The rate-policy levers dwarf every threat: fully lagging inflation costs &minus;26, and the <em>literal</em> 15-year
+          freeze &mdash; the District's actual 2009&ndash;26 record, published here so nobody has to compute it for us &mdash; costs
+          &minus;54. Both move the county's number almost not at all, which is the cancellation again. <b>(3)</b> The delay lever is the
+          one the board fully controls: each year of waiting costs roughly 4 points of payback probability
+          (<a class="xref" href="#s3-6">&sect;3.6</a> for the mechanism). The v2.2 <b>fixed-cost bracket</b> rows answer the outside
+          review's structural question &mdash; &ldquo;do costs conveniently vanish when subscribers leave?&rdquo; &mdash; without asserting
+          a split no cost-allocation study exists to support: hold 30% or 50% of the starting base's operating cost fixed in dollars and
+          the headline gives back 9&ndash;15 points, both ends published.</p>
       </section>
 
       <section class="sec s-l2" id="s2-6">
@@ -725,18 +733,23 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
             (<a class="xref" href="#s3-4">&sect;3.4</a>).</li>
           <li><b>The counterfactual is wholesale, not retail.</b> Household savings are measured against an escalating <em>wholesale</em>
             rate, not retail Starlink at ~$120/mo &mdash; understating what captive households would actually pay.</li>
-          <li><b>The floor scenario freezes the rate for 15 years</b> while costs inflate (the &ldquo;margin scissors&rdquo;) &mdash;
-            harsher than the District's own record of periodic adjustments elsewhere.</li>
-          <li><b>Sales tax is charged in full</b> (8%) even though an exemption may apply; <b>terminal value is $0</b> (towers, leases,
-            and the customer base persisting past year 15 are counted as worthless); <b>the $40 tier takes an elasticity haircut</b>
-            (2.5% fewer takers).</li>
+          <li><b>The floor scenario lets the rate recover only 30&ndash;60% of inflation</b> while costs track it fully (the
+            &ldquo;margin scissors&rdquo;). The District's <em>actual</em> record &mdash; literally flat since 2009 &mdash; is harsher
+            still, so since v2.2 the literal 15-year freeze is published as its own sensitivity (&sect;2.5): ~25% in the floor
+            configuration, ~34% from the Balanced base. The floor, and the floor beneath it.</li>
+          <li><b>Sales tax is charged in full</b> (8% &mdash; on the initial build and, since v2.2, on incremental growth radios and the
+            G2 refresh too); <b>terminal value is $0</b> (towers, leases, and the customer base persisting past year 15 are counted as
+            worthless); <b>the $40 tier takes an elasticity haircut</b> (2.5% fewer takers &mdash; in every ledger since v2.2; Ledger B
+            had omitted it, a ~2.5% upward simplification the audit caught).</li>
           <li><b>The macro factor's stress side is fully loaded</b> &mdash; a bad decade raises churn, drags growth, and raises overbuild
             odds simultaneously (<a class="xref" href="#s3-7">&sect;3.7</a>).</li>
           <li><b>The NCI exit is treated as near-certain</b> (85%) and timed realistically (year 2), which strands the already-bought
             radios instead of crediting a capital saving &mdash; adopted precisely <em>because</em> it lowered our headline
-            (<a class="xref" href="#s3-15">&sect;3.15</a>).</li>
-          <li><b>The browser calculator reads a few points lower</b> than the full model (triangular draws, 8K runs) &mdash; so the
-            number a visitor checks is the conservative one (<a class="xref" href="#s3-1">&sect;3.1</a>).</li>
+            (<a class="xref" href="#s3-15">&sect;3.15</a>). v2.1 applied that timing only to the cost-recovery ledger; the v2.2 audit
+            caught the county ledger still using the flattering at-start credit, and it now carries the same year-2 stranding.</li>
+          <li><b>The browser calculator reads several points lower</b> than the full model (triangular draws, 8K runs &mdash; roughly
+            5&ndash;8 points at the presets) &mdash; so the number a visitor checks is the conservative one
+            (<a class="xref" href="#s3-1">&sect;3.1</a>).</li>
         </ul>
       </section>
 
@@ -778,9 +791,9 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           ($1.46M in the scenario configuration), not the bare hardware sum &mdash; that's what
           &ldquo;contingency included&rdquo; means concretely.</p>
         <h3>Conditional vs unconditional payback &mdash; don't mix them</h3>
-        <p>&ldquo;Median payback 8.9 years&rdquo; is <b>conditional</b> &mdash; the typical timing <em>among
+        <p>&ldquo;Median payback 9 years&rdquo; is <b>conditional</b> &mdash; the typical timing <em>among
           futures that recover</em>. The <b>unconditional</b> read counts every future, including the ones that never pay back: in the
-          Balanced case the unconditional P50 is 9.3 years and the P90 is
+          Balanced case the unconditional P50 is 9.4 years and the P90 is
           &ldquo;not reached&rdquo;. Both are published (<a class="xref" href="#s3-8">&sect;3.8</a>);
           quoting only the conditional one without saying so is how models get accused of spin.</p>
         <h3>DSCR &mdash; three different coverage numbers, labeled</h3>
@@ -793,7 +806,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           actual ~2.9% 2020 bond cost. And context that belongs next to any sub-1.0&times; scenario figure: the whole telecom segment's
           audited surplus covers that same debt several times over regardless.</p>
         <h3>A &ldquo;miss&rdquo; is not money vanished</h3>
-        <p>When a run fails the payback test, the median discounted shortfall is $143K          (Balanced) &mdash; on a ~$1.2M spend, with the towers, the 200-mile backbone, and the customer relationships still standing.
+        <p>When a run fails the payback test, the median discounted shortfall is $144K          (Balanced) &mdash; on a ~$1.2M spend, with the towers, the 200-mile backbone, and the customer relationships still standing.
           The failure mode is &ldquo;the first generation of electronics didn't fully self-amortize,&rdquo; not &ldquo;the money is
           gone.&rdquo;</p>
       </section>
@@ -810,7 +823,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
           <li><b>Anything about service quality, coverage equity, or resilience.</b> This is a financial model only; those arguments live
             on their own pages with their own evidence (<a href="https://savelocalbroadband.com/coverage.php">coverage</a>, <a href="https://savelocalbroadband.com/resilience.php">resilience</a>,
             <a href="https://savelocalbroadband.com/income.php">equity</a>).</li>
-          <li><b>Precision beyond its inputs.</b> The claim is never &ldquo;exactly 88.4%&rdquo;; it's
+          <li><b>Precision beyond its inputs.</b> The claim is never &ldquo;exactly 87.9%&rdquo;; it's
             &ldquo;in the central case, recovery is much more likely than not, and the county comes out ahead almost regardless.&rdquo;
             The rigor is in the transparency and the ranges, not the decimal place.</li>
           <li><b>Whether the board <em>should</em> build.</b> The model prices the choice; weighing bounded, recoverable financial risk
@@ -825,7 +838,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         <span class="ly">Layer 3 &middot; Full reference</span>
         <h2>Open the hood. Every part, labeled.</h2>
         <p>The complete technical specification: distributions with parameters, the simulation loop equation by equation, the audit
-          trail, and the file map. Written against source <code>montecarlo_v2.py</code>, version v2.1-2026-07-03.</p>
+          trail, and the file map. Written against source <code>montecarlo_v2.py</code>, version v2.2-2026-07-10.</p>
       </div>
 
       <section class="sec s-l3" id="s3-1">
@@ -841,7 +854,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
             <tr><td><b>Iterations</b></td><td>200,000, <a class="tip" href="#g-seed" data-tip="The starting value for the random-number generator. A fixed, published seed means every re-run draws the identical random numbers — so anyone reproduces the exact published figures.">seed</a> locked (20260629)</td><td>~8,000 per slider move, unseeded (live re-draws)</td></tr>
             <tr><td><b>Bounded draws</b></td><td><a class="tip" href="#g-pert" data-tip="A smooth three-point distribution (minimum / most-likely / maximum) built on a Beta curve. The standard for expert-estimated quantities: it respects hard bounds without piling probability at them.">PERT</a> (Beta-based three-point)</td><td>Triangular (same three points, straight-line shape)</td></tr>
             <tr><td><b>Debt service (DSCR)</b></td><td>Sized per run-set on funded P80 capex &mdash; $132K/yr in the scenario runs</td><td>Fixed $124,406/yr (the base-configuration P80 of ~$1.38M)</td></tr>
-            <tr><td><b>Bias of the difference</b></td><td>&mdash;</td><td>Reads a few points <b>lower</b> (triangular is fatter-shouldered than PERT; fewer runs) &mdash; conservative, and labeled as illustrative on the page</td></tr>
+            <tr><td><b>Bias of the difference</b></td><td>&mdash;</td><td>Reads several points <b>lower</b> &mdash; roughly 5&ndash;8 at the presets (triangular is fatter-shouldered than PERT; fewer runs; every v2.2 stressor ported) &mdash; conservative, and labeled as illustrative on the page</td></tr>
           </tbody>
         </table></div>
         <div class="box note">
@@ -854,7 +867,7 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
             (<a class="xref" href="#s3-15">&sect;3.15</a>). Debt service follows the same logic: $124,406/yr on the base P80,
             $132K/yr on the scenario P80.</p>
         </div>
-        <p>Version history is embedded in the source header: <code>v2.1-2026-07-03</code> is the promoted v2.1 build
+        <p>Version history is embedded in the source header: <code>v2.2-2026-07-10</code> is the promoted v2.1 build
           (2026-07-03), successor to <code>recovery_model.py</code> &mdash; which randomized only margin and growth against a fixed
           capex, the exact weakness a board member's &ldquo;where's the labor and contingency?&rdquo; question exposed. v2's changes are
           catalogued in <a class="xref" href="#s3-15">&sect;3.15</a>.</p>
@@ -882,9 +895,11 @@ section.sec:target h2.st{text-decoration:underline;text-decoration-color:var(--r
         </div>
         <h3>Bernoulli events &mdash; for things that either happen or don't</h3>
         <p>The NCI exit (p&nbsp;=&nbsp;0.85), a fiber overbuild (p&nbsp;&asymp;&nbsp;0.12 over the decade, macro-adjusted), a market
-          shock (p&nbsp;=&nbsp;0.20 when the scenario arms it): each run flips the weighted coin once, and if the event lands it gets a
-          drawn <em>year</em> and a drawn <em>severity</em> too. This is how &ldquo;NCI leaves&rdquo; can be near-certain without every
-          run pretending it happens on day one.</p>
+          shock (p&nbsp;=&nbsp;0.20 when the scenario arms it): each run flips the weighted coin once. A landed <em>overbuild</em> then
+          draws its year (U{3..10}) and its severity (8&ndash;18%); a landed <em>shock</em> draws its year (U{3..7}); the NCI exit's
+          timing (year 2 in the headline scenarios, <a class="xref" href="#s3-11">&sect;3.11</a>) and its ~11% net severity after
+          migration (<a class="xref" href="#s3-6">&sect;3.6</a>) are fixed, labeled scenario constants. This is how an overbuild can be
+          a real decade-long hazard without every run pretending it happens on day one.</p>
         <h3>Mixture &mdash; for inflation's two moods</h3>
         <p>Inflation isn't one bell curve; decades come in regimes. Each run draws its regime first &mdash; 88% chance of a normal
           decade (Normal, mean 2.5%, sd 1.0%), 12% chance of a high-inflation decade (mean 5.5%, sd 1.2%) &mdash; then clips to
@@ -939,7 +954,7 @@ capex = (hardware &times; 1.08 + labor) &times; (1 + overrun)   <span class="c">
           stress). At the $40 step the take-rate gets a 2.5% <a class="tip" href="#g-elasticity" data-tip="How much demand falls when price rises. A necessity-grade elasticity (~−0.3) with partial pass-through supports roughly a 2.5% take-rate reduction for the $31→$40 wholesale step.">elasticity</a>          haircut. The rate then grows at <code>g_arpu</code>, which is where <b>rate policy</b> enters:</p>
         <div class="fml">g_arpu = RT &times; g_opex + (1 &minus; RT) &times; &beta;<sub>arpu</sub>&pi;      <span class="c"># RT = rate-tracking policy lever, 0..1</span>
   &beta;<sub>arpu</sub> ~ U(0.3, 0.6)   <span class="c"># a lagging cost-based rate recovers only part of inflation</span>
-  RT = 0 (frozen, the 17-yr record) &middot; 0.6 (Balanced) &middot; 1.0 (full cost recovery)</div>
+  RT = 0 (lags inflation &mdash; the <em>literal</em> 15-year freeze (the 2009&ndash;26 record) is the published <code>true_freeze</code> sensitivity) &middot; 0.6 (Balanced) &middot; 1.0 (full cost recovery)</div>
         <h3>Line 2 &middot; wholesale bandwidth resale</h3>
         <p>A separate, currently-billed line on every RSP invoice ($193K in 2025, distinct from the $1.14M access line;
           <a class="tip" href="#g-p95bill" data-tip="95th-percentile billing: usage is sampled every 5 minutes all month; the top 5% of readings (~36 hours of bursts) are free; the bill is the highest sustained rate remaining × the per-megabit price.">billed on the 95th percentile</a>          at $1.50/Mbps, with upstream transit cost ~$0 since the flat-rate 100G NoaNet link). Per customer per year:</p>
@@ -951,8 +966,8 @@ capex = (hardware &times; 1.08 + labor) &times; (1 + overrun)   <span class="c">
           <p>Two honest reasons: a residual chance the audited segment margin already reflects part of this line (we can't prove a clean
             split without an access-only cost allocation), and modesty. The scenarios therefore publish an explicit <b>overlap
             bracket</b>: assume the margin already holds <em>all</em> of it (add nothing &mdash; Balanced falls to
-            76.4%), <em>half</em> (90.9%), or
-            <em>none</em> (add the documented ~2.8 &mdash; 97.2%). The headline 1.0 Mbps sits
+            75.5%), <em>half</em> (90.5%), or
+            <em>none</em> (add the documented ~2.8 &mdash; 97.1%). The headline 1.0 Mbps sits
             near the ~64%-overlap point &mdash; well into the cautious half of the bracket. Meanwhile the pressure runs the other way:
             these 878 sit on the congested towers where usage is being suppressed, and per-customer demand has risen every year for two
             decades.</p>
@@ -961,8 +976,8 @@ capex = (hardware &times; 1.08 + labor) &times; (1 + overrun)   <span class="c">
         <p>A rate held below inflation gets more competitive every year, which pulls price-sensitive customers in. The model converts
           the widening gap into take-up with a necessity-grade elasticity:</p>
         <div class="fml">pull = 0.30 &times; max((&pi; + 1.2%) &minus; g_arpu, 0)     <span class="c"># big when the rate is frozen; ~0 at full recovery</span></div>
-        <p>A sensitivity run with pull forced to zero isolates its contribution: Balanced 88.4% &rarr;
-          86.0% &mdash; real but modest, about 2 points.</p>
+        <p>A sensitivity run with pull forced to zero isolates its contribution: Balanced 87.9% &rarr;
+          85.4% &mdash; real but modest, about 2 points.</p>
       </section>
 
       <section class="sec s-l3" id="s3-5">
@@ -981,12 +996,26 @@ opex_t = opex&#8320; &times; (1 + g_opex)<sup>t</sup> &times; bathtub_t
           <p>Because &beta;<sub>opex</sub> &ge; 1.0 while a frozen or lagging rate grows at &beta;<sub>arpu</sub>&pi; &lt; &pi;, margin
             is <em>derived</em> fresh each year and erodes whenever the rate under-tracks costs. A run can never pair flat costs with a
             rising rate &mdash; the coupling through the same drawn &pi; forbids the cheat. This single mechanism is most of why the
-            frozen-rate floor (RT&nbsp;0) scores 44.9% while full recovery scores
-            79.4%.</p>
+            lagging-rate floor (RT&nbsp;0, recovering 30&ndash;60% of inflation) scores 44.6% while full
+            recovery scores 79.3% &mdash; and why the <em>literal</em> freeze (g<sub>arpu</sub> = 0, the
+            2009&ndash;26 record, published as <code>true_freeze</code> since v2.2) scores
+            24.7%.</p>
         </div>
         <p>Scenario stress: an armed price war adds <code>F4 &times; revenue</code> to opex for the first three years (default 2 margin
           points). The June-22 board question &mdash; &ldquo;does that include any O&amp;M?&rdquo; &mdash; is answered structurally
-          here: <b>every</b> cash figure in every ledger is net of this opex line; there is no gross-revenue path through the model.</p>
+          here: <b>every</b> cash figure in every ledger is net of this opex line; there is no gross-revenue path through the model.
+          (One labeled substitution: Ledger E's run-to-failure path replaces the bathtub with its own steeper emergency-maintenance ramp,
+          <a class="xref" href="#s3-10">&sect;3.10</a> &mdash; the build path charges the bathtub like everywhere else, since v2.2.)</p>
+        <div class="box note">
+          <span class="bl">Fixed vs variable cost &mdash; the v2.2 bracket</span>
+          <p>By default the entire opex line is per-customer, which implicitly lets every cost shed when subscribers leave &mdash; the
+            one structural critique of the outside review that survived verification. Real networks keep tower leases, backhaul, and
+            staff time. Because no cost-allocation study exists for the segment, v2.2 does not assert a split; it publishes a bracket:
+            <code>scn['fixed_share']</code> holds that fraction of the <em>starting</em> base's opex as fixed dollars (they inflate and
+            age, but neither shed with decline nor grow with expansion). At 30% fixed the Balanced headline reads
+            79%; at 50%, 73% (&sect;2.5). Fixed costs punish
+            declining futures and reward growing ones &mdash; both directions are published.</p>
+        </div>
       </section>
 
       <section class="sec s-l3" id="s3-6">
@@ -996,7 +1025,7 @@ opex_t = opex&#8320; &times; (1 + g_opex)<sup>t</sup> &times; bathtub_t
           adjustment below and, at the $40 tier, the elasticity haircut). Each year:</p>
         <div class="fml">subs_t = min( subs_{t&minus;1} &times; (1 + growth + pull) &times; (1 &minus; churn_t),  cap )
   growth ~ PERT(&minus;6%, 0% + U3, +5% + U3) &minus; 0.004Z    <span class="c"># mode 0: the record shows a flat-to-shrinking base</span>
-  churn_t = churn&#8320; &times; (1 + 0.08 &times; min(t&minus;1, 6)) + 0.0015Z,   churn&#8320; ~ U(0.3%, 1.2%)
+  churn_t = max(churn&#8320; + 0.0015Z, 0) &times; (1 + 0.08 &times; min(t&minus;1, 6)),   churn&#8320; ~ U(0.3%, 1.2%)   <span class="c"># Z loads the base hazard, floored at zero, then the ramp applies</span>
   cap = 1,035 funded radios (+ U1 coverage upside when armed)</div>
         <ul>
           <li><b>Churn is front-loaded and plateaus.</b> The 8%/yr ramp on the Starlink hazard stops growing at year 7 &mdash;
@@ -1012,7 +1041,7 @@ opex_t = opex&#8320; &times; (1 + g_opex)<sup>t</sup> &times; bathtub_t
             own-tower customers continue either way &mdash; and are <em>not</em> credited, another one-sided rounding against us.</li>
           <li><b>Build delay</b> (the calculator's waiting lever): each delayed year multiplies the starting base by
             (1&nbsp;&minus;&nbsp;0.04&nbsp;&times;&nbsp;years), floored at 50% &mdash; the congested network sheds customers to Starlink
-            while it waits, and the longer they're gone the harder the win-back. This is the ~3&ndash;4 points/yr in
+            while it waits, and the longer they're gone the harder the win-back. This is the ~4 points/yr in
             <a class="xref" href="#s2-5">&sect;2.5</a>.</li>
           <li><b>Overbuild and market shock</b> land as one-time steps in their drawn years: overbuild (p&nbsp;&asymp;&nbsp;0.12,
             macro-adjusted; year U{3..10}) cuts 8&ndash;18% of a site; an armed shock (p&nbsp;=&nbsp;0.20, year U{3..7}) cuts F3 and
@@ -1079,27 +1108,28 @@ bal_t = bal_{t&minus;1} &minus; cash_t/df_t + netAdd_t &times; radio_t/df_t     
             exchange the model honestly charges the G2 refresh at wear-out. This is how utilities actually recover capital &mdash;
             through successive refresh cycles, each paid for by the revenue it enables.</li>
         </ul>
-        <p>The convention alone is worth ~17 points in the Balanced world (<a class="xref" href="#s2-5">&sect;2.5</a>) &mdash; which is
+        <p>The convention alone is worth ~22 points in the Balanced world (<a class="xref" href="#s2-5">&sect;2.5</a>) &mdash; which is
           why the model publishes each scenario under <em>both</em> conventions (<code>district_alt_method</code> in the outputs)
           rather than letting the choice hide inside a headline.</p>
         <h3>Outputs, precisely defined</h3>
         <div class="tbl"><table>
           <thead><tr><th>Key</th><th>Definition</th><th class="num">Balanced value</th></tr></thead>
           <tbody>
-            <tr><td><code>p_payback</code></td><td>share of runs whose discounted balance clears within the deadline</td><td class="num">88.4%</td></tr>
-            <tr><td><code>payback_P50/P80</code> (conditional)</td><td>timing percentiles <em>among recovering runs</em></td><td class="num">8.9 / 11.4 yr</td></tr>
-            <tr><td><code>payback_P50_uncond</code></td><td>timing percentile across <em>all</em> runs; reads &ldquo;not reached&rdquo; when fewer than the percentile's share ever recover</td><td class="num">9.3 yr</td></tr>
-            <tr><td><code>p_paid_by_yr8/10/15</code></td><td>cumulative recovery curve (share of all futures recovered by year Y)</td><td class="num">26.2% / 58.7% / 88.4%</td></tr>
+            <tr><td><code>p_payback</code></td><td>share of runs whose discounted balance clears within the deadline</td><td class="num">87.9%</td></tr>
+            <tr><td><code>payback_P50/P80</code> (conditional)</td><td>timing percentiles <em>among recovering runs</em></td><td class="num">9 / 11.4 yr</td></tr>
+            <tr><td><code>payback_P50_uncond</code></td><td>timing percentile across <em>all</em> runs; reads &ldquo;not reached&rdquo; when fewer than the percentile's share ever recover</td><td class="num">9.4 yr</td></tr>
+            <tr><td><code>p_paid_by_yr8/10/15</code></td><td>cumulative recovery curve (share of all futures recovered by year Y)</td><td class="num">25.7% / 57.9% / 87.9%</td></tr>
             <tr><td><code>dscr_min_P50</code></td><td>median worst-single-year operating cash &divide; debt service on funded P80 (annuity at 4%/15yr)</td><td class="num">1.23&times;</td></tr>
-            <tr><td><code>terminal_unrecovered_P50</code></td><td>median discounted shortfall among the runs that never clear</td><td class="num">$143K</td></tr>
+            <tr><td><code>terminal_unrecovered_P50</code></td><td>median discounted shortfall among the runs that never clear</td><td class="num">$144K</td></tr>
           </tbody>
         </table></div>
         <div class="box ex">
           <span class="bl">Worked example &middot; the debt-service arithmetic</span>
           <p>Funded capex P80 = $1,462,110. Level annual payment on a 15-year bond at 4%:
             <code>P80 &times; 0.04 / (1 &minus; 1.04<sup>&minus;15</sup>)</code> = $131,504/yr. The
-            Balanced world's median worst year produces $184K-scale cash against it &mdash; min-year
-            coverage 1.23&times;. The same arithmetic on the base configuration's P80
+            Balanced world produces $184K-scale <em>average</em> annual cash against it &mdash;
+            average coverage 1.4&times;; the worst single year is tighter, min-year coverage
+            1.23&times;. The same arithmetic on the base configuration's P80
             ($1,383,192) gives the $124,406 figure the browser calculator uses
             (<a class="xref" href="#s3-1">&sect;3.1</a>).</p>
         </div>
@@ -1111,13 +1141,13 @@ bal_t = bal_{t&minus;1} &minus; cash_t/df_t + netAdd_t &times; radio_t/df_t     
         <h3>Ledger B &middot; ratepayer surplus avoided</h3>
         <p>What households don't overpay because the cost-based public rate exists, discounted over the served base:</p>
         <div class="fml">PV_B = &Sigma;<sub>t</sub> subs_t &times; (P_com,t &minus; P_pub,t) / (1+disc)<sup>t</sup>
-  P_pub,t = $480 &times; 1.015<sup>t</sup>                    <span class="c"># flat cost-based drift</span>
+  P_pub,t = $480 &times; 1.015<sup>t</sup>                    <span class="c"># cost-based drift, 1.5%/yr — lags inflation, which SHRINKS the published gap</span>
   P_com,t = $480 &times; &Pi;(1+g&#8322;),  g&#8322; = clip(&beta;<sub>com</sub>&pi; + creep + noise, 0, 11%)
   &beta;<sub>com</sub> ~ U(1.0,1.2), creep ~ N(1.2%, 1%)      <span class="c"># a for-profit passes inflation through and creeps above it</span></div>
-        <p>Results: 10-year P50 $463K (P5 $14K &ndash; P95
-          $1,086K); 15-year P50 $921K. The headline applies the near-certain NCI
-          exit to the base; the no-exit and full-22%-loss runs bracket it ($795K &ndash;
-          $1,013K at 15 years). Escalation is floored at zero &mdash; conceding per-megabit price
+        <p>Results: 10-year P50 $445K (P5 $13K &ndash; P95
+          $1,046K); 15-year P50 $884K. The headline applies the near-certain NCI
+          exit to the base; the no-exit and full-22%-loss runs bracket it ($762K &ndash;
+          $972K at 15 years). Escalation is floored at zero &mdash; conceding per-megabit price
           deflation &mdash; and the counterfactual is <em>wholesale</em>, not retail Starlink. Never summed with Ledger A.</p>
         <h3>Ledger C &middot; the identity that makes the rate cancel</h3>
         <div class="fml">county = households + District
@@ -1135,18 +1165,18 @@ bal_t = bal_{t&minus;1} &minus; cash_t/df_t + netAdd_t &times; radio_t/df_t     
             for-profit would price exactly at our cost); 12&ndash;22% are the scenario settings; observed gaps run 30&ndash;50%.</li>
         </ul>
         <p>At the floor &mdash; premium 0, every concession granted &mdash; the county is ahead in
-          92.0% of 10-year futures (P50 $478K) and
-          99.3% at 15. With the modest 15% premium the record supports, those become
+          91.0% of 10-year futures (P50 $462K) and
+          99.1% at 15. With the modest 15% premium the record supports, those become
           99.8% and 100.0%. And the decomposition shows the
-          two-pockets story explicitly: in 57.5% of floor runs the District's own books lose
-          &mdash; yet in 49.6% (of all runs) the county is ahead <em>anyway</em>.
+          two-pockets story explicitly: in 59.0% of floor runs the District's own books lose
+          &mdash; yet in 50.1% (of all runs) the county is ahead <em>anyway</em>.
           Same dollars, different pockets.</p>
         <div class="box warn">
           <span class="bl">The scenario that can lose &mdash; on purpose</span>
           <p>A result that can't fail is a definition, not a finding. So Ledger C has a falsifier switch: <code>competitive=True</code>
             sets P_com&nbsp;=&nbsp;P_pub &mdash; a market so competitive there's no overpayment to avoid &mdash; and the county advantage
             collapses to the District's own payback (pessimistic 15-yr county-ahead falls from
-            98.2% to 47.9%). The county conclusion therefore
+            97.0% to 41.2%). The county conclusion therefore
             <em>depends</em> on rural Okanogan not being a competitively-priced market &mdash; which is exactly the condition the
             public network exists to address, and the reason the result is a finding.</p>
         </div>
@@ -1174,17 +1204,17 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
           <thead><tr><th>Case</th><th>Initial decline</th><th>Median fail yr</th><th class="num">P(build &gt; RTF)</th><th class="num">Incremental NPV P50</th><th class="num">Protected cash P50</th></tr></thead>
           <tbody>
             <tr><td><b>Favorable</b> (slow bleed)</td><td>5%/yr, worsening 8%/yr</td><td>8</td>
-              <td class="num">19.9%</td><td class="num neg">$-351K</td>
-              <td class="num">$989K</td></tr>
+              <td class="num">13.4%</td><td class="num neg">$-458K</td>
+              <td class="num">$887K</td></tr>
             <tr><td><b>Central</b></td><td>10%/yr, worsening 12%/yr</td><td>5</td>
-              <td class="num">44.2%</td><td class="num neg">$-61K</td>
-              <td class="num">$1,280K</td></tr>
+              <td class="num">34.6%</td><td class="num neg">$-167K</td>
+              <td class="num">$1,180K</td></tr>
             <tr><td><b>Grim</b> (the staff-quote pace)</td><td>15%/yr, worsening 18%/yr</td><td>3</td>
-              <td class="num">60.5%</td><td class="num pos">$115K</td>
-              <td class="num">$1,457K</td></tr>
+              <td class="num">50.9%</td><td class="num pos">$10K</td>
+              <td class="num">$1,357K</td></tr>
           </tbody>
         </table></div>
-        <p><b>Read this table honestly &mdash; both directions.</b> The build protects $0.99M&ndash;$1.46M          of present-value cash across the bracket &mdash; on the order of the capex itself, which is the basis for the published
+        <p><b>Read this table honestly &mdash; both directions.</b> The build protects $0.89M&ndash;$1.36M          of present-value cash across the bracket &mdash; on the order of the capex itself, which is the basis for the published
           &ldquo;avoided decline&rdquo; framing. At the same time, the pure 15-year incremental NPV is <em>negative at the median</em>
           in the slower-decline cases. Why both are true: run-to-failure spends nothing and still harvests cash while it bleeds, and
           the window slams shut at year 15 &mdash; every customer, tower, and revenue stream the build preserves <em>beyond</em> year 15
@@ -1229,7 +1259,7 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
         <p>Balanced's credits deserve their basis stated plainly: the retention credit reflects an observably sticky non-NCI base
           (Starlink accounts for only ~15% of cancellations in the record); the growth credit points toward capacity <em>the District
           itself budgeted for</em>; the coverage figure is the District's own field-test result. Strip all three and Balanced gives up
-          about 5 points (<a class="xref" href="#s2-5">&sect;2.5</a>) &mdash; a robustness the skeptic can bank.</p>
+          about 6 points (<a class="xref" href="#s2-5">&sect;2.5</a>) &mdash; a robustness the skeptic can bank.</p>
         <p>Every scenario also publishes its bandwidth overlap bracket (<a class="xref" href="#s3-4">&sect;3.4</a>), its
           flipped-accounting twin (<code>district_alt_method</code>), its demand-pull-off sensitivity, and its competitive-market
           falsifier (<a class="xref" href="#s3-9">&sect;3.9</a>) &mdash; the un-bundling that keeps conventions from hiding inside
@@ -1255,7 +1285,7 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
             <tr><td><b>Discount rate</b></td><td><code>disc</code></td><td><span class="tg rand">RANDOM</span></td><td>1.5% real + &pi; (Fisher)</td><td><span class="tg doc">DOC</span> audit-added; couples to each run's inflation</td></tr>
             <tr><td><b>Organic growth</b></td><td><code>growth</code></td><td><span class="tg rand">RANDOM</span></td><td>PERT(&minus;6%, 0%, +5%) &minus; 0.004Z</td><td><span class="tg inf">INF</span> mode forced to 0 by the subscriber record</td></tr>
             <tr><td><b>Demand-pull</b></td><td><code>pull</code></td><td><span class="tg scen">DERIVED</span></td><td>0.30 &times; max((&pi;+1.2%) &minus; g_arpu, 0)</td><td><span class="tg inf">INF</span> necessity-grade elasticity on the widening price edge</td></tr>
-            <tr><td><b>Starlink churn</b></td><td><code>star_churn</code></td><td><span class="tg rand">RANDOM</span></td><td>U(0.3%, 1.2%) &times; (1 + 8%&times;min(t&minus;1,6)) + 0.0015Z</td><td><span class="tg inf">INF</span> bounded, front-loaded, plateaus ~yr 7</td></tr>
+            <tr><td><b>Starlink churn</b></td><td><code>star_churn</code></td><td><span class="tg rand">RANDOM</span></td><td>max(U(0.3%, 1.2%) + 0.0015Z, 0) &times; (1 + 8%&times;min(t&minus;1,6))</td><td><span class="tg inf">INF</span> bounded, front-loaded, plateaus ~yr 7</td></tr>
             <tr><td><b>Gear life (deadline)</b></td><td><code>wear_life</code></td><td><span class="tg rand">RANDOM</span></td><td>PERT(8, 11, 14) yr effective</td><td><span class="tg doc">DOC</span> wireless asset-class life; blends physical + economic (no second hazard &mdash; &sect;3.15)</td></tr>
             <tr><td><b>G2 refresh</b></td><td><code>g2_cost</code></td><td><span class="tg rand">RANDOM</span></td><td>PERT($110K, $150K, $210K) at drawn wear-out (full-life mode only)</td><td><span class="tg doc">DOC</span> base-node gear only; CPE is a reimbursed pass-through</td></tr>
             <tr><td><b>NCI exit</b></td><td><code>nci_exit</code></td><td><span class="tg evt">EVENT</span></td><td>Bernoulli p=0.85; net loss 22% &times; (1&minus;50% migration) &asymp; 11%; timing per <code>nci_year</code></td><td><span class="tg doc">DOC</span> share &amp; wind-down; <span class="tg inf">INF</span> migration fraction</td></tr>
@@ -1282,14 +1312,17 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
             <tr><td><b>Commercial escalation</b></td><td><code>mu, g_com</code></td><td><span class="tg rand">RANDOM</span></td><td>U(1.0,1.2)&times;&pi; + N(1.2%, 1%), yearly noise, clip [0, 11%]</td><td><span class="tg doc">DOC</span> inflation pass-through + real creep; below FCC cable's 6.1%/yr record</td></tr>
             <tr><td><b>For-profit start premium</b></td><td><code>PREM</code></td><td><span class="tg scen">SCENARIO</span></td><td>0% floor &middot; 6 / 12 / 22% by scenario &middot; 15% &ldquo;realistic&rdquo; run</td><td><span class="tg inf">INF</span> observed gaps 30&ndash;50%; a taxed owner prices above cost; RCW bars the PUD that markup</td></tr>
             <tr><td><b>Competitive-market falsifier</b></td><td><code>COMPETITIVE</code></td><td><span class="tg scen">SWITCH</span></td><td>P_com := P_pub (savings := 0)</td><td>the scenario that can lose &mdash; &sect;3.9</td></tr>
-            <tr><td><b>Served base &amp; dynamics</b></td><td><code>subs</code></td><td><span class="tg rand">RANDOM</span></td><td>mirrors Ledger A: same growth/churn/pull/NCI/cap machinery</td><td>coherence across ledgers by construction</td></tr>
-            <tr><td><b>Capex &amp; growth radios</b></td><td><code>capex, capk</code></td><td><span class="tg rand">RANDOM</span></td><td>identical draws to Ledger A; charged inside the county flow</td><td>the county pays real costs, not transfers</td></tr>
+            <tr><td><b>Served base &amp; dynamics</b></td><td><code>subs</code></td><td><span class="tg rand">RANDOM</span></td><td>same machinery as Ledger A &mdash; growth/churn with the Z loadings, demand-pull, the overbuild tail, the timed NCI exit, and the radio cap &mdash; drawn on an offset seed stream (&sect;3.14)</td><td>coherence across ledgers; Z + overbuild carried into B/C in v2.2 (they were A-only before &mdash; the audit caught it)</td></tr>
+            <tr><td><b>Capex &amp; growth radios</b></td><td><code>capex, capk</code></td><td><span class="tg rand">RANDOM</span></td><td>same distributions as Ledger A (hardware/labor/overrun/tax), offset seed stream; charged inside the county flow &mdash; scenario runs strand the NCI radios exactly as A does (v2.2)</td><td>the county pays real costs, not transfers</td></tr>
             <tr><td><b>Horizons</b></td><td><code>H</code></td><td><span class="tg fix">FIXED</span></td><td>10 and 15 years, both published</td><td>10-yr = the conservative decision window</td></tr>
           </tbody>
         </table></div>
         <p>Coherence note: B and C draw from the same regime mixture, the same Fisher discount, and the same subscriber machinery as A
-          &mdash; an event can't be catastrophic in one ledger and invisible in another. Where B simplifies (no demand-pull, no premium
-          &mdash; it's the standalone household view), it simplifies <em>downward</em>.</p>
+          &mdash; including, since v2.2, the shared macro factor Z, the fiber-overbuild tail, the $40 elasticity haircut, and the timed
+          NCI exit &mdash; so an event can't be catastrophic in one ledger and invisible in another. (Before v2.2 that sentence was
+          aspirational: Z and the overbuild existed only in Ledger A, leaving B and C slightly rosier. The audit caught it; the code now
+          delivers the guarantee, and the county headline gave back roughly a point for it.) Where B still simplifies (no demand-pull,
+          no premium &mdash; it's the standalone household view), it simplifies <em>downward</em>.</p>
       </section>
 
       <section class="sec s-l3" id="s3-14">
@@ -1302,7 +1335,7 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
           <li><b>Convergence.</b> At n = 200,000, the binomial <a class="tip" href="#g-se" data-tip="Standard error: how much a simulated percentage would wobble if re-run with a different random seed. At n = 200,000 ours is about ±0.11 points — effectively no wobble.">standard error</a>            on a headline percentage is &radic;(p(1&minus;p)/n) &asymp; &plusmn;0.11 points &mdash; the Monte Carlo
             noise is two orders of magnitude smaller than the input uncertainty it exists to measure. (The browser calculator's 8,000
             runs wobble visibly &mdash; &plusmn;0.5pt &mdash; which is why the published headlines come from the full model.)</li>
-          <li><b>Version pinning.</b> The output JSONs embed <code>model_version</code> (<code>v2.1-2026-07-03</code>) and
+          <li><b>Version pinning.</b> The output JSONs embed <code>model_version</code> (<code>v2.2-2026-07-10</code>) and
             the seed, so a figure can always be traced to the exact code that produced it. This documentation is written against that
             version; the pages read the JSONs live.</li>
           <li><b>Test harness.</b> <code>test_v2.py</code> ships alongside the model &mdash; invariance checks (the county total's
@@ -1335,9 +1368,15 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
             <tr><td>Overbuild loss fixed from every-year reapplication to a one-time step</td><td>v2 code review &mdash; a genuine bug that had been <em>overstating</em> harm</td><td class="pos">higher (bug removed)</td></tr>
             <tr><td>Phantom &ldquo;obsolescence hazard&rdquo; removed from the documentation</td><td>v2 review: earlier docs described a hazard the code never implemented; adding it would double-count the random effective life</td><td>docs corrected to match code</td></tr>
             <tr><td>DSCR overhaul: the old &ldquo;DSCR&rdquo; was really average coverage &mdash; renamed; true year-1 and minimum-year covenant metrics added; debt sized on funded P80 per configuration</td><td>v2 review (promotion bundle)</td><td class="neg">stricter metric reads lower</td></tr>
-            <tr><td>NCI exit timing measured, then moved from flattering t0 to realistic year-2 (radios strand instead of saving capex)</td><td>v2 review: &ldquo;measure the direction instead of presuming it&rdquo;</td><td class="neg">Balanced 91.3 &rarr; 88.4%</td></tr>
+            <tr><td>NCI exit timing measured, then moved from flattering t0 to realistic year-2 (radios strand instead of saving capex)</td><td>v2 review: &ldquo;measure the direction instead of presuming it&rdquo;</td><td class="neg">Balanced 91.3 &rarr; 87.9%</td></tr>
             <tr><td>Ledger E added: run-to-failure comparison with bracketed decline &mdash; including publishing the cases where build <em>loses</em> the 15-yr NPV race</td><td>v2 review; framing anchored to the District's own deck</td><td>new, two-sided (&sect;3.10)</td></tr>
             <tr><td>Tower-fixed corrected $371,323 &rarr; $370,783</td><td>workbook re-foot</td><td>~$540</td></tr>
+            <tr style="border-top:2px solid var(--hair)"><td>v2.2: lever-table generator repointed to the live model &mdash; it had still imported the superseded pre-v2 script, so every published lever number was stale, each in the favorable direction (strict accounting 71&rarr;66, all-three-fears 66&rarr;63, Starlink surge 74&rarr;72)</td><td>3rd-party review + 54-agent internal consistency audit (2026-07-10)</td><td class="neg">every stale lever corrected downward</td></tr>
+            <tr><td>v2.2: the year-2 NCI stranding extended to the county ledger (it had applied only to cost recovery, leaving the county figures on the flattering at-start capital credit)</td><td>internal audit</td><td class="neg">county 10-yr &minus;0.4 to &minus;5 by scenario</td></tr>
+            <tr><td>v2.2: macro factor Z + fiber-overbuild tail carried into Ledgers B &amp; C; the $40 elasticity haircut applied in B; the aging-gear bathtub charged on Ledger E's build path; sales tax extended to growth radios and the G2 refresh</td><td>internal audit: coherence claims the code didn't yet deliver</td><td class="neg">B &minus;4%, county floor &minus;1, E central P50 &minus;$106K, Balanced 88.4 &rarr; 87.9</td></tr>
+            <tr><td>v2.2: the literal 15-year rate freeze published as its own sensitivity (<code>true_freeze</code> &asymp; 25% floor-configuration / 34% from Balanced) &mdash; the RT&nbsp;0 &ldquo;floor&rdquo; lags inflation rather than freezing, and the prose now says so</td><td>internal audit: the site over-claimed its own conservatism</td><td>new floor-beneath-the-floor on the record</td></tr>
+            <tr><td>v2.2: fixed-vs-variable opex bracket published (30% / 50% of starting-base opex held fixed: &minus;9 / &minus;15 pts from Balanced)</td><td>3rd-party review's one structural critique that survived adversarial verification</td><td class="neg">bracket ends read lower</td></tr>
+            <tr><td>v2.2: county = household + district identity asserted at runtime; monotonicity, seed-sweep, and convergence guards added to the test suite; NumPy/Python versions + model-file SHA-256 stamped into every output JSON</td><td>internal audit (reproducibility hardening)</td><td>no numeric effect</td></tr>
           </tbody>
         </table></div>
         <p>Every markdown was kept; every markup is documented with its reason. The full review records ship in the repository
@@ -1351,12 +1390,14 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
         <div class="tbl"><table>
           <thead><tr><th>File (under <code>sources/analysis/</code>)</th><th>Role</th></tr></thead>
           <tbody>
-            <tr><td><code>montecarlo_v2.py</code></td><td><b>The model.</b> Ledgers A&ndash;E; writes the five output JSONs below. Single dependency: NumPy.</td></tr>
+            <tr><td><code>montecarlo_v2.py</code></td><td><b>The model.</b> Ledgers A&ndash;E plus the delay sweep; writes the six output JSONs below, each stamped with version, seed, NumPy/Python versions, and the model file's SHA-256 (v2.2). Single dependency: NumPy.</td></tr>
             <tr><td><code>montecarlo_robust_output.json</code></td><td>Ledger A base configurations: flat-rate floor, 50% / 100% rate-tracking, today's-$31 stress. Embeds version + seed.</td></tr>
             <tr><td><code>scenarios_output.json</code></td><td>Ledger D: the three worldviews with their full metric sets (overlap brackets, alt-method twins, DSCR family, recovery curves).</td></tr>
             <tr><td><code>ratepayer_benefit_output.json</code></td><td>Ledger B: household surplus percentiles + brackets, 10 &amp; 15 yr.</td></tr>
             <tr><td><code>county_value_output.json</code></td><td>Ledger C: county-ahead probabilities, decomposition, premium runs.</td></tr>
             <tr><td><code>run_to_failure_output.json</code></td><td>Ledger E: the three decline brackets.</td></tr>
+            <tr><td><code>delay_sweep_output.json</code></td><td>The cost-of-waiting sweep (delay 0&ndash;5 yr) behind the homepage chart &mdash; committed data, not a hand-carried table (v2.2).</td></tr>
+            <tr><td><code>sensitivity_levers_output.json</code></td><td>The &sect;2.5 lever table as data, regenerated by <code>sensitivity_levers.py</code> from the live model (v2.2 &mdash; the generator previously imported the superseded model; see &sect;3.15).</td></tr>
             <tr><td><code>test_v2.py</code>, <code>FINDINGS.md</code>, <code>REVIEW_v2.md</code>, <code>PROMOTION_BUNDLE.md</code></td><td>Test harness and the adversarial-review records behind &sect;3.15.</td></tr>
             <tr><td><code>financial_appendix.py</code>, <code>sensitivity_levers.py</code>, <code>sources_and_uses.py</code></td><td>The deterministic DCF companion, the &sect;2.5 lever table, and the funding-plan arithmetic.</td></tr>
             <tr><td><code>recovery_model.py</code></td><td>The superseded v1 (fixed capex) &mdash; kept public so the improvement is auditable.</td></tr>
@@ -1442,7 +1483,7 @@ protected cash  =          &Sigma; (cash_build &minus; cash_rtf)/df    <span cla
 
       <div class="doc-foot">
         <p><b>Save Local Broadband</b> &mdash; model documentation, maintained alongside model
-          <code>v2.1-2026-07-03</code>. Corrections welcome: if any statement here disagrees with the code or the
+          <code>v2.2-2026-07-10</code>. Corrections welcome: if any statement here disagrees with the code or the
           record, <a href="https://savelocalbroadband.com/action.php">tell us</a> and we'll fix it and log it in &sect;3.15.
           Companion pages: <a href="https://savelocalbroadband.com/how-we-modeled-risk.php">the model &amp; live calculator</a> &middot;
           <a href="https://savelocalbroadband.com/case.php">the case</a> &middot; <a href="https://savelocalbroadband.com/financial-analysis.php">financial analysis</a> &middot;

@@ -3,53 +3,59 @@
  "horizons": {
   "10": {
    "H": 10,
-   "p_county_ahead": 92.0,
-   "p_district_loses": 57.5,
-   "p_district_loses_but_county_ahead": 49.6,
-   "county_P10": 40050,
-   "county_P50": 478268,
-   "county_P90": 970198,
-   "household_savings_P50": 523203,
-   "household_savings_mean": 550775,
-   "district_P50": -55758
+   "p_county_ahead": 91.0,
+   "p_district_loses": 59.0,
+   "p_district_loses_but_county_ahead": 50.1,
+   "county_P10": 19291,
+   "county_P50": 461769,
+   "county_P90": 954239,
+   "household_savings_P50": 516925,
+   "household_savings_mean": 544465,
+   "district_P50": -66518
   },
   "15": {
    "H": 15,
-   "p_county_ahead": 99.3,
-   "p_district_loses": 29.6,
-   "p_district_loses_but_county_ahead": 28.9,
-   "county_P10": 556083,
-   "county_P50": 1326735,
-   "county_P90": 2298618,
-   "household_savings_P50": 1064928,
-   "household_savings_mean": 1140944,
-   "district_P50": 241925
+   "p_county_ahead": 99.1,
+   "p_district_loses": 30.9,
+   "p_district_loses_but_county_ahead": 30.0,
+   "county_P10": 517342,
+   "county_P50": 1292902,
+   "county_P90": 2265847,
+   "household_savings_P50": 1046661,
+   "household_savings_mean": 1123829,
+   "district_P50": 224206
   }
  },
  "realistic_premium15": {
   "10": {
    "H": 10,
    "p_county_ahead": 99.8,
-   "p_district_loses": 57.5,
-   "p_district_loses_but_county_ahead": 57.4,
-   "county_P10": 527896,
-   "county_P50": 1027961,
-   "county_P90": 1599175,
-   "household_savings_P50": 1071648,
-   "household_savings_mean": 1105655,
-   "district_P50": -55758
+   "p_district_loses": 59.0,
+   "p_district_loses_but_county_ahead": 58.8,
+   "county_P10": 500811,
+   "county_P50": 1006071,
+   "county_P90": 1579864,
+   "household_savings_P50": 1060517,
+   "household_savings_mean": 1094882,
+   "district_P50": -66518
   },
   "15": {
    "H": 15,
    "p_county_ahead": 100.0,
-   "p_district_loses": 29.6,
-   "p_district_loses_but_county_ahead": 29.6,
-   "county_P10": 1226857,
-   "county_P50": 2142306,
-   "county_P90": 3298646,
-   "household_savings_P50": 1875990,
-   "household_savings_mean": 1968790,
-   "district_P50": 241925
+   "p_district_loses": 30.9,
+   "p_district_loses_but_county_ahead": 30.9,
+   "county_P10": 1175965,
+   "county_P50": 2098425,
+   "county_P90": 3261526,
+   "household_savings_P50": 1847507,
+   "household_savings_mean": 1942419,
+   "district_P50": 224206
   }
- }
+ },
+ "_model_version": "v2.2-2026-07-10",
+ "_env": {
+  "python": "3.12.10",
+  "numpy": "2.4.6"
+ },
+ "_sha256_model": "2d70d4495d0ac3300ade5a8b91419679f1b6abbf5dfa08da5b54a89b9da0a3a8"
 }
